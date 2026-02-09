@@ -1,5 +1,6 @@
 """Main entry point for agentpaper_reporter CLI."""
 
+import argparse
 import logging
 import sys
 from datetime import date, timedelta
@@ -16,6 +17,20 @@ from agentpaper_reporter.summarizer import Summarizer
 logger = logging.getLogger(__name__)
 
 
+def parse_args() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(description="Weekly AI Paper Monitor")
+    parser.add_argument(
+        "--start-date", type=date.fromisoformat,
+        help="Start date (YYYY-MM-DD). Overrides lookback_days.",
+    )
+    parser.add_argument(
+        "--end-date", type=date.fromisoformat,
+        help="End date (YYYY-MM-DD). Defaults to today.",
+    )
+    return parser.parse_args()
+
+
 def main() -> int:
     """
     Main entry point for the agentpaper_reporter application.
@@ -23,6 +38,8 @@ def main() -> int:
     Returns:
         0 on success, 1 on fatal error
     """
+    args = parse_args()
+
     try:
         # Load configuration
         config = load_config()
@@ -31,8 +48,8 @@ def main() -> int:
         return 1
 
     # Calculate date range
-    end_date = date.today()
-    start_date = end_date - timedelta(days=config.schedule.lookback_days)
+    end_date = args.end_date or date.today()
+    start_date = args.start_date or (end_date - timedelta(days=config.schedule.lookback_days))
 
     logger.info(f"Starting paper collection for {start_date} to {end_date}")
 
@@ -129,7 +146,8 @@ def main() -> int:
         report_path = reporter.save(
             content,
             config.report.output_dir,
-            config.report.filename_pattern
+            config.report.filename_pattern,
+            date=end_date,
         )
 
         # Cleanup old database entries
