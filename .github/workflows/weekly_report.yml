@@ -1,0 +1,40 @@
+name: Weekly AI Paper Report
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Monday 9:00 UTC
+  workflow_dispatch:  # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate weekly report
+        env:
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'claude' }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python -m agentpaper_reporter
+
+      - name: Commit and push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ data/
+          git diff --staged --quiet || (git commit -m "Add weekly AI paper report $(date +%Y-%m-%d)" && git push)
