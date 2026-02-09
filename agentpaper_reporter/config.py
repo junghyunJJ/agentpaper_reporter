@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Optional
 
 import yaml
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -87,7 +88,11 @@ def load_config(config_path: Optional[str] = None) -> AppConfig:
         FileNotFoundError: If config file not found.
         ValueError: If required API key not found for selected provider.
     """
-    # Setup logging first
+    # Load .env file (does not override existing env vars)
+    project_root = Path(__file__).parent.parent
+    load_dotenv(project_root / ".env")
+
+    # Setup logging
     logging.basicConfig(
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -97,8 +102,6 @@ def load_config(config_path: Optional[str] = None) -> AppConfig:
 
     # Determine config path
     if config_path is None:
-        # Find project root (directory containing config.yaml)
-        project_root = Path(__file__).parent.parent
         config_path = str(project_root / "config.yaml")
 
     config_file = Path(config_path)

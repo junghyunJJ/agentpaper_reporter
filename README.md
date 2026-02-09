@@ -22,7 +22,14 @@ pip install -r requirements.txt
 
 ### Configuration
 
-Set your LLM API key as an environment variable:
+Copy the example `.env` file and set your API key:
+
+```bash
+cp .env.example .env
+# Edit .env with your API key
+```
+
+Or set environment variables directly:
 
 ```bash
 # For Claude
