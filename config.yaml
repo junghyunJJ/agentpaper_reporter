@@ -1,0 +1,46 @@
+search:
+  keywords:
+    - "agentic AI"
+    - "multi-agent system"
+    - "multi-agent"
+    - "AI agent"
+    - "autonomous agent"
+    - "LLM agent"
+    - "agent framework"
+    - "tool-use"
+    - "function calling"
+    - "agent orchestration"
+    - "agent collaboration"
+    - "reasoning agent"
+  categories:
+    - "cs.AI"
+    - "cs.MA"
+    - "cs.CL"
+    - "cs.LG"
+
+sources:
+  arxiv:
+    enabled: true
+    max_results: 200
+  biorxiv:
+    enabled: true
+    max_results: 500
+  medrxiv:
+    enabled: true
+    max_results: 500
+
+llm:
+  provider: "claude"  # "claude" or "openai"
+  claude_model: "claude-sonnet-4-20250514"
+  openai_model: "gpt-4o-mini"
+  max_tokens: 300
+
+report:
+  output_dir: "reports"
+  filename_pattern: "weekly_report_{date}.md"
+
+database:
+  path: "data/papers.db"
+
+schedule:
+  lookback_days: 7
