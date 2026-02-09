@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Generated reports
+reports/*.md
+
+# Database
+data/papers.db
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# OMC
+.omc/
