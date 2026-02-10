@@ -4,7 +4,13 @@ import argparse
 import logging
 import sys
 from datetime import date, timedelta
+from pathlib import Path
 
+from agentpaper_reporter.comparison import (
+    build_comparison,
+    load_previous_stats,
+    save_weekly_stats,
+)
 from agentpaper_reporter.config import load_config
 from agentpaper_reporter.db import DeduplicationDB
 from agentpaper_reporter.fetchers.arxiv_fetcher import ArxivFetcher
@@ -26,7 +32,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--end-date", type=date.fromisoformat,
-        help="End date (YYYY-MM-DD). Defaults to today.",
+        help="End date (YYYY-MM-DD). Defaults to yesterday (Sunday).",
     )
     return parser.parse_args()
 
@@ -47,9 +53,13 @@ def main() -> int:
         logging.error(f"Failed to load configuration: {e}")
         return 1
 
-    # Calculate date range
-    end_date = args.end_date or date.today()
-    start_date = args.start_date or (end_date - timedelta(days=config.schedule.lookback_days))
+    # Calculate date range: default is Mon-Sun (previous week)
+    # When run on Monday, end_date = Sunday (yesterday), start_date = Monday (7 days ago)
+    end_date = args.end_date or (date.today() - timedelta(days=1))
+    start_date = args.start_date or (end_date - timedelta(days=6))
+
+    # Report filename date = day after end_date (Monday = generation day)
+    report_date = end_date + timedelta(days=1)
 
     logger.info(f"Starting paper collection for {start_date} to {end_date}")
 
@@ -129,6 +139,16 @@ def main() -> int:
                 papers_by_source[paper.source] = []
             papers_by_source[paper.source].append(paper)
 
+        # Collect biomedical papers (bioRxiv + medRxiv)
+        biomedical_papers = []
+        for source in ("biorxiv", "medrxiv"):
+            biomedical_papers.extend(papers_by_source.get(source, []))
+
+        # Generate biomedical summary
+        biomedical_summary = None
+        if biomedical_papers:
+            biomedical_summary = summarizer.generate_biomedical_summary(biomedical_papers)
+
         # Build report data
         report_data = ReportData(
             date_range_start=start_date,
@@ -136,8 +156,26 @@ def main() -> int:
             total_papers_fetched=total_fetched,
             total_papers_matched=len(filtered_papers),
             papers_by_source=papers_by_source,
-            search_keywords=config.search.keywords
+            search_keywords=config.search.keywords,
+            biomedical_papers=biomedical_papers,
+            biomedical_summary=biomedical_summary,
         )
+
+        # Week-over-week comparison
+        stats_dir = str(Path(config.database.path).parent)
+        prev_stats = load_previous_stats(stats_dir, report_date)
+        if prev_stats is not None:
+            logger.info("Generating week-over-week comparison...")
+            comparison_summary = summarizer.generate_comparison_summary(
+                report_data, prev_stats
+            )
+            report_data.comparison = build_comparison(
+                report_data, prev_stats, comparison_summary
+            )
+            logger.info("Comparison generated")
+
+        # Save weekly stats for future comparisons
+        save_weekly_stats(report_data, stats_dir, report_date)
 
         # Generate and save report
         logger.info("Generating report...")
@@ -147,7 +185,7 @@ def main() -> int:
             content,
             config.report.output_dir,
             config.report.filename_pattern,
-            date=end_date,
+            date=report_date,
         )
 
         # Cleanup old database entries
@@ -159,11 +197,16 @@ def main() -> int:
         logger.info("=" * 60)
         logger.info("Summary Statistics:")
         logger.info(f"  Date range: {start_date} to {end_date}")
+        logger.info(f"  Report date (filename): {report_date}")
         logger.info(f"  Total papers fetched: {total_fetched}")
         logger.info(f"  Papers after filtering: {len(filtered_papers)}")
+        logger.info(f"  Biomedical papers: {len(biomedical_papers)}")
         logger.info(f"  Papers by source:")
         for source, papers in sorted(papers_by_source.items()):
             logger.info(f"    {source}: {len(papers)}")
+        if report_data.comparison:
+            logger.info(f"  Comparison: vs {report_data.comparison.prev_report_date} "
+                        f"({report_data.comparison.change_total:+d} papers)")
         logger.info(f"  Output: {report_path}")
         logger.info("=" * 60)
 

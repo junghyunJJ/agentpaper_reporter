@@ -27,7 +27,7 @@ jobs:
 
       - name: Generate weekly report
         env:
-          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'claude' }}
+          LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'openai' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python -m agentpaper_reporter

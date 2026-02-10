@@ -30,7 +30,7 @@ sources:
     max_results: 500
 
 llm:
-  provider: "claude"  # "claude" or "openai"
+  provider: "openai"  # "claude" or "openai"
   claude_model: "claude-sonnet-4-20250514"
   openai_model: "gpt-4o-mini"
   max_tokens: 300

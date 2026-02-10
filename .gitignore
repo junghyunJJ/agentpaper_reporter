@@ -18,9 +18,6 @@ env/
 *.swp
 *.swo
 
-# Generated reports
-reports/*.md
-
 # Database
 data/papers.db
 

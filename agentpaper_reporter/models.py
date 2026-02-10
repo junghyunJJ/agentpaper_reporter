@@ -21,6 +21,17 @@ class Paper(BaseModel):
     summary: str | None = None
 
 
+class WeekComparison(BaseModel):
+    """Week-over-week comparison data."""
+
+    prev_report_date: date
+    prev_total_matched: int
+    change_total: int
+    prev_by_source: dict[str, int]
+    change_by_source: dict[str, int]
+    summary: str
+
+
 class ReportData(BaseModel):
     """Data structure for the generated report."""
 
@@ -31,3 +42,6 @@ class ReportData(BaseModel):
     total_papers_matched: int
     papers_by_source: dict[str, list[Paper]]
     search_keywords: list[str]
+    biomedical_papers: list[Paper] = Field(default_factory=list)
+    biomedical_summary: str | None = None
+    comparison: WeekComparison | None = None

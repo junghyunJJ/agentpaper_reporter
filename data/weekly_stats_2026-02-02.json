@@ -1,0 +1,38 @@
+{
+  "report_date": "2026-02-02",
+  "date_range_start": "2026-01-26",
+  "date_range_end": "2026-02-01",
+  "total_fetched": 885,
+  "total_matched": 23,
+  "by_source": {
+    "arxiv": 21,
+    "biorxiv": 1,
+    "medrxiv": 1
+  },
+  "top_papers": [
+    "Legal Infrastructure for Transformative AI Governance",
+    "Agyn: A Multi-Agent System for Team-Based Autonomous Software Engineering",
+    "Provable Cooperative Multi-Agent Exploration for Reward-Free MDPs",
+    "Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents",
+    "From Pragmas to Partners: A Symbiotic Evolution of Agentic High-Level Synthesis",
+    "Towards knowledge-based workflows: a semantic approach to atomistic simulations for mechanical and thermodynamic properties",
+    "Social Catalysts, Not Moral Agents: The Illusion of Alignment in LLM Societies",
+    "Beyond Pixels: Visual Metaphor Transfer via Schema-Driven Agentic Reasoning",
+    "A-MapReduce: Executing Wide Search via Agentic MapReduce",
+    "ContextEvolve: Multi-Agent Context Compression for Systems Code Optimization"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}

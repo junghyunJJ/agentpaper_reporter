@@ -10,7 +10,7 @@ import anthropic
 import openai
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from agentpaper_reporter.models import Paper
+from agentpaper_reporter.models import Paper, ReportData
 
 if TYPE_CHECKING:
     from agentpaper_reporter.config import AppConfig
@@ -91,3 +91,126 @@ class Summarizer:
             if i < total - 1:
                 time.sleep(0.5)
         return papers
+
+    def generate_biomedical_summary(self, papers: list[Paper]) -> str:
+        """Generate a brief overview of all biomedical papers.
+
+        Args:
+            papers: List of biomedical papers (bioRxiv + medRxiv).
+
+        Returns:
+            LLM-generated summary paragraph, or empty string if no papers.
+        """
+        if not papers:
+            return ""
+
+        paper_descriptions = []
+        for paper in papers[:20]:
+            abstract_snippet = paper.abstract[:200] + ("..." if len(paper.abstract) > 200 else "")
+            paper_descriptions.append(f"- {paper.title}: {abstract_snippet}")
+        papers_text = "\n".join(paper_descriptions)
+
+        prompt = (
+            "Provide a brief overview (3-5 sentences) of the following biomedical papers "
+            "that are relevant to AI agents in biomedicine. Summarize the key themes, "
+            "methodologies, and areas of focus across these papers.\n\n"
+            f"{papers_text}"
+        )
+
+        try:
+            if self.config.llm.provider == "claude":
+                client = anthropic.Anthropic(
+                    api_key=self.config.llm.anthropic_api_key
+                )
+                response = client.messages.create(
+                    model=self.config.llm.claude_model,
+                    max_tokens=400,
+                    system="You are a biomedical research analyst specializing in the intersection of AI agents and biomedicine.",
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                return response.content[0].text
+            elif self.config.llm.provider == "openai":
+                client = openai.OpenAI(api_key=self.config.llm.openai_api_key)
+                response = client.chat.completions.create(
+                    model=self.config.llm.openai_model,
+                    max_tokens=400,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are a biomedical research analyst specializing in the intersection of AI agents and biomedicine.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                )
+                return response.choices[0].message.content
+            else:
+                return "Biomedical summary unavailable."
+        except Exception as e:
+            logger.warning(f"Failed to generate biomedical summary: {e}")
+            return "Biomedical summary unavailable."
+
+    def generate_comparison_summary(
+        self, current: ReportData, prev_stats: dict
+    ) -> str:
+        """Generate an LLM comparison summary between current and previous week.
+
+        Args:
+            current: Current week's report data.
+            prev_stats: Previous week's stats dict.
+
+        Returns:
+            LLM-generated comparison summary string.
+        """
+        current_by_source = {
+            source: len(papers)
+            for source, papers in current.papers_by_source.items()
+        }
+        top_titles = [
+            paper.title
+            for papers in current.papers_by_source.values()
+            for paper in papers[:5]
+        ]
+
+        prompt = (
+            "Compare this week's AI agent paper trends with last week. "
+            f"Current week: {current.total_papers_matched} papers "
+            f"({', '.join(f'{s}: {c}' for s, c in current_by_source.items())}). "
+            f"Previous week: {prev_stats.get('total_matched', 0)} papers "
+            f"({', '.join(f'{s}: {c}' for s, c in prev_stats.get('by_source', {}).items())}). "
+            f"Top paper titles this week: {top_titles[:10]}. "
+            f"Previous week top papers: {prev_stats.get('top_papers', [])[:10]}. "
+            "Highlight 3-5 notable points about trends, shifts in topics, "
+            "or changes in volume across sources. Be concise."
+        )
+
+        try:
+            if self.config.llm.provider == "claude":
+                client = anthropic.Anthropic(
+                    api_key=self.config.llm.anthropic_api_key
+                )
+                response = client.messages.create(
+                    model=self.config.llm.claude_model,
+                    max_tokens=500,
+                    system="You are a research trend analyst specializing in AI agent systems.",
+                    messages=[{"role": "user", "content": prompt}],
+                )
+                return response.content[0].text
+            elif self.config.llm.provider == "openai":
+                client = openai.OpenAI(api_key=self.config.llm.openai_api_key)
+                response = client.chat.completions.create(
+                    model=self.config.llm.openai_model,
+                    max_tokens=500,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are a research trend analyst specializing in AI agent systems.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                )
+                return response.choices[0].message.content
+            else:
+                return "Comparison summary unavailable (unknown provider)."
+        except Exception as e:
+            logger.warning(f"Failed to generate comparison summary: {e}")
+            return "Comparison summary unavailable."

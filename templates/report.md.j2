@@ -11,6 +11,60 @@
 
 ---
 
+{% if report.comparison %}
+## Week-over-Week Comparison
+
+| Metric | This Week | Last Week ({{ report.comparison.prev_report_date }}) | Change |
+|--------|-----------|-----------|--------|
+| Total matched | {{ report.total_papers_matched }} | {{ report.comparison.prev_total_matched }} | {{ "%+d" | format(report.comparison.change_total) }} |
+{%- for source in ["arxiv", "biorxiv", "medrxiv"] %}
+{%- set curr = report.papers_by_source.get(source, []) | length %}
+{%- set prev = report.comparison.prev_by_source.get(source, 0) %}
+{%- set change = report.comparison.change_by_source.get(source, 0) %}
+| {{ source }} | {{ curr }} | {{ prev }} | {{ "%+d" | format(change) }} |
+{%- endfor %}
+
+### Notable Trends
+
+{{ report.comparison.summary }}
+
+---
+
+{% endif %}
+{% if report.biomedical_papers %}
+## Biomedical Highlights ({{ report.biomedical_papers | length }} papers)
+
+Papers from bioRxiv and medRxiv relevant to agentic AI in biomedicine.
+
+{% if report.biomedical_summary %}
+{{ report.biomedical_summary }}
+
+{% endif %}
+{% for paper in report.biomedical_papers %}
+### {{ loop.index }}. {{ paper.title }}
+
+- **Authors:** {{ paper.authors | join(', ') }}
+- **Published:** {{ paper.published_date }}
+- **Source:** {{ paper.source }}
+- **URL:** [{{ paper.url }}]({{ paper.url }})
+{% if paper.pdf_url %}- **PDF:** [{{ paper.pdf_url }}]({{ paper.pdf_url }}){% endif %}
+{% if paper.categories %}- **Categories:** {{ paper.categories | join(', ') }}{% endif %}
+
+{% if paper.summary %}
+> {{ paper.summary }}
+{% endif %}
+
+<details>
+<summary>Abstract</summary>
+
+{{ paper.abstract }}
+
+</details>
+
+{% endfor %}
+---
+
+{% endif %}
 {% for source, papers in report.papers_by_source.items() %}
 ## {{ source | title }} ({{ papers | length }} papers)
 

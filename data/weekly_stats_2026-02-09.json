@@ -1,0 +1,38 @@
+{
+  "report_date": "2026-02-09",
+  "date_range_start": "2026-02-02",
+  "date_range_end": "2026-02-08",
+  "total_fetched": 1070,
+  "total_matched": 167,
+  "by_source": {
+    "arxiv": 162,
+    "medrxiv": 4,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "Agentic Uncertainty Reveals Agentic Overconfidence",
+    "TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code",
+    "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+    "From Features to Actions: Explainability in Traditional and Agentic AI Systems",
+    "LLM Active Alignment: A Nash Equilibrium Perspective",
+    "An AI Agent for Automated Causal Inference in Epidemiology",
+    "Safety and Utility of an Agentic Large Language Model-Based Hospital Course Summarizer: A Prospective Real-World Pilot Study",
+    "Drug Safety Agents Using Graphs and Ontologies",
+    "Automated Task-Specific vs General-Purpose Artificial Intelligence for Detecting Subtle Intraoperative Warning Signs During Cataract Surgery: A Multicenter Diagnostic Study",
+    "Optimizing Motor Skills with HD-tDCS: Insights from a Pilot Study on Chopstick Proficiency"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
