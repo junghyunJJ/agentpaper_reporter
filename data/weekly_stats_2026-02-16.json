@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-02-16",
+  "date_range_start": "2026-02-09",
+  "date_range_end": "2026-02-15",
+  "total_fetched": 1016,
+  "total_matched": 124,
+  "by_source": {
+    "medrxiv": 2,
+    "arxiv": 120,
+    "biorxiv": 2
+  },
+  "top_papers": [
+    "Metagenomics AI powered prediction of Inflammatory Bowel Disease and Probiotic Recommendation",
+    "MedAgentBrief for Hospital Course Summarization: Safety, Use, and Discharge Documentation Burden",
+    "In-Context Autonomous Network Incident Response: An End-to-End Large Language Model Agent Approach",
+    "TraceBack: Multi-Agent Decomposition for Fine-Grained Table Attribution",
+    "SciAgentGym: Benchmarking Multi-Step Scientific Tool-use in LLM Agents",
+    "BrowseComp-$V^3$: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents",
+    "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+    "Causal evidence for a shared mechanism linking language and tool use via the putamen",
+    "MetaKnogic-Alpha: A Hyper-Relational Knowledge Base for Grounded Metabolic Reasoning"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
