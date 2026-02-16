@@ -13,6 +13,7 @@ from agentpaper_reporter.comparison import (
 )
 from agentpaper_reporter.config import load_config
 from agentpaper_reporter.db import DeduplicationDB
+from agentpaper_reporter.email_sender import EmailSender
 from agentpaper_reporter.fetchers.arxiv_fetcher import ArxivFetcher
 from agentpaper_reporter.fetchers.biorxiv_fetcher import BiorxivFetcher
 from agentpaper_reporter.filter import filter_and_deduplicate
@@ -187,6 +188,12 @@ def main() -> int:
             config.report.filename_pattern,
             date=report_date,
         )
+
+        # Send email notification
+        if config.email.enabled:
+            email_sender = EmailSender(config.email)
+            if not email_sender.send(content, report_date=report_date):
+                logger.warning("Email notification was not sent")
 
         # Cleanup old database entries
         deleted = db.cleanup()

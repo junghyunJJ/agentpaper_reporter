@@ -64,6 +64,17 @@ class ScheduleConfig(BaseModel):
     lookback_days: int
 
 
+class EmailConfig(BaseModel):
+    """Email notification configuration."""
+    enabled: bool = False
+    recipients: list[str] = Field(default_factory=list)
+    smtp_host: str = "smtp.gmail.com"
+    smtp_port: int = 587
+    use_tls: bool = True
+    sender_name: str = "AI Paper Reporter"
+    subject_pattern: str = "Weekly AI Paper Report - {date}"
+
+
 class AppConfig(BaseModel):
     """Application configuration."""
     search: SearchConfig
@@ -72,6 +83,7 @@ class AppConfig(BaseModel):
     report: ReportConfig
     database: DatabaseConfig
     schedule: ScheduleConfig
+    email: EmailConfig = Field(default_factory=EmailConfig)
 
 
 def load_config(config_path: Optional[str] = None) -> AppConfig:
@@ -132,6 +144,19 @@ def load_config(config_path: Optional[str] = None) -> AppConfig:
         config_data["llm"]["anthropic_api_key"] = anthropic_api_key
     if openai_api_key:
         config_data["llm"]["openai_api_key"] = openai_api_key
+
+    # Apply email overrides from environment
+    email_enabled = os.getenv("EMAIL_ENABLED")
+    if email_enabled:
+        config_data.setdefault("email", {})
+        config_data["email"]["enabled"] = email_enabled.lower() in ("true", "1", "yes")
+
+    email_recipients = os.getenv("EMAIL_RECIPIENTS")
+    if email_recipients:
+        config_data.setdefault("email", {})
+        config_data["email"]["recipients"] = [
+            r.strip() for r in email_recipients.split(",") if r.strip()
+        ]
 
     # Validate configuration
     config = AppConfig(**config_data)

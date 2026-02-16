@@ -44,3 +44,12 @@ database:
 
 schedule:
   lookback_days: 7
+
+email:
+  enabled: false
+  recipients: []
+  smtp_host: "smtp.gmail.com"
+  smtp_port: 587
+  use_tls: true
+  sender_name: "AI Paper Reporter"
+  subject_pattern: "Weekly AI Paper Report - {date}"
