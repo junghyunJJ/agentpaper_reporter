@@ -1,6 +1,6 @@
 # Weekly AI Agent Paper Report
 
-**Generated:** 2026-02-16 10:07
+**Generated:** 2026-02-16 23:03
 **Period:** 2026-02-09 to 2026-02-15
 
 ## Summary
@@ -23,15 +23,17 @@
 
 ### Notable Trends
 
-1. **Decrease in Volume**: This week saw a notable decrease in the number of AI agent papers published, from 167 last week to 124. This decline indicates a potential seasonal slowdown or a shift in focus temporarily away from AI agent topics.
+Here are the notable points comparing this week's AI agent paper trends with last week's:
 
-2. **Source Distribution Shift**: This week saw a significantly higher contribution from arXiv (120 papers) compared to last week, where arXiv contributed 162. Meanwhile, medRxiv papers decreased from 4 to 2, suggesting a reduced emphasis on health-related AI agent research in the current week.
+1. **Volume Decrease**: There was a significant drop from 167 papers last week to 124 papers this week, indicating a reduction in publication activity in the field of AI agents.
 
-3. **Emerging Research Areas**: Current week papers emphasize topics such as metagenomics, innovative benchmarking for multimodal agents, and autonomous network incident responses. This reflects a shift towards practical, application-driven research whereas last week’s papers predominantly centered around theoretical frameworks and explanations.
+2. **Shift in Source Distribution**: The contribution from arXiv decreased from 162 papers last week to 120 this week, while medRxiv saw a slight decline from 4 to 2. BioRxiv maintained a comparable volume with 1-2 papers across both weeks, suggesting a stability in the biosciences focus.
 
-4. **Advanced Benchmarking Focus**: The introduction of multiple benchmarking papers in the current week (e.g., SciAgentGym, SkillsBench, BrowseComp-$V^3$) suggests an increased focus on evaluating AI agent capabilities across diverse tasks, indicating a maturation in the field’s approach to performance assessment.
+3. **Emerging Research Focus**: This week’s top papers reflect an expanding breadth of topics, including metagenomics and multimodal systems, with a focus on practical applications like health monitoring and incident response. In contrast, previous week’s papers emphasized foundational concepts in agent-based systems and AI alignment.
 
-5. **Consistency in Hospital AI Applications**: There continues to be substantial interest in AI applications related to healthcare, with multiple mentions in both weeks, highlighting a persistent focus on integrating AI agents within medical contexts, as seen in papers focusing on summarizing hospital courses and causal inference in epidemiology.
+4. **Interest in Evaluation Frameworks**: The presence of papers like 'SciAgentGym' and 'SkillsBench' this week highlights an increasing focus on benchmarking and evaluating agent capabilities across diverse tasks, suggesting a maturation in the research landscape.
+
+5. **Increased Health Domain Relevance**: The recurrence of health-related applications, particularly in summarization and causal inference, suggests a growing trend in deploying AI agents for practical healthcare solutions, which mirrors the ongoing demand for innovative healthcare technologies.
 
 ---
 
@@ -42,15 +44,7 @@
 Papers from bioRxiv and medRxiv relevant to agentic AI in biomedicine.
 
 
-The first paper explores the causal relationship linking language and tool use through the putamen, highlighting the cognitive mechanism that organizes symbols and actions into structured sequences. Using neuroimaging techniques, the study investigates how these two complex cognitive processes are interrelated in humans. 
-
-The second paper introduces MetaKnogic-Alpha, a hyper-relational knowledge base designed for metabolic reasoning, addressing the issue of fragmented knowledge in metabolic research. The authors employ advanced AI methods to synthesize vast amounts of biomedical literature, facilitating a more comprehensive understanding of metabolic pathways and their implications.
-
-The third paper discusses the application of AI in predicting Inflammatory Bowel Disease (IBD) and recommending probiotics based on metagenomic analysis. By analyzing gut microbiome signatures, the study elucidates the relationship between dysbiosis and autoimmune diseases, showcasing how AI can enhance diagnostic and therapeutic strategies.
-
-The fourth paper evaluates the MedAgentBrief system aimed at summarizing hospital courses to alleviate documentation burden on clinicians during discharge processes. This AI-driven tool focuses on producing high-quality summaries that ensure safe transitions of care while reducing clinician burnout, thus highlighting the role of AI in improving clinical workflows. 
-
-Across these papers, key themes include the integration of AI in interpreting complex biological and cognitive data, addressing knowledge fragmentation in biomedicine, and improving clinician efficiency through automated summarization technologies. Methodologies range from neuroimaging and metagenomic analysis to the development of knowledge bases and AI-driven systems for documentation purposes.
+The first paper explores the interrelationship between human language and tool use, emphasizing a shared cognitive mechanism within the putamen that organizes symbols and actions into structured sequences, which is crucial for both capabilities. The second paper introduces MetaKnogic-Alpha, a hyper-relational knowledge base designed to address the "synthesis gap" in metabolic research by integrating diverse biomedical literature to facilitate more comprehensive metabolic reasoning. The third paper investigates the potential of AI-driven metagenomics to predict Inflammatory Bowel Disease (IBD) and recommend probiotics, highlighting the connection between gut microbiome dysbiosis and autoimmune diseases through specific microbial signatures. Finally, the fourth paper discusses MedAgentBrief, an AI tool aimed at automating hospital course summarization, which can alleviate clinician documentation burdens associated with discharge summaries, ultimately enhancing patient care transitions and reducing clinician burnout. Across these works, common themes include the application of AI and advanced modeling techniques to improve biomedical research, patient care, and understanding of complex biological systems.
 
 
 
@@ -64,7 +58,7 @@ Across these papers, key themes include the integration of AI in interpreting co
 - **Categories:** neuroscience
 
 
-> This paper identifies the putamen as a critical neural substrate linking human language and tool use through a shared mechanism that supports goal-dependent sequence integrity. The researchers employed brain lesion analysis, developmental contrasts, and functional neuroimaging involving 100 adults with focal brain injuries, revealing that damage to the putamen impaired both sentence processing and tool use. Key findings indicate that early language acquisition enhances tool-use performance and strengthens putaminal responses, highlighting the importance of this brain region in agentic AI systems that aim to replicate or understand human-like cognitive processes.
+> The paper investigates the neural mechanisms linking language and tool use, revealing that the putamen plays a crucial role in maintaining goal-dependent sequence integrity in both capacities. Using a combination of brain lesion analysis, developmental studies, and functional neuroimaging, the authors found that damage to the putamen in individuals with brain injury impaired both sentence processing and tool use, while early language acquisition was shown to enhance tool performance and strengthen putaminal responses. This research highlights the putamen as a shared neural substrate for language and action, with early language experience significantly influencing its functionality.
 
 
 <details>
@@ -87,7 +81,7 @@ One-Sentence SummaryLanguage and tool use share a putamen-based mechanism that s
 - **Categories:** bioinformatics
 
 
-> The main contribution of the paper is the development of MetaKnogic-Alpha, a hyper-relational knowledge base designed to synthesize and organize biomedical literature related to metabolic research, facilitating grounded metabolic reasoning. The methodology involves transforming over 100,000 full-text articles into a hypergraph structure that captures complex relationships within metabolic pathways, utilizing an autonomous reasoning agent to enhance query precision and perform multi-hop expansions to identify critical biological relationships while ensuring rigorous validity through deterministic grounding against a curated metabolic network. Key findings indicate that MetaKnogic-Alpha achieves a mechanistic accuracy of 0.98 in providing reliable insights derived from literature, significantly improving the efficiency of metabolic research by automating synthesis that historically required extensive manual effort, thus enhancing the capabilities of agents in precision oncology.
+> The paper introduces MetaKnogic-Alpha, a hyper-relational knowledge base developed to synthesize extensive biomedical literature related to metabolic research, addressing the challenge of fragmented mechanistic insights. The methodology involves transforming over 100,000 full-text articles into a hypergraph structure that captures complex metabolic relationships, utilizing an autonomous reasoning agent for precise query enrichment and deterministic grounding against established metabolic networks. Key findings include achieving a mechanistic accuracy of 0.98 in evidence-supported scenarios, demonstrating that MetaKnogic-Alpha significantly improves the speed and reliability of knowledge extraction in metabolic pathways, thereby enhancing the capabilities of researchers in fields like precision oncology.
 
 
 <details>
@@ -108,7 +102,7 @@ The exponential trajectory of biomedical literature has precipitated a fundament
 - **Categories:** gastroenterology
 
 
-> This paper presents a novel AI-driven predictive tool for identifying the inflammatory bowel disease (IBD) status based on gut microbiome composition, utilizing machine learning techniques such as XGBoost. The methodology involves processing metagenomic data to generate taxonomic profiles, which are then analyzed to determine dysbiosis and subsequently provide personalized probiotic recommendations. Key findings include an 86.6% accuracy in predicting IBD status and identifying specific dysbiotic taxa, highlighting an innovative approach in the agentic AI field for disease prediction and personalized health recommendations.
+> This paper introduces a predictive tool leveraging AI and machine learning to assess Inflammatory Bowel Disease (IBD) based on the gut microbiome's composition. Using integrated metagenomic processing and an XGBoost classifier, the tool achieved an accuracy of 86.6% in predicting IBD status and identified specific dysbiotic taxa, while also providing personalized probiotic recommendations. Although validation was limited, the high performance and detailed analysis indicate significant potential for advancing agentic AI applications in personalized medicine for autoimmune diseases.
 
 
 <details>
@@ -129,7 +123,7 @@ Background and Objective The dysbiosis of human gut microbiome has been increasi
 - **Categories:** health informatics
 
 
-> The paper presents MedAgentBrief, an LLM-based agentic workflow designed to generate hospital course summaries, and evaluates its safety, utility, and impact on clinician burden through a prospective pilot study involving 11 hospitalist physicians. The methodology involved generating nightly summaries using a custom AI model, followed by physician review, with results indicating that 57% of summaries were utilized, and physicians reported minimal risk of harm from unedited versions, along with a significant decrease in burnout scores by utilizing the tool. Key findings support the potential of agentic AI systems like MedAgentBrief to alleviate documentation burdens in healthcare settings while maintaining summary quality.
+> The study presents MedAgentBrief, an LLM-based agentic AI workflow designed to generate hospital course summaries and evaluate its safety, utilization, and impact on clinician burden in a real-world setting. Conducted as a single-arm prospective pilot study involving 384 hospital discharges, the system demonstrated a utilization rate of 57% among physicians, with minimal harm reported and a significant reduction in burnout scores alongside time-saving benefits. Key findings suggest that while the AI-generated summaries occasionally contained omissions and inaccuracies, the overall safety profile was reassuring, highlighting the potential of AI to alleviate clinician documentation burdens effectively.
 
 
 <details>
@@ -139,7 +133,7 @@ ImportanceHigh-quality discharge summaries are essential for safe care transitio
 
 ObjectiveTo evaluate the safety, utilization, and impact on clinician burden of MedAgentBrief, an LLM-based agentic workflow for generating hospital course summaries, during prospective clinical deployment.
 
-Design, Setting, and ParticipantsSingle-arm prospective pilot study of 11 attending hospitalist physicians at one inpatient unit from August 1 to October 11, 2025, with baseline comparisons drawn from April 9 to July 31, 2025.
+Design, Setting, and ParticipantsSingle-arm prospective pilot study encompassing 384 hospital discharges at one academic inpatient medicine unit from August 1 to October 11, 2025, with baseline comparisons drawn from April 9 to July 31, 2025.
 
 InterventionMedAgentBrief, a custom agentic AI workflow utilizing Gemini 2.5 Pro, generated draft hospital course summaries nightly using the patients history and physical and daily progress notes. Drafts were securely emailed to physicians daily for review and optional use.
 
@@ -169,7 +163,7 @@ Conclusions and RelevanceAn LLM-based agentic workflow produced hospital course 
 - **Categories:** gastroenterology
 
 
-> This paper presents a novel AI-driven predictive tool for identifying the inflammatory bowel disease (IBD) status based on gut microbiome composition, utilizing machine learning techniques such as XGBoost. The methodology involves processing metagenomic data to generate taxonomic profiles, which are then analyzed to determine dysbiosis and subsequently provide personalized probiotic recommendations. Key findings include an 86.6% accuracy in predicting IBD status and identifying specific dysbiotic taxa, highlighting an innovative approach in the agentic AI field for disease prediction and personalized health recommendations.
+> This paper introduces a predictive tool leveraging AI and machine learning to assess Inflammatory Bowel Disease (IBD) based on the gut microbiome's composition. Using integrated metagenomic processing and an XGBoost classifier, the tool achieved an accuracy of 86.6% in predicting IBD status and identified specific dysbiotic taxa, while also providing personalized probiotic recommendations. Although validation was limited, the high performance and detailed analysis indicate significant potential for advancing agentic AI applications in personalized medicine for autoimmune diseases.
 
 
 <details>
@@ -190,7 +184,7 @@ Background and Objective The dysbiosis of human gut microbiome has been increasi
 - **Categories:** health informatics
 
 
-> The paper presents MedAgentBrief, an LLM-based agentic workflow designed to generate hospital course summaries, and evaluates its safety, utility, and impact on clinician burden through a prospective pilot study involving 11 hospitalist physicians. The methodology involved generating nightly summaries using a custom AI model, followed by physician review, with results indicating that 57% of summaries were utilized, and physicians reported minimal risk of harm from unedited versions, along with a significant decrease in burnout scores by utilizing the tool. Key findings support the potential of agentic AI systems like MedAgentBrief to alleviate documentation burdens in healthcare settings while maintaining summary quality.
+> The study presents MedAgentBrief, an LLM-based agentic AI workflow designed to generate hospital course summaries and evaluate its safety, utilization, and impact on clinician burden in a real-world setting. Conducted as a single-arm prospective pilot study involving 384 hospital discharges, the system demonstrated a utilization rate of 57% among physicians, with minimal harm reported and a significant reduction in burnout scores alongside time-saving benefits. Key findings suggest that while the AI-generated summaries occasionally contained omissions and inaccuracies, the overall safety profile was reassuring, highlighting the potential of AI to alleviate clinician documentation burdens effectively.
 
 
 <details>
@@ -200,7 +194,7 @@ ImportanceHigh-quality discharge summaries are essential for safe care transitio
 
 ObjectiveTo evaluate the safety, utilization, and impact on clinician burden of MedAgentBrief, an LLM-based agentic workflow for generating hospital course summaries, during prospective clinical deployment.
 
-Design, Setting, and ParticipantsSingle-arm prospective pilot study of 11 attending hospitalist physicians at one inpatient unit from August 1 to October 11, 2025, with baseline comparisons drawn from April 9 to July 31, 2025.
+Design, Setting, and ParticipantsSingle-arm prospective pilot study encompassing 384 hospital discharges at one academic inpatient medicine unit from August 1 to October 11, 2025, with baseline comparisons drawn from April 9 to July 31, 2025.
 
 InterventionMedAgentBrief, a custom agentic AI workflow utilizing Gemini 2.5 Pro, generated draft hospital course summaries nightly using the patients history and physical and daily progress notes. Drafts were securely emailed to physicians daily for review and optional use.
 
@@ -227,7 +221,7 @@ Conclusions and RelevanceAn LLM-based agentic workflow produced hospital course 
 - **Categories:** cs.CR, cs.AI
 
 
-> The paper presents a novel incident response system for cyberattacks that leverages large language models (LLMs) to autonomously adapt to evolving threats, addressing limitations in traditional reinforcement learning approaches that rely on handcrafted simulations. The proposed end-to-end agent integrates perception, reasoning, planning, and action functionalities within a single lightweight LLM, enabling it to process system logs, update attack models, simulate outcomes, and generate effective responses through in-context learning. Key findings include the agent's ability to refine its strategies based on comparisons of simulated outcomes with actual observations, resulting in incident recovery that is up to 23% faster than current leading LLMs.
+> The paper presents an innovative approach for autonomous network incident response by utilizing a lightweight large language model (LLM) that integrates perception, reasoning, planning, and action functionalities into a single agentic solution. By employing in-context learning and fine-tuning, the LLM agent can effectively process system logs, infer attack models, plan responses, and refine its strategies based on real-time outcomes, all without the need for handcrafted simulation models. Key findings indicate that this agent can recover from incidents up to 23% faster than existing leading LLMs, demonstrating significant advancements in adaptability and efficiency in the field of agentic AI for cybersecurity.
 
 
 <details>
@@ -248,7 +242,7 @@ Rapidly evolving cyberattacks demand incident response systems that can autonomo
 - **Categories:** cs.CL
 
 
-> The paper presents TraceBack, a modular multi-agent framework designed to enhance fine-grained attribution in single-table question answering (QA) by effectively tracking which table cells support specific answers. The methodology involves pruning irrelevant table sections, decomposing the main question into coherent sub-questions, and aligning answer spans with their corresponding supporting cells to capture both explicit and implicit reasoning evidence. Key findings demonstrate that TraceBack significantly outperforms existing systems in terms of attribution quality across various datasets, while the newly proposed FairScore metric effectively evaluates attribution precision and recall without the need for human cell annotations, thereby promoting greater transparency and trust in automated table QA systems.
+> The paper presents TraceBack, a modular multi-agent framework designed to enhance fine-grained attribution in single-table question answering (QA) by providing transparent connections between answers and their supporting cells. The methodology involves pruning irrelevant table sections, breaking down questions into sub-questions, and aligning answers with the corresponding cells, while introducing CITEBench as a benchmark for evaluating this framework. Key findings indicate that TraceBack significantly improves performance over existing systems and that the newly developed FairScore metric effectively measures attribution precision and recall, aligning closely with human judgments, which is crucial for trustworthiness in agentic AI applications.
 
 
 <details>
@@ -269,7 +263,7 @@ Question answering (QA) over structured tables requires not only accurate answer
 - **Categories:** cs.CL
 
 
-> The paper introduces SciAgentGym, a novel benchmarking environment designed to evaluate the capabilities of large language model (LLM) agents in using scientific tools across four domains, highlighting a significant gap in existing benchmarks regarding complex tool orchestration. The methodology includes a comprehensive evaluation framework, SciAgentBench, which assesses agent performance through simple to intricate workflows, revealing that leading models like GPT-5 face substantial challenges with multi-step tasks. Key findings indicate that effective tool-use diminishes notably as task complexity increases, and the development of SciForge, a method that leverages dependency graphs for training, enables their model SciAgent-8B to outperform larger counterparts and improve cross-domain tool-use skills, indicating the potential for advanced autonomous scientific agents.
+> The paper presents SciAgentGym, an innovative benchmarking environment designed to evaluate the ability of large language model (LLM) agents to use scientific tools across various disciplines, addressing a gap in current benchmarks regarding complex multi-step workflows. Through a comprehensive evaluation using SciAgentBench, it was discovered that even advanced models like GPT-5 exhibit a significant decline in performance during long-horizon interactions, highlighting challenges in executing intricate workflows. To combat this, the authors propose SciForge, a data synthesis technique that enhances LLM training on tool use, enabling their model, SciAgent-8B, to outperform larger counterparts while demonstrating effective cross-domain capabilities in scientific tool use.
 
 
 <details>
@@ -290,7 +284,7 @@ Scientific reasoning inherently demands integrating sophisticated toolkits to na
 - **Categories:** cs.AI
 
 
-> The paper presents BrowseComp-$V^3$, a new benchmark aimed at evaluating multimodal browsing agents, addressing previous limitations in task complexity and evaluation granularity. It comprises 300 challenging questions requiring complex multi-hop reasoning across textual and visual modalities, with a focus on reproducibility through publicly searchable evidence. Key findings reveal that state-of-the-art models struggle significantly, achieving only 36% accuracy, underscoring critical gaps in multimodal integration and perception capabilities in agentic AI.
+> The paper presents BrowseComp-$V^3$, a benchmark designed to evaluate the capabilities of multimodal large language models (MLLMs) in performing complex web browsing tasks. Methodologically, it introduces 300 diverse and challenging questions that require deep, multi-level reasoning across textual and visual modalities, with a focus on using publicly searchable evidence and incorporating a subgoal-driven evaluation process to assess intermediate reasoning. Key findings reveal that even state-of-the-art MLLMs achieve only 36% accuracy on this benchmark, underscoring significant limitations in their ability to integrate multimodal information and perform robust deep searches in real-world scenarios, thus highlighting critical areas for improvement in agentic AI frameworks.
 
 
 <details>
@@ -311,7 +305,7 @@ Multimodal large language models (MLLMs), equipped with increasingly advanced pl
 - **Categories:** cs.AI
 
 
-> The paper presents SkillsBench, a comprehensive benchmark designed to evaluate the effectiveness of Agent Skills across 86 tasks in 11 domains, addressing the lack of standardized measurement in the agentic AI field. The methodology involved testing various agent-model configurations under conditions with no Skills, curated Skills, and self-generated Skills, revealing that curated Skills significantly improved task performance by an average of 16.2 percentage points, although results varied by domain. Key findings indicate that curated Skills are more effective than self-generated Skills, which showed no average benefit, and that smaller models can achieve performance parity with larger models when utilizing Skills, suggesting a strategic advantage in focused skill application.
+> The paper introduces SkillsBench, a comprehensive benchmark consisting of 86 tasks across 11 domains to evaluate the efficacy of curated and self-generated agent skills for LLMs. Through testing 7 agent-model configurations on 7,308 trajectories, the study finds that curated skills significantly improve performance by an average of 16.2 percentage points, though the impact varies by domain, and self-generated skills offer no measurable advantage. The results highlight that focused skills using 2-3 modules are more effective than extensive documentation, indicating potential for smaller models with skills to match the performance of larger models without them, contributing valuable insights into agentic AI development.
 
 
 <details>
@@ -332,7 +326,7 @@ Agent Skills are structured packages of procedural knowledge that augment LLM ag
 - **Categories:** cs.AI, cs.CL
 
 
-> The paper presents CogRouter, a novel framework for training large language model (LLM) agents to adapt their cognitive depth dynamically during multi-turn decision-making tasks. By leveraging ACT-R theory, it establishes a hierarchical cognitive structure and employs a two-stage training method that includes Cognition-aware Supervised Fine-tuning and Cognition-aware Policy Optimization to improve efficiency and performance. The experiments show that CogRouter significantly outperforms existing models, achieving an 82.3% success rate with 62% fewer tokens used, demonstrating enhanced adaptability to varying cognitive demands in agentic AI applications.
+> The paper presents CogRouter, a novel framework designed for large language model (LLM) agents that allows them to adapt their cognitive depth dynamically during multi-turn decision-making tasks, addressing the inefficiencies of fixed cognitive patterns. Methodologically, CogRouter employs a two-stage training approach that incorporates Cognition-aware Supervised Fine-tuning (CoSFT) and Cognition-aware Policy Optimization (CoPO) to enable agents to adjust their cognitive levels based on task demands. Key findings highlight that CogRouter achieves state-of-the-art performance with a significant increase in efficiency, demonstrated by an 82.3% success rate on the ALFWorld and ScienceWorld benchmarks while utilizing 62% fewer tokens compared to existing models.
 
 
 <details>
@@ -353,7 +347,7 @@ Large language models (LLMs) are increasingly deployed as autonomous agents for 
 - **Categories:** cs.AI, cs.HC, cs.LG
 
 
-> The paper introduces InventoryBench, a benchmark comprising over 1,000 inventory instances, to examine the collaborative efficacy of operations research (OR) algorithms, large language models (LLMs), and human decision-makers in inventory control under various conditions. The methodology reveals that integrating OR with LLM strategies enhances performance compared to using either alone, indicating a complementary relationship. Key findings highlight that human-AI collaboration can lead to higher profits compared to independent operation, with a significant portion of individuals benefiting from this collaborative approach, thereby contributing to the understanding of agentic AI in decision-making contexts.
+> The paper presents a novel approach to inventory control by demonstrating how operations research (OR) algorithms, large language models (LLMs), and human decision-makers can work together to enhance performance. Using a new benchmark called InventoryBench, the authors show that OR-augmented LLM methods outperform traditional approaches when faced with fluctuating demand and uncertainty, indicating a complementary relationship rather than a competitive one. Additionally, through a controlled experiment, they find that human-AI collaboration yields higher profits than either party working alone and identify a significant fraction of individuals who benefit from this collaborative framework, highlighting its potential in agentic AI systems.
 
 
 <details>
@@ -376,7 +370,7 @@ Inventory control is a fundamental operations problem in which ordering decision
 - **Categories:** cs.LG, cs.MA
 
 
-> The paper introduces a new model-based multi-agent reinforcement learning framework that integrates joint state-action representation learning with imaginative roll-outs to enhance coordination in dynamic environments. The methodology involves using a world model augmented with state-action learned embeddings (SALE), which are applied in both predicting future trajectories and estimating joint action values through a mixing network. Key findings show that this approach leads to improved long-term planning and optimization, outperforming baseline algorithms in various multi-agent benchmarks, thereby highlighting the significance of SALE for effective decision-making in multi-agent systems.
+> The paper introduces a novel multi-agent model-based reinforcement learning framework that integrates joint state-action representation learning with imaginative roll-outs to enhance coordination in dynamic environments. The methodology employs a world model trained with variational auto-encoders, using state-action learned embeddings (SALE) to improve future trajectory forecasting and action value estimation. Key findings indicate that this approach significantly outperforms baseline algorithms in multi-agent benchmarks, enhancing agents' understanding of collective outcomes and improving long-term planning efficiency.
 
 
 <details>
@@ -397,7 +391,7 @@ Learning to coordinate many agents in partially observable and highly dynamic en
 - **Categories:** cs.LG, cs.AI, cs.MA, math.OC
 
 
-> The paper presents Bench-MFG, a benchmark suite designed for evaluating algorithms in stationary Mean Field Games (MFGs) within the Reinforcement Learning context, addressing the current fragmentation in evaluation protocols. The authors introduce a taxonomy of MFG problem classes alongside prototypical environments, and propose MF-Garnets for generating random MFG instances, enabling robust statistical testing of various learning algorithms, including a novel approach for exploitability minimization. Key findings emphasize the need for standardized experimental guidelines to assess the robustness and generalization of emerging methods in agentic AI systems.
+> The paper introduces Bench-MFG, a benchmark suite designed to standardize evaluation for learning in stationary Mean Field Games (MFGs), addressing the current lack of cohesive assessment methodologies in the intersection of MFGs and Reinforcement Learning. The methodology includes a taxonomy of problem classes, prototypical environments for testing various algorithms, and the development of MF-Garnets for generating random MFG instances. Key findings suggest that the benchmark facilitates robust comparisons across learning algorithms, including a new exploitability minimization approach, and offers guidelines for standardizing future research in agentic AI.
 
 
 <details>
@@ -418,7 +412,7 @@ The intersection of Mean Field Games (MFGs) and Reinforcement Learning (RL) has 
 - **Categories:** cs.MA
 
 
-> The paper presents a novel framework for scaling small-team defense strategies against large drone swarms by utilizing a dynamic programming (DP) decomposition to assemble these strategies into larger, efficient defensive teams. The methodology involves sampling from small-team candidates and iteratively refining team configurations to optimize outcomes, demonstrating the ability to handle larger scenarios while retaining effectiveness. Key findings indicate that this modular approach not only allows for scalable defense solutions but also uncovers cooperative behaviors that traditional direct optimization methods may overlook, highlighting its significance in the field of agentic AI.
+> The paper presents a novel framework for scaling small-team defense strategies against large drone swarms, addressing the limitations of traditional multi-agent optimization methods. Utilizing dynamic programming decomposition, the authors efficiently construct larger defense teams by integrating proven modular components while iterating on large-team outcomes to refine strategies. Key findings indicate that this approach maintains effectiveness and uncovers cooperative behaviors in large scenarios, highlighting its potential contribution to the field of agentic AI in optimizing multi-agent systems for complex operational environments.
 
 
 <details>
@@ -439,7 +433,7 @@ Defending against large adversarial drone swarms requires coordination methods t
 - **Categories:** cs.SE, cs.AI, cs.CR
 
 
-> The paper introduces Favia, an innovative forensic agent framework designed to enhance the identification of vulnerability-fixing commits in large code repositories, addressing the shortcomings of existing methods that struggle with precision-recall trade-offs. Favia employs a dual-stage methodology that first ranks candidate commits efficiently and then utilizes a ReAct-based large language model (LLM) agent to conduct deep semantic reasoning, thus uncovering complex, multi-file fixes often missed by traditional approaches. Evaluations on a newly created dataset, CVEVC, demonstrate that Favia significantly outperforms current state-of-the-art techniques, achieving superior precision, recall, and F1-scores, thereby making substantial contributions to the field of agentic AI in secure software maintenance.
+> The paper introduces Favia, an agent-based framework designed to enhance the identification of vulnerability-fixing commits related to disclosed CVEs in large software repositories. Utilizing a two-stage methodology, Favia first ranks potential commits to focus the search effectively and then applies a ReAct-based large language model (LLM) agent for detailed evaluation, employing iterative semantic reasoning to establish connections between code changes and vulnerability origins. Evaluation results on the CVEVC dataset indicate that Favia outperforms existing approaches, achieving superior precision-recall trade-offs and F1-scores, thus providing significant advancements in the field of agentic AI for security maintenance.
 
 
 <details>
@@ -460,7 +454,7 @@ Identifying vulnerability-fixing commits corresponding to disclosed CVEs is esse
 - **Categories:** cs.MA
 
 
-> The paper introduces an adaptive ensemble agent that utilizes Theory of Mind to enhance zero-shot coordination in multi-agent reinforcement learning by inferring teammates' intentions and selecting the most suitable policy from a diverse ensemble. The methodology involves a novel approach that goes beyond the typical static best-response agent by allowing for more flexible and context-aware adaptations to varying partner behaviors. Experimental results in the Overcooked environment show that this adaptive agent significantly outperforms traditional single best-response agents, highlighting its potential for improving synergy and collaboration in agentic AI systems.
+> The paper presents a novel adaptive ensemble agent that enhances zero-shot coordination in multi-agent reinforcement learning by employing Theory-of-Mind principles to infer teammates' intentions, allowing it to select the most appropriate policy from a diverse ensemble. Unlike traditional approaches that often lead to static generalist policies, this method promotes dynamic adaptability, resulting in more effective collaboration and increased synergy with unseen partners. The evaluation in the Overcooked environment shows that this approach significantly outperforms conventional best-response models in both fully and partially observable scenarios, marking a substantial contribution to advancing agentic AI capabilities.
 
 
 <details>
@@ -481,7 +475,7 @@ A central challenge in multi-agent reinforcement learning is enabling agents to 
 - **Categories:** cs.MA, cs.AI
 
 
-> The paper presents a comprehensive survey of agent skills for large language models (LLMs), marking a shift from monolithic architectures to modular, skill-equipped agents that enhance functionality without requiring retraining. It examines the architecture of skills, methods for skill acquisition, scaling deployment, and security issues, highlighting findings such as a notable percentage of community skills containing vulnerabilities and introducing a Skill Trust and Lifecycle Governance Framework for enhancing security in skill integration. The authors identify seven open challenges within the field and propose a research agenda aimed at developing trustworthy and self-improving skill ecosystems, specifically emphasizing the importance of the emerging skill abstraction layer in advancing agentic AI systems.
+> The paper presents a comprehensive survey on the evolution of agent skills in large language models (LLMs), highlighting the shift from monolithic architectures to modular agents that utilize composable skill packages for dynamic capability expansion. It details the methodology behind skill architecture, acquisition techniques such as reinforcement learning and autonomous discovery, and deployment strategies, while also addressing security concerns linked to vulnerabilities in community-contributed skills. Key findings emphasize the need for a governance framework for skill deployment and identify critical challenges within the agentic AI landscape, setting a research agenda for developing robust and trustworthy skill ecosystems.
 
 
 <details>
@@ -502,7 +496,7 @@ The transition from monolithic language models to modular, skill-equipped agents
 - **Categories:** cs.MA, cs.GT, cs.LG
 
 
-> The paper presents a novel two-timescale Actor-Critic algorithm that achieves global convergence in learning stationary policies for infinite-horizon general-sum Markov games (MGs) by applying Risk-averse Quantal response Equilibria (RQE). By leveraging the regularity conditions of RQE, the authors establish finite-sample guarantees for their method, demonstrating its effectiveness in practical applications. Key findings indicate that the proposed algorithm outperforms risk-neutral baselines in terms of convergence properties, contributing to advancements in risk-aware decision-making in multi-agent reinforcement learning systems.
+> The paper presents a novel two-timescale Actor-Critic algorithm for learning stationary policies in infinite-horizon general-sum Markov games, addressing the challenges of Multi-Agent Reinforcement Learning (MARL). By incorporating Risk-averse Quantal response Equilibria (RQE) from behavioral game theory, the authors establish a method with strong regularity conditions that enable global convergence with finite-sample guarantees. Empirical results show that the proposed approach significantly outperforms risk-neutral baselines, highlighting its potential impact on the field of agentic AI by providing a robust framework for risk-averse decision-making in multi-agent scenarios.
 
 
 <details>
@@ -523,7 +517,7 @@ Learning stationary policies in infinite-horizon general-sum Markov games (MGs) 
 - **Categories:** cs.AI
 
 
-> The paper presents CM2, a novel reinforcement learning framework that utilizes checklist rewards for multi-turn and multi-step agentic tool use, aiming to address challenges in applying RL in environments with unstructured objectives. The methodology involves decomposing each turn's behavior into binary criteria with evidence grounding, using sparse rewards but dense evaluation, and training within a scalable simulated tool environment to avoid heavy engineering costs. Key findings demonstrate that CM2 significantly outperforms traditional supervised fine-tuning methods and existing open-source baselines, indicating its effectiveness in optimizing AI agents for complex tasks without relying on verifiable outcome rewards.
+> The paper presents CM2, a novel reinforcement learning framework that utilizes checklist rewards to facilitate multi-turn and multi-step agentic tool use. By breaking down intended behaviors into fine-grained binary criteria and using a scalable LLM-simulated tool environment, CM2 effectively transforms open-ended evaluation into structured decision-making while minimizing the need for complex tool engineering. Experimental results demonstrate that CM2 significantly outperforms traditional supervised fine-tuning approaches across various benchmarks, showcasing its potential as a scalable method for training agentic AI without relying on verifiable rewards.
 
 
 <details>
@@ -544,7 +538,7 @@ AI agents are increasingly used to solve real-world tasks by reasoning over mult
 - **Categories:** cs.AI, cs.LG
 
 
-> The paper introduces KeplerAgent, a physics-guided framework designed to enhance symbolic equation discovery by emulating the multi-step reasoning process characteristic of scientific inquiry. This agentic system integrates physics-based tools to extract key properties before applying symbolic regression methods, leading to a more structured approach compared to traditional LLM-based methods that rely on direct guessing. Key findings indicate that KeplerAgent significantly outperforms both LLM and conventional approaches in terms of symbolic accuracy and robustness to noise across various physical equation benchmarks.
+> The paper introduces KeplerAgent, a novel framework that enhances symbolic equation discovery by incorporating a multi-step scientific reasoning process, which is often overlooked in existing large language models (LLMs). By leveraging physics-based tools to extract intermediate structures, KeplerAgent effectively coordinates these insights to optimize symbolic regression methods like PySINDy and PySR. Key findings reveal that KeplerAgent significantly outperforms both LLM and traditional methods in terms of symbolic accuracy and robustness, making it a compelling advancement in the agentic AI field focused on scientific discovery.
 
 
 <details>
@@ -565,7 +559,7 @@ Explaining observed phenomena through symbolic, interpretable formulas is a fund
 - **Categories:** cs.HC, cs.AI, cs.SI
 
 
-> The paper presents VIRENA (Virtual Arena), a novel platform designed for conducting controlled experiments within realistic social media environments, enabling the study of human-AI interactions and content moderation strategies. Utilizing large language model-powered AI agents with configurable personas, VIRENA allows researchers to design and execute complex studies without requiring programming expertise, facilitating exploration of group deliberation and experimentation across various conditions. Key findings indicate that VIRENA's open-source and no-code architecture not only streamlines research across disciplines but also adheres to ethical standards and data protection requirements, thus enhancing the accessibility and reliability of social media research.
+> The paper presents VIRENA (Virtual Arena), a novel platform that facilitates controlled experimentation in realistic social media environments to study communication dynamics, human-AI interaction, and content moderation. Utilizing large language model-powered AI agents and a user-friendly no-code interface, VIRENA allows researchers to engage multiple participants in simulations of platforms like Instagram and Facebook, enabling the manipulation of experimental conditions without the complexities of programming. Key findings highlight VIRENA's potential to revolutionize research methodologies by making it feasible to analyze social interactions and deliberation processes in a controlled yet realistic setting, while also ensuring compliance with data protection standards.
 
 
 <details>
@@ -586,7 +580,7 @@ Digital platforms shape how people communicate, deliberate, and form opinions. S
 - **Categories:** cs.AI, cs.CL, cs.CY, cs.GT, cs.MA
 
 
-> The paper presents GT-HarmBench, a benchmark designed to evaluate AI safety risks in multi-agent environments, addressing the gap in existing assessments that predominantly focus on single agents. Utilizing 2,009 scenarios inspired by game-theoretic constructs, the authors analyze the decision-making of 15 frontier AI models, revealing that these agents only act in socially beneficial ways 62% of the time, frequently resulting in harmful consequences. The findings demonstrate that framing and ordering in game-theoretic contexts significantly influence agent performance, and that targeted interventions can enhance beneficial outcomes by up to 18%, thereby providing a critical tool for investigating alignment issues in agentic AI systems.
+> The main contribution of the paper is the introduction of GT-HarmBench, a comprehensive benchmark designed to assess AI safety risks in multi-agent settings through game-theoretic frameworks. The methodology involves evaluating 15 frontier AI models across 2,009 scenarios drawn from realistic contexts, revealing that these agents choose socially beneficial actions only 62% of the time, often resulting in harmful outcomes. Key findings demonstrate that game-theoretic interventions can enhance beneficial outcomes by up to 18%, underscoring the importance of understanding coordination and conflict in agentic AI systems while providing a standardized tool for future research in AI alignment.
 
 
 <details>
@@ -607,7 +601,7 @@ Frontier AI systems are increasingly capable and deployed in high-stakes multi-a
 - **Categories:** cs.GT, cs.LG, cs.MA
 
 
-> The paper presents a comprehensive extension of Convex Markov Games to General Utility Markov Games (GUMGs), addressing the theoretical foundations and learning algorithms for Nash equilibria in multi-agent systems. The authors prove that Nash equilibria in GUMGs correspond to fixed points of projected pseudo-gradient dynamics and establish a simple existence proof using Brouwer's fixed-point theorem, along with the derivation of a policy gradient theorem and a model-free learning algorithm. Key findings include iteration complexity guarantees for computing approximate Nash equilibria and sample complexity bounds, significantly advancing the understanding and applicability of multi-agent learning frameworks beyond zero-sum scenarios.
+> The paper presents significant advancements in understanding Convex Markov Games (cMGs) by extending them to General Utility Markov Games (GUMGs), which accommodate more complex agent interactions. Utilizing a novel agent-wise gradient domination property, the authors establish that Nash equilibria correspond to fixed points of projected pseudo-gradient dynamics, offer a straightforward proof of existence via Brouwer's fixed-point theorem, and introduce a model-free policy gradient algorithm with complexity guarantees. Key findings indicate that GUMGs allow for the coexistence of Nash and Markov perfect equilibria, broadening the theoretical landscape for multi-agent systems beyond the typical zero-sum frameworks.
 
 
 <details>
@@ -628,7 +622,7 @@ Convex Markov Games (cMGs) were recently introduced as a broad class of multi-ag
 - **Categories:** cs.SE, cs.AI
 
 
-> This paper presents a pioneering empirical study examining the role of AI coding agents in open-source mobile app development, focusing on 2,901 AI-generated pull requests (PRs) across Android and iOS platforms. The methodology involved analyzing PR acceptance behaviors, revealing that Android projects received twice as many AI-authored PRs and had a higher acceptance rate compared to iOS, with task categories related to routine functions performing better than structural changes. Key findings indicate notable differences in agent effectiveness and PR resolution times, establishing baseline metrics for evaluating the impact of AI contributions in the context of agentic systems within mobile development.
+> This paper presents the first empirical study on the adoption and impact of AI coding agents in open-source mobile app development, analyzing 2,901 AI-generated pull requests across 193 Android and iOS projects. Using a comparative methodology, the study reveals that Android projects receive significantly more AI-authored PRs and have higher acceptance rates compared to iOS, with routine tasks outperforming structural changes in terms of acceptance and resolution times. The findings establish foundational data for evaluating the contributions of AI in mobile software development, highlighting variations in agent effectiveness and providing insights relevant to the design of agentic AI systems.
 
 
 <details>
@@ -649,7 +643,7 @@ AI coding agents are increasingly contributing to software development, yet thei
 - **Categories:** cs.SE, cs.AI
 
 
-> This paper introduces a multi-agent framework designed to generate physics simulation code from natural language descriptions, featuring an innovative perceptual self-reflection mechanism for validation. The system consists of four specialized agents that handle language interpretation, parameter generation, code creation with self-correction, and perceptual validation through graphical analysis, which addresses the limitations of conventional code testing methods. Key findings indicate that this architecture significantly surpasses traditional single-shot generation methods by improving accuracy in physics simulations across diverse domains and demonstrating effective code self-correction, thereby highlighting the potential applicability of agentic AI in enhancing engineering and physics data generation workflows.
+> The paper presents a multi-agent framework that generates physics simulation code from natural language descriptions, incorporating a novel perceptual self-reflection mechanism for validation. The methodology involves four specialized agents that handle natural language interpretation, technical requirements generation, code generation with self-correction, and validation through perceptual analysis of rendered animations. Key findings indicate that this approach significantly improves code generation accuracy across various physics domains compared to conventional single-shot methods, demonstrating the efficacy of integrating visual outputs into the refinement process and highlighting the potential of agentic AI in enhancing engineering workflows and data generation in physics.
 
 
 <details>
@@ -670,7 +664,7 @@ We present a multi-agent framework for generating physics simulation code from n
 - **Categories:** cs.GT, cs.AI, cs.HC
 
 
-> This paper investigates the impact of different AI assistance modalities—Advisor, Coach, and Delegate—on multi-party negotiation outcomes through an online experiment involving 243 participants. The study reveals that while participants preferred the Advisor modality, they actually achieved the highest individual gains when using the Delegate, highlighting a preference-performance misalignment; the Delegate was found to enhance negotiation outcomes not only for users but also produced positive effects for non-users. The findings suggest that despite the advanced capabilities of autonomous agents, their effectiveness in improving group welfare can be limited by user perceptions and interface design, indicating the need for strategic development of AI systems that facilitate user adoption and engagement.
+> The paper investigates the effects of different AI modalities (Advisor, Coach, and Delegate) in multi-party negotiations to understand their impact on user interaction and outcomes. Through an online behavioral experiment with 243 participants, the authors found that while users preferred the Advisor for its proactive recommendations, the Delegate modality led to the highest individual gains and positive externalities for non-users, acting as a market maker that enhanced the negotiation environment. The findings highlight a significant misalignment between user preferences and performance outcomes, emphasizing the need for better design of AI assistance systems that facilitate adoption and optimize group welfare.
 
 
 <details>
@@ -691,7 +685,7 @@ As AI usage becomes more prevalent in social contexts, understanding agent-user 
 - **Categories:** cs.AI, cs.LO
 
 
-> The paper presents a novel approach called Differentiable Modal Logic (DML), implemented through Modal Logical Neural Networks (MLNNs), to enhance multi-agent systems' ability to diagnose and orchestrate actions in dynamic environments without relying on manually specified relationship structures. By leveraging a unified neurosymbolic debugging framework, the authors demonstrate how DML can help systems learn essential modalities—epistemic, temporal, deontic, and doxastic—through behavioral data, effectively rendering logical inconsistencies as learnable optimization targets. Key findings include the development of interpretable structures for trust and causality, the integration of knowledge through differentiable axioms, and practical implementations for enhancing real-time monitoring and control in multi-agent contexts.
+> The paper presents a novel framework called differentiable modal logic (DML), implemented using Modal Logical Neural Networks (MLNNs), which enables multi-agent AI systems to learn complex relational structures like trust networks and causal chains from behavioral data without manual specification. The proposed methodology integrates four modalities—epistemic, temporal, deontic, and doxastic—into a unified neurosymbolic debugging framework, demonstrated across various scenarios including diplomacy games and addressing hallucinations in large language models. Key findings include the interpretability of learned structures, the capability for knowledge injection through differentiable axioms, and the advancement of multi-modal reasoning, making this work significant for improving the robustness and adaptability of agentic AI systems in dynamic environments.
 
 
 <details>
@@ -713,7 +707,7 @@ As multi-agent AI systems evolve from simple chatbots to autonomous swarms, debu
 - **Categories:** cs.AI, cs.MA, cs.RO
 
 
-> The paper presents DTAPP-IICR, a novel method for preflight planning of large-scale UAV fleets in dynamic airspace, addressing challenges like temporal No-Fly Zones and heterogeneous vehicle profiles. The methodology combines a prioritized mission approach with a new 4D planner (SFIPP-ST) for trajectory generation, and employs an iterative Large Neighborhood Search for conflict resolution, enhanced by a directional pruning technique. Key findings indicate that DTAPP-IICR achieves near-100% success rates for fleets up to 1,000 UAVs and offers significant runtime reductions compared to existing methods, demonstrating its scalability and practicality for urban Unmanned Traffic Management.
+> The paper introduces DTAPP-IICR, a novel framework for preflight planning of large-scale UAV fleets in dynamic airspace that addresses challenges such as temporal No-Fly Zones and diverse vehicle profiles. The methodology employs a Delivery-Time Aware Prioritized Planning approach for initial trajectory generation, integrates a new 4D planner for trajectory optimization under constraints, and utilizes an iterative Large Neighborhood Search for conflict resolution. Key findings indicate that DTAPP-IICR achieves near-100% success rates with fleets of up to 1,000 UAVs while significantly reducing runtime by up to 50% through advanced pruning techniques, marking it as a scalable and practical solution for urban UAV deployments in Unmanned Traffic Management systems.
 
 
 <details>
@@ -734,7 +728,7 @@ Preflight planning for large-scale Unmanned Aerial Vehicle (UAV) fleets in dynam
 - **Categories:** cs.LG, cs.DC
 
 
-> The paper presents PrefillShare, a novel algorithm that enhances the efficiency of multi-agent systems using multiple specialized language models by enabling shared prefill stages and key-value (KV) caches across models in a disaggregated serving setup. The methodology involves factorizing models into prefill and decode modules, stabilizing the prefill module while fine-tuning only the decode module, alongside implementing a routing mechanism for heterogeneous models. Key findings reveal that PrefillShare achieves comparable accuracy to full fine-tuning while significantly improving performance metrics, yielding 4.5x lower tail latency and 3.9x higher throughput in multi-model agent workloads, thereby addressing redundancy issues in language model execution.
+> The paper presents PrefillShare, a novel algorithm designed to enhance the efficiency of multi-agent systems in language model serving by sharing the prefill module and key-value (KV) cache across different models, thereby reducing computational redundancy and latency. Methodologically, it employs a disaggregated serving framework that separates prefill and decode processes while freezing the prefill module and fine-tuning only the decode modules, coupled with a routing mechanism for effective sharing. Key findings indicate that PrefillShare achieves full fine-tuning accuracy across various tasks and models while significantly improving performance metrics, offering 4.5x lower p95 latency and 3.9x higher throughput in multi-model agent scenarios, thus advancing the field of agentic AI.
 
 
 <details>
@@ -755,7 +749,7 @@ Multi-agent systems increasingly orchestrate multiple specialized language model
 - **Categories:** cs.MA
 
 
-> The paper presents a multi-agent perimeter defense game on a cylindrical environment, focusing on a scenario where multiple slow-moving defenders aim to prevent a single fast-moving attacker from breaching their defensive perimeter. The methodology involves analyzing the strategic interactions and conditions that determine the attacker's success when initiating from a defended boundary region. Key findings reveal specific conditions under which the attacker can successfully navigate the defense, contributing valuable insights into agentic AI strategies for dynamic and spatially constrained adversarial scenarios.
+> This paper presents a multi-agent perimeter defense game set on a cylindrical topology, where a team of slow-moving defenders aims to thwart a single fast-moving attacker attempting to breach a boundary. The authors develop a theoretical framework to analyze the interplay between defenders and the attacker, particularly focusing on scenarios where the attacker begins near the boundary in a defended region. Key findings highlight specific conditions under which the attacker can successfully penetrate the defense, contributing valuable insights to the design of agentic AI systems focused on collaborative defense strategies.
 
 
 <details>
@@ -776,7 +770,7 @@ We describe a multi-agent perimeter defense game played on a cylinder. A team of
 - **Categories:** cs.AI
 
 
-> The paper presents Gaia2, a benchmark specifically designed for assessing large language model (LLM) agents in dynamic and asynchronous environments, which contrasts with prior methodologies that focused on static or synchronous contexts. It employs scenarios where environments independently evolve, prompting agents to adapt to temporal constraints and collaborate, evaluated using a write-action verifier for nuanced performance metrics. Benchmarks reveal that no single model excels across all capabilities: while GPT-5 achieves the highest overall score, it struggles with time-sensitive tasks, and results emphasize the need to balance reasoning, efficiency, and robustness, addressing the challenges of practical agent systems and closing the "sim2real" gap.
+> The paper presents Gaia2, a benchmark designed for assessing large language model (LLM) agents in dynamic and asynchronous environments, moving beyond static evaluations to include scenarios where environments evolve independently of agent actions. Utilizing a write-action verifier for detailed evaluation, Gaia2 allows for reinforcement learning with verifiable rewards. Results indicate that while no model consistently outperforms others across all tasks, key findings reveal trade-offs in reasoning, efficiency, and robustness, underscoring challenges in bridging the "sim2real" gap and providing a valuable infrastructure for future developments in agentic AI.
 
 
 <details>
@@ -797,7 +791,7 @@ We introduce Gaia2, a benchmark for evaluating large language model agents in re
 - **Categories:** cs.CL, cs.AI
 
 
-> The paper presents AdaptEvolve, a framework that enhances the efficiency of evolutionary AI agents by implementing adaptive model selection based on intrinsic generation confidence. The methodology focuses on dynamically selecting the most suitable large language model (LLM) for each generation step, thereby overcoming limitations of static heuristics in existing routing strategies. Key findings indicate that this confidence-driven selection approach significantly reduces inference costs by an average of 37.9% while maintaining 97.5% of the accuracy of traditional static models, highlighting its potential for optimizing computational resources in agentic AI applications.
+> The paper presents AdaptEvolve, a novel framework for dynamically selecting large language models (LLMs) in evolutionary agentic systems to enhance computational efficiency without compromising reasoning capability. By employing a confidence-driven approach for model selection during inference, the methodology improves efficiency through adaptive LLM selection based on real-time solvability estimates. Key findings indicate that this approach reduces total inference costs by an average of 37.9% while maintaining 97.5% of the accuracy achieved by static large-model baselines, significantly benefiting the field of agentic AI.
 
 
 <details>
@@ -818,7 +812,7 @@ Evolutionary agentic systems intensify the trade-off between computational effic
 - **Categories:** cs.AI
 
 
-> The paper introduces MEME (Modeling the Evolutionary Modes of Financial Markets), a novel framework that models financial markets as dynamic ecosystems of competing investment narratives, emphasizing a Logic-Oriented perspective that aims to enhance reasoning behind market movements. The methodology involves a multi-agent extraction module to convert noisy data into Investment Arguments and employs Gaussian Mixture Modeling to identify latent consensus, while also tracking semantic drift through a temporal evaluation mechanism. Key findings indicate that MEME outperforms seven state-of-the-art baselines in predicting market dynamics across different Chinese stock pools, underscoring its effectiveness in leveraging robust reasoning for portfolio construction amidst changing market conditions.
+> The paper introduces MEME (Modeling the Evolutionary Modes of Financial Markets), a novel framework that models financial markets as dynamic ecosystems of competing investment narratives, emphasizing a Logic-Oriented perspective. The methodology includes a multi-agent extraction module to convert noisy data into Investment Arguments and employs Gaussian Mixture Modeling to identify latent consensus within market conditions. Key findings reveal that MEME significantly outperforms seven state-of-the-art baselines on various Chinese stock pools from 2023 to 2025, demonstrating its effectiveness in adapting to market evolution while prioritizing enduring investment wisdom.
 
 
 <details>
@@ -839,7 +833,7 @@ LLMs have demonstrated significant potential in quantitative finance by processi
 - **Categories:** cs.CR, cs.AI
 
 
-> The paper proposes a novel architectural framework for cybersecurity that redefines the approach to AI-driven systems as agentic, multi-agent cognitive systems rather than traditional model-centric detection pipelines. By implementing a meta-cognitive judgement function that governs decision-making readiness and system autonomy in the face of adversarial uncertainty, the authors integrate principles from distributed cognition, multi-agent systems, and responsible AI governance. Key findings indicate that this approach enhances accountable decision-making processes and aligns cybersecurity practices with organizational and regulatory requirements, paving the way for more robust and governable AI-enabled cyber defense mechanisms.
+> The paper presents a novel meta-cognitive architecture for agentic AI in cybersecurity, aiming to enhance accountability and governance in decision-making under adversarial uncertainty. It introduces a framework where heterogeneous AI agents work together through a meta-cognitive judgment function that manages decision readiness and adjusts system autonomy based on evidence quality. The key finding is that integrating this structured cognitive approach allows for more effective cybersecurity orchestration, moving beyond traditional task-centric models to enable responsible and adaptable AI-driven response mechanisms.
 
 
 <details>
@@ -860,7 +854,7 @@ Contemporary AI-driven cybersecurity systems are predominantly architected as mo
 - **Categories:** cs.AI
 
 
-> The paper presents a novel adaptive framework for intelligent AI delegation that enhances the task allocation process among AI agents and humans by incorporating aspects like authority transfer, accountability, and trust-building mechanisms. The methodology focuses on meaningful problem decomposition and dynamic adaptation to environmental changes to address the limitations of existing heuristics. Key findings suggest that this framework facilitates more effective collaboration in complex delegation networks, thereby contributing to the field of agentic AI by promoting robust and adaptable interaction protocols among agents.
+> The paper introduces an adaptive framework for intelligent AI delegation, which improves task decomposition and delegation beyond existing heuristic methods by incorporating dynamic adaptability and handling unexpected failures. The methodology focuses on a sequence of decisions for task allocation that includes authority transfer, accountability, role clarity, intent specification, and trust mechanisms. Key findings suggest that this framework enhances collaboration in complex delegation networks involving both AI agents and humans, thereby contributing significantly to the field of agentic AI.
 
 
 <details>
@@ -881,7 +875,7 @@ AI agents are able to tackle increasingly complex tasks. To achieve more ambitio
 - **Categories:** cs.LG, cs.GT
 
 
-> This paper presents the InvestESG multi-agent simulation, which models the interactions between investors and companies in the context of climate risk, revealing conditions for an intertemporal social dilemma where individual incentives conflict with collective welfare. The authors employ Advantage Alignment, an opponent shaping algorithm, to modify agent learning dynamics, leading to a preference for socially beneficial equilibria. Key findings suggest that strategically guiding agent behavior can enhance cooperative outcomes, offering insights for developing investment policies that align market incentives with sustainable goals.
+> The paper presents a novel approach to addressing social dilemmas in sustainable investment by using the multi-agent simulation InvestESG to analyze the interactions between investors and companies under climate risk. The authors implement the Advantage Alignment algorithm to shape agent learning towards cooperative behaviors, thereby aligning individual incentives with collective welfare. Key findings reveal that this method can systematically favor socially beneficial outcomes, suggesting that opponent shaping could inform policy mechanisms that promote sustainable investment practices.
 
 
 <details>
@@ -902,7 +896,7 @@ Addressing climate change requires global coordination, yet rational economic ac
 - **Categories:** cs.AI, cs.CL
 
 
-> The paper presents LAVES, a hierarchical LLM-based multi-agent system designed to generate high-quality instructional videos, addressing the limitations of traditional end-to-end video generation models that struggle with logical rigor and knowledge representation. The methodology involves decomposing the video generation process into specialized agents, including an Orchestrating Agent and dedicated Solution, Illustration, and Narration Agents, all governed by quality gates and iterative critiques. Key findings indicate that LAVES can produce over one million videos per day with a cost reduction exceeding 95% compared to standard industry practices, while achieving high procedural fidelity and pedagogical coherence, thus significantly advancing the capabilities of agentic AI in educational video production.
+> The paper presents LAVES, a hierarchical LLM-based multi-agent system that transforms the process of generating educational videos from problem statements into a structured multi-objective task, enhancing logical rigor and knowledge representation. Utilizing a central Orchestrating Agent to coordinate specialized agents—including a Solution Agent, Illustration Agent, and Narration Agent—LAVES systematically ensures high-quality outputs through iterative critique and explicit quality control mechanisms. The findings highlight LAVES's capability to produce over one million instructional videos per day with more than 95% cost reduction compared to traditional methods while maintaining high user acceptance, thereby significantly advancing the field of agent-based AI systems in educational content generation.
 
 
 <details>
@@ -923,7 +917,7 @@ Although recent end-to-end video generation models demonstrate impressive perfor
 - **Categories:** cs.AI, cs.CL, cs.LG
 
 
-> The paper presents TSR (Trajectory-Search Rollouts), a novel approach designed to enhance multi-turn reinforcement learning for large language model (LLM) agents by improving the quality of rollout generation. TSR employs a lightweight tree-style search mechanism to optimize action selection at each turn based on task-specific feedback, which addresses challenges related to sparse rewards and stochastic environments. The implementation of TSR, combined with various search methods and reinforcement learning algorithms, demonstrated up to a 15% performance improvement and increased learning stability in diverse tasks, indicating its potential as a robust enhancement to existing agent training frameworks.
+> The paper presents TSR (Trajectory-Search Rollouts), an innovative method aimed at enhancing multi-turn reinforcement learning (RL) for large language model (LLM) agents by improving rollout quality through a lightweight tree-style search that utilizes task-specific feedback. By applying TSR during training, the method generates high-quality trajectories, leading to significant performance gains (up to 15%) and increased stability in learning across various tasks such as Sokoban, FrozenLake, and WebShop, while remaining optimizer-agnostic. This approach shifts the search process from inference to the training stage, thereby providing a robust framework to bolster multi-turn agent capabilities and complementing existing selection methods.
 
 
 <details>
@@ -944,7 +938,7 @@ Advances in large language models (LLMs) are driving a shift toward using reinfo
 - **Categories:** cs.MA, cs.AI, cs.GT
 
 
-> The paper presents the FLCOA framework, which conceptualizes cooperation and coordination in LLM-based multi-agent systems (LLM-MAS) while emphasizing the often-overlooked impact of lower-layer factors like computational and communication resources. Through simulations using a Continuous Prisoner's Dilemma with Communication Delay, the authors find that increased communication delay can lead to exploitation among agents but also reveals a U-shaped relationship where excessive delay can reduce instances of such exploitation, thereby enhancing mutual cooperation. This highlights the importance of considering communication constraints in the design of autonomous agent systems for effective collaborative behavior.
+> The paper introduces the FLCOA framework to explore how cooperation and coordination develop among autonomous LLM-based multi-agent systems (LLM-MAS), emphasizing the often-overlooked influence of lower-layer factors like communication delays. Through simulations of a Continuous Prisoner's Dilemma with varying communication delays, the study reveals that while increased delays initially promote exploitation of slower responses, excessive delays ultimately enhance mutual cooperation, highlighting a U-shaped relationship. These findings suggest that effective cooperation in LLM-MAS requires a comprehensive approach that integrates both high-level design and low-level resource considerations.
 
 
 <details>
@@ -965,7 +959,7 @@ LLM-based multi-agent systems (LLM-MAS), in which autonomous AI agents cooperate
 - **Categories:** cs.SE, cs.AI, cs.HC
 
 
-> The paper introduces AmbiBench, a novel benchmark designed to evaluate Mobile GUI Agents in scenarios involving ambiguous user instructions, emphasizing bidirectional intent alignment rather than one-shot instruction following. The authors develop a taxonomy of instruction clarity and a comprehensive dataset featuring 240 tasks across 25 applications, alongside an automated evaluation framework called MUSE that assesses agent performance across key dimensions. Key findings demonstrate the limitations of state-of-the-art agents when dealing with varying clarity levels and highlight the benefits of proactive user-agent interactions, thus fostering advancements in agentic AI that better understand user intent in real-world applications.
+> The paper presents AmbiBench, a novel benchmark for evaluating Mobile GUI Agents that addresses the realistic challenges of user instructions which are often unclear or incomplete. Utilizing a taxonomy of instruction clarity derived from Cognitive Gap theory, the researchers developed a comprehensive dataset and an evaluation framework called MUSE, which employs a multi-agent architecture for detailed analysis of agent performance in various interaction scenarios. Key findings indicate that this benchmark reveals performance limitations of state-of-the-art agents and highlights the importance of active user-agent interaction to enhance intent alignment.
 
 
 <details>
@@ -986,7 +980,7 @@ Benchmarks are paramount for gauging progress in the domain of Mobile GUI Agents
 - **Categories:** cs.AI
 
 
-> The paper introduces AIR, the first incident response framework specifically designed for Large Language Model (LLM) agent systems, addressing the limitations of existing safety mechanisms that primarily focus on preventing failures. AIR employs a domain-specific language to autonomously manage the incident response lifecycle, enabling LLM agents to detect incidents, execute containment and recovery actions, and synthesize guardrail rules for future prevention. Evaluation results indicate that AIR achieves over 90% success rates in detection, remediation, and eradication, highlighting the effectiveness and necessity of integrating incident response as a key component for enhancing agent safety in autonomous applications.
+> The paper presents AIR, the first incident response framework specifically designed for large language model (LLM) agent systems, addressing the gap in capabilities to manage incidents post-failure. The methodology includes a domain-specific language integrated into the agent's execution loop for detecting incidents, guiding actions for containment and recovery, and synthesizing guardrail rules to prevent future occurrences. Key findings indicate that AIR achieves over 90% success rates in detection, remediation, and eradication, demonstrating the feasibility and necessity of incorporating incident response as a fundamental mechanism for enhancing the safety of agentic AI systems.
 
 
 <details>
@@ -1007,7 +1001,7 @@ Large Language Model (LLM) agents are increasingly deployed in practice across a
 - **Categories:** cs.AI, cs.CL
 
 
-> The paper presents PhyNiKCE, a neurosymbolic framework designed to enhance autonomous agents' capabilities in Computational Fluid Dynamics (CFD) by addressing the limitations of Large Language Models (LLMs) in upholding physical constraints. By decoupling neural planning from symbolic validation, PhyNiKCE approaches simulation setup as a Constraint Satisfaction Problem, using a Symbolic Knowledge Engine and Deterministic RAG Engine to enforce strict physical laws, which led to a 96% relative improvement in task performance over existing methods. Additionally, the framework decreased the need for excessive self-correction loops by 59% and reduced LLM token usage by 17%, underscoring its potential as a scalable and robust solution for trustworthy AI in broader industrial applications.
+> The paper presents PhyNiKCE, a neurosymbolic framework designed to enhance the reliability of autonomous agents in Computational Fluid Dynamics (CFD) by addressing the limitations of Large Language Models (LLMs) in enforcing strict physical laws. The methodology involves decoupling neural planning from symbolic validation, utilizing a Symbolic Knowledge Engine to frame simulation setups as Constraint Satisfaction Problems, and employing a Deterministic RAG Engine for ensuring compliance with physical constraints. Key findings indicate that PhyNiKCE achieves a 96% relative improvement over existing methods in CFD tasks, decreases self-correction loops by 59%, and reduces LLM token consumption by 17%, thereby demonstrating its potential as a scalable solution for Trustworthy AI in diverse industrial applications.
 
 
 <details>
@@ -1028,7 +1022,7 @@ The deployment of autonomous agents for Computational Fluid Dynamics (CFD), is c
 - **Categories:** cs.AI
 
 
-> This paper investigates behavioral consistency in LLM-based agents by running the same models on the same task multiple times, revealing that significant discrepancies often arise in their behavior. Analyzing 3,000 runs across models such as Llama 3.1, GPT-4o, and Claude Sonnet 4.5, the study finds that agents exhibit an average of 2.0 to 4.2 distinct action sequences, with higher inconsistency correlating with decreased task accuracy—showing a 32–55 percentage point drop for tasks exhibiting over six unique paths. The authors suggest that monitoring early decision-making stages, particularly the first search query, could enhance reliability and facilitate early error detection in agent systems.
+> The paper explores the behavioral consistency of LLM-based agents, revealing significant variability in their responses to identical tasks, which diminishes performance reliability. Analyzing 3,000 runs across three models, the study finds that high variance in action sequences correlates with poorer task accuracy, with consistent behaviors scoring 80-92% compared to 25-60% for inconsistent ones. Key findings indicate that divergence largely originates from early decisions, particularly the first search query, suggesting that monitoring for consistency could be a strategy to enhance agent reliability in agentic AI systems.
 
 
 <details>
@@ -1049,7 +1043,7 @@ Run the same LLM agent on the same task twice: do you get the same behavior? We 
 - **Categories:** cs.AI, cs.LG
 
 
-> The paper surveys multi-agent communication (MA-Comm) by examining the key aspects of who communicates, with whom, when, what is conveyed, and why it matters, thereby linking diverse research avenues within the agentic AI field. It outlines the evolution of communication methods across Multi-Agent Reinforcement Learning (MARL), Emergent Language (EL), and Large Language Models (LLMs), highlighting the transition from task-specific protocols to more structured communications and the ongoing challenges such as grounding and scalability in EL. The authors provide insights into effective communication design choices, practical patterns, and unresolved issues, aiming to inform the development of hybrid systems that enhance collaboration and understanding among autonomous agents.
+> This survey paper explores multi-agent communication (MA-Comm) by examining the dynamics of communication through the framework of the Five Ws: who communicates, what is communicated, when, and why. It traces the evolution of communication approaches from Multi-Agent Reinforcement Learning (MARL) to Emergent Language (EL) and large language models (LLMs), highlighting the limitations of existing methods—such as task-specific protocols in MARL and grounding issues in EL—that have inspired the integration of LLMs for improved reasoning and collaboration. The authors provide insights into design patterns and identify unresolved challenges for future systems that aim to merge learning, language, and control, ultimately contributing to the field of agentic AI by emphasizing the importance of effective communication in multi-agent systems.
 
 
 <details>
@@ -1070,7 +1064,7 @@ Multi-agent sequential decision-making powers many real-world systems, from auto
 - **Categories:** cs.AI
 
 
-> The paper presents ARC (Agentic Resource & Configuration learner), a reinforcement learning-based approach for configuring LLM-based agent systems that enhances performance by tailoring configurations to individual queries rather than relying on fixed templates or heuristics. The methodology involves developing a lightweight hierarchical policy that adapts workflows, tools, and prompts, resulting in improved task accuracy—up to 25%—while also decreasing token usage and runtime costs across various benchmarks. These findings highlight the potential of query-wise configuration in agentic AI systems as a superior alternative to traditional uniform strategies.
+> The paper introduces ARC (Agentic Resource & Configuration learner), a reinforcement learning-based approach for dynamically configuring LLM-based agent systems by treating agent configuration as a query-wise decision problem. The methodology involves developing a hierarchical policy that customizes workflows, tools, and prompts, resulting in improvements in task accuracy by up to 25% compared to traditional fixed templates and hand-tuned heuristics, while also reducing computational costs. The key findings highlight that learning tailored configurations for individual queries significantly enhances the performance and efficiency of agentic AI systems, providing a compelling alternative to rigid, one-size-fits-all design strategies.
 
 
 <details>
@@ -1091,7 +1085,7 @@ Configuring LLM-based agent systems involves choosing workflows, tools, token bu
 - **Categories:** cs.AI
 
 
-> The paper presents CausalAgent, a novel conversational multi-agent system designed to streamline end-to-end causal inference, thereby lowering barriers for users without extensive statistical and programming expertise. Utilizing a combination of Multi-Agent Systems, Retrieval-Augmented Generation, and the Model Context Protocol, the system automates various stages of causal analysis—from data cleaning to reporting—through natural language interactions. Key findings indicate that CausalAgent not only enhances accessibility to causal analysis but also maintains rigorous analytical standards through interactive visualizations, marking a significant advancement in user-centered human-AI collaboration in the agentic AI field.
+> The paper presents CausalAgent, a conversational multi-agent system designed to automate end-to-end causal inference, thereby simplifying the process for users who may lack extensive technical backgrounds. By integrating Multi-Agent Systems, Retrieval-Augmented Generation, and the Model Context Protocol, it allows users to initiate causal analysis through natural language queries after simply uploading their datasets. Key findings indicate that CausalAgent enhances user accessibility and interaction in causal analysis while maintaining rigorous standards of interpretation and reporting, showcasing a novel approach to human-AI collaboration in the agentic AI field.
 
 
 <details>
@@ -1112,7 +1106,7 @@ Causal inference holds immense value in fields such as healthcare, economics, an
 - **Categories:** cs.AI
 
 
-> The paper introduces AgentLeak, the first comprehensive benchmark designed to assess privacy leakage in multi-agent Large Language Model (LLM) systems, targeting internal communication pathways often neglected by existing audits. Utilizing a dataset of 1,000 scenarios across various domains, the study reveals that while multi-agent configurations reduce leakage in output channels, they significantly increase total system exposure due to unmonitored internal communication, with inter-agent messages responsible for the highest leakage rates. The findings emphasize the necessity for enhanced privacy protections in agent coordination frameworks, particularly highlighting that the design of models like Claude 3.5 Sonnet can positively impact leakage rates.
+> The paper introduces AgentLeak, a pioneering benchmark designed to assess privacy leakage in multi-agent Large Language Model (LLM) systems by evaluating internal communication channels across 1,000 scenarios in various sensitive domains. The methodology involves a detailed attack taxonomy and a three-tier detection pipeline, revealing that while multi-agent configurations reduce output leakage, they significantly increase total system exposure due to unmonitored internal channels, highlighting that inter-agent messages pose a substantial privacy risk. Key findings indicate that existing output-only audits fail to identify a notable portion of privacy violations, suggesting the necessity for enhanced frameworks that prioritize internal-channel privacy and inter-agent communication controls in agentic AI systems.
 
 
 <details>
@@ -1133,7 +1127,7 @@ Multi-agent Large Language Model (LLM) systems create privacy risks that current
 - **Categories:** cs.LG
 
 
-> The paper presents a novel framework for fair consensus clustering in streaming environments, addressing the limitations of previously developed offline methods that require extensive memory storage. The authors introduce a constant-factor algorithm that efficiently processes incoming clusterings with a logarithmic memory footprint and integrates a new algorithmic approach that combines closest fair clustering with cluster fitting, enhancing approximation guarantees. Key findings indicate that this framework is adaptable to various fairness definitions and extends to the k-median consensus clustering scenario, contributing significantly to the field of agentic AI by enabling more equitable data structuring in multi-agent systems.
+> The paper presents a novel framework for fair consensus clustering in streaming environments, addressing limitations of previous offline approaches that require extensive memory. The authors develop a constant-factor algorithm capable of processing sequential clustering inputs while only retaining a logarithmic amount of data. The key findings demonstrate that their framework not only improves approximation guarantees for streaming data but is also versatile enough to apply to various fairness definitions and extends to the k-median consensus clustering problem, thereby contributing to the field of agentic AI by enhancing fairness and efficiency in multi-agent clustering scenarios.
 
 
 <details>
@@ -1155,7 +1149,7 @@ Consensus clustering seeks to combine multiple clusterings of the same dataset, 
 - **Categories:** cs.AI, cs.MA
 
 
-> The paper presents a novel approach called Distributionally Robust IGM (DrIGM) to enhance cooperative multi-agent reinforcement learning (MARL) in the presence of environmental uncertainties, establishing a robust alignment between individual agent actions and the team-optimal joint action. The authors develop robust variants of existing value-factorization techniques that operate on robust Q-targets, maintaining scalability and compatibility with existing systems, while providing a provable robustness guarantee. Empirical results demonstrate that their method significantly improves out-of-distribution performance in diverse environments, including SustainGym and StarCraft, highlighting its practical applicability in agentic AI systems.
+> The paper presents Distributionally Robust Individual-Global-Maximum (DrIGM), a framework designed to enhance cooperative multi-agent reinforcement learning (MARL) by addressing the unreliability of existing value-factorization methods in real-world scenarios. The methodology involves deriving robust variants of well-known value-factorization architectures that operate on robust action values and are compatible with decentralized execution, providing a robustness guarantee for the system. Key findings indicate that the proposed DrIGM framework significantly improves out-of-distribution performance in complex environments, such as SustainGym simulators and StarCraft, while maintaining scalability and integration ease with existing systems.
 
 
 <details>
@@ -1176,7 +1170,7 @@ Cooperative multi-agent reinforcement learning (MARL) commonly adopts centralize
 - **Categories:** cs.CR, cs.LG
 
 
-> The paper presents a novel approach to enhancing the autonomy of AI agents while ensuring security against indirect prompt injection attacks through the development of a security-aware agent. By introducing richer human-in-the-loop (HITL) interactions and planning for both task progress and policy compliance, the proposed methodology quantifies autonomy using new metrics that measure the ability to execute actions without human oversight. Key findings indicate that this enhanced agent design increases task autonomy and completion rates, while mitigating the risks associated with prompt injection without compromising overall utility.
+> The paper "Optimizing Agent Planning for Security and Autonomy" presents a novel security-aware agent design aimed at improving autonomy while ensuring safety against indirect prompt injection attacks. The methodology involves enhancing human-in-the-loop (HITL) interactions and incorporating explicit planning for both task accomplishment and adherence to policies, evaluated using the AgentDojo and WASP benchmarks. Key findings reveal that the proposed approach increases the autonomy of agents—measured by the fraction of consequential actions they can undertake without human approval—while maintaining their operational effectiveness, thus highlighting the potential of system-level defenses to reduce the need for human oversight in agentic AI systems.
 
 
 <details>
@@ -1197,7 +1191,7 @@ Indirect prompt injection attacks threaten AI agents that execute consequential 
 - **Categories:** cs.CY, cs.AI, cs.HC
 
 
-> The paper investigates the influence of social proof on the verification of claims concerning agentic AI in online discussions, focusing on the impact of visibility on user trust and discourse quality. Utilizing a longitudinal dataset from two Reddit communities, the authors employ survival analysis to examine how high-visibility discussions often lead to delayed or absent verification of claims, revealing a "Popularity Paradox" that contributes to "Narrative Lock-in." The findings indicate that early unverified claims can solidify cognitive biases, highlighting the need for design interventions such as "epistemic friction" to enhance critical evaluation in AI discourse.
+> The paper investigates the impact of social proof and delayed verification in discussions surrounding agentic AI, revealing a "Popularity Paradox" where high-visibility conversations often lack timely verification cues. Utilizing a right-censored survival analysis framework on Reddit data from two different communities, the study finds that prominent, unverified claims can reinforce cognitive biases due to a phenomenon called "Narrative Lock-in." The authors suggest that this credibility-by-visibility effect poses risks for AI safety and propose the concept of "epistemic friction" as a potential intervention to mitigate these issues in engagement-driven platforms.
 
 
 <details>
@@ -1220,7 +1214,7 @@ Agentic AI systems-autonomous entities capable of independent planning and execu
 - **Categories:** cs.AI
 
 
-> The paper introduces TRACER, a novel trajectory-level uncertainty metric designed to enhance the performance of AI agents in multi-turn interactions involving tool use, addressing the limitations of existing single-shot uncertainty proxies that overlook critical failure episodes. TRACER integrates various components, including content-aware surprisal and coherence gap signals, aggregated through a sophisticated risk functional, and is evaluated on the $τ^2$-bench for its effectiveness in predicting task failures. The results show significant improvements in predictive capabilities, with AUROC and AUARC enhancements of up to 37.1% and 55%, respectively, thereby advancing the understanding and management of uncertainties in agentic reasoning contexts.
+> The paper introduces TRACER, a novel trajectory-level uncertainty metric designed for AI agents engaged in multi-turn interactions with humans in tool-using scenarios. By integrating content-aware surprisal with various situational-awareness signals and using a tailored risk aggregation approach, TRACER significantly enhances the detection of critical failure episodes that traditional single-shot uncertainty metrics overlook. Key findings demonstrate that TRACER outperforms existing methods, achieving improvements of up to 37.1% in AUROC and 55% in AUARC, facilitating more precise and timely identification of uncertainties in complex agentic reasoning contexts.
 
 
 <details>
@@ -1241,7 +1235,7 @@ Estimating uncertainty for AI agents in real-world multi-turn tool-using interac
 - **Categories:** cs.AI, cs.CL
 
 
-> The paper introduces ReplicatorBench, a novel benchmarking framework designed to evaluate AI agents in the context of research replication within the social and behavioral sciences, addressing the limitations of existing benchmarks that primarily focus on computational reproduction and ignore the complexities of non-replicable research. The methodology involves a three-stage process: extracting replication data, designing and executing experiments, and interpreting results, using an agent framework called ReplicatorAgent, which integrates various tools for these tasks. Key findings indicate that while current large language model (LLM) agents can effectively design and execute computational experiments, they face challenges in retrieving the necessary resources, such as new data, to successfully replicate research claims.
+> The paper presents ReplicatorBench, a comprehensive benchmarking framework designed to evaluate AI agents' capabilities in the replication of scientific research, particularly in the social and behavioral sciences. The methodology involves a three-stage process that assesses agents' performance in extracting data, executing experiments, and interpreting results, addressing previous benchmarks that overlooked non-replicable research and the variability of data availability. Key findings indicate that while the tested LLM agents, accessed via the developed framework ReplicatorAgent, are proficient at experimental design and execution, they face significant challenges in resource retrieval, highlighting a critical gap in their ability to perform successful research replication.
 
 
 <details>
@@ -1262,7 +1256,7 @@ The literature has witnessed an emerging interest in AI agents for automated ass
 - **Categories:** cs.AI, cs.LG
 
 
-> The paper introduces Behavioral Agentic Optimization (BAO), a novel reinforcement learning framework designed to improve the performance of proactive large language model (LLM) agents by enhancing their reasoning and information-gathering capabilities while regulating interaction efficiency. The methodology incorporates behavior enhancement and regularization to effectively balance task performance with user engagement in multi-turn interactions. The key findings show that BAO significantly outperforms existing proactive agentic RL baselines and matches or exceeds the performance of commercial LLM agents, thereby presenting a promising approach for developing user-centered proactive AI systems.
+> The paper introduces Behavioral Agentic Optimization (BAO), a novel reinforcement learning framework designed to enhance proactive large language model (LLM) agents by improving their reasoning and information-gathering capabilities while aligning their interactions with user expectations. The methodology involves integrating behavior enhancement and regularization techniques to address the challenges of balancing task performance and user engagement in multi-turn interaction scenarios. Key findings demonstrate that BAO significantly surpasses existing proactive agentic RL baselines and achieves performance on par with, or better than, commercial LLM agents, indicating its potential for developing effective user-centric agentic AI systems.
 
 
 <details>
@@ -1283,7 +1277,7 @@ Proactive large language model (LLM) agents aim to actively plan, query, and int
 - **Categories:** cs.AI
 
 
-> The paper presents AgentNoiseBench, a novel framework designed to evaluate the robustness of tool-using large language model (LLM) agents in noisy environments. By analyzing biases and uncertainties in real-world scenarios, the authors categorize noise into user-noise and tool-noise, then develop an automated pipeline to introduce controllable noise into agent-centric benchmarks while maintaining task solvability. The extensive evaluations reveal significant performance variations among different models under varying noise conditions, underscoring the vulnerability of current agent systems to realistic environmental perturbations and emphasizing the need for improved robustness in agentic AI.
+> The paper introduces AgentNoiseBench, a novel framework designed to evaluate the robustness of tool-using large language model (LLM) agents in noisy environments, addressing the gap between idealized benchmark performance and real-world applications. The methodology involves categorizing environmental noise into user-noise and tool-noise, followed by the development of an automated pipeline to inject controllable noise into existing benchmarks while maintaining task solvability. Key findings demonstrate that current agentic models exhibit significant performance sensitivity to various noise conditions, underscoring the need for improved robustness in future AI agent designs.
 
 
 <details>
@@ -1304,7 +1298,7 @@ Recent advances in large language models have enabled LLM-based agents to achiev
 - **Categories:** cs.CR, cs.AI
 
 
-> This paper proposes a structured threat modeling analysis to evaluate the security of four emerging AI agent communication protocols: Model Context Protocol (MCP), Agent2Agent (A2A), Agora, and Agent Network Protocol (ANP). The methodology includes the development of a qualitative risk assessment framework that identifies twelve protocol-level risks and evaluates their security posture across various operational phases. Key findings reveal significant design-induced risk surfaces, particularly in MCP, urging the need for improved security measures and standardization in AI-agent ecosystems to facilitate secure deployment and interoperability.
+> The paper contributes to the field of agentic AI by providing a systematic security analysis of four emerging AI agent communication protocols: MCP, A2A, Agora, and ANP. It develops a structured threat modeling framework that examines each protocol's architecture and identifies twelve specific risks, assessing their security posture throughout different operational phases. Key findings reveal critical design-induced risks that could impact secure deployment; specifically, the case study on MCP quantifies an important vulnerability regarding executable component validation, offering insights for enhanced security practices and standardization in AI agent communication.
 
 
 <details>
@@ -1325,7 +1319,7 @@ The rapid development of the AI agent communication protocols, including the Mod
 - **Categories:** cs.AI, cs.CR
 
 
-> The paper presents the Practitioners Blueprint for Secure AI (PBSAI) Governance Ecosystem, a multi-agent reference architecture designed to secure enterprise AI estates comprising various AI systems and tools. Utilizing a twelve domain taxonomy, the PBSAI organizes agent responsibilities and incorporates systems security techniques, while establishing formal models for context and outputs that ensure traceability and human oversight. Key findings demonstrate its alignment with existing governance frameworks like the NIST AI Risk Management Framework, thereby providing a structured foundation for enhancing security in complex AI environments.
+> The paper presents the Practitioners Blueprint for Secure AI (PBSAI) Governance Ecosystem, a comprehensive multi-agent reference architecture aimed at enhancing security in enterprise AI estates amid the growing deployment of complex AI systems. The methodology involves organizing security responsibilities into a twelve domain taxonomy, defining agent families that bridge tools and policies, and employing key security techniques such as analytic monitoring and adaptive response. Key findings illustrate how PBSAI aligns with existing governance frameworks like the NIST AI Risk Management Framework and demonstrates practical applications in enterprise security operations and defensive environments, underscoring its potential as a structured foundation for future development and validation in agentic AI research.
 
 
 <details>
@@ -1347,7 +1341,7 @@ Enterprises are rapidly deploying large language models, retrieval augmented gen
 - **Categories:** eess.SY, cs.AI, eess.SP
 
 
-> The paper presents Attention-Enhanced Multi-Agent Proximal Policy Optimization (AE-MAPPO), a novel framework designed to effectively resolve latency spikes in 6G radio access networks (RAN) by combining deep reinforcement learning with interpretable attention mechanisms. Utilizing a three-phase strategy—predictive, reactive, and inter-slice optimization—AE-MAPPO demonstrates impressive performance in a URLLC case study by resolving latency spikes within 18 ms and achieving a latency of 0.98 ms with 99.9999% reliability, significantly reducing troubleshooting time by 93% while ensuring service continuity. The findings underscore AE-MAPPO's capability to provide real-time automation with high interpretability, enhancing compliance with service-level agreements in complex network environments.
+> The paper presents Attention-Enhanced Multi-Agent Proximal Policy Optimization (AE-MAPPO), a novel framework designed to effectively manage latency spikes in 6G radio access networks by integrating six specialized attention mechanisms for improved interpretability and decision-making. Through a three-phase strategy of predictive, reactive, and inter-slice optimization, AE-MAPPO demonstrated its effectiveness in a URLLC case study, resolving latency spikes within 18 ms and achieving a reliability rate of 99.9999%, while significantly reducing troubleshooting time by 93%. The findings highlight AE-MAPPO's capability to enforce service-level agreements while providing clear, interpretable decision processes, reinforcing its applicability in agentic AI systems for real-time automation.
 
 
 <details>
@@ -1369,7 +1363,7 @@ Sixth-generation (6G) radio access networks (RANs) must enforce strict service-l
 - **Categories:** cs.LG, cs.CL
 
 
-> The paper introduces StructMemEval, a benchmark designed to evaluate how LLM-based agents organize their long-term memory, moving beyond traditional assessments that focus solely on fact retention and recall. The authors curate a series of tasks that reflect human-like organization of memory, such as managing transaction ledgers and to-do lists, revealing that while simple retrieval-augmented LLMs struggle with these structured tasks, memory-enhanced agents perform well when given guidance on memory organization. Key findings emphasize the necessity for improved training methods and memory architecture designs, as current LLMs often fail to autonomously recognize or utilize complex memory structures without explicit prompts.
+> The paper introduces StructMemEval, a benchmark designed to evaluate the organizational capabilities of long-term memory in LLM-based agents beyond simple fact retention. Methodologically, it involves a suite of tasks that require agents to structure knowledge similarly to human cognitive strategies, such as using transaction ledgers and to-do lists. The key findings indicate that while memory agents excel when guided on how to organize their memory, standard retrieval-augmented LLMs struggle with these tasks, emphasizing a need for improved training and memory architectures in agentic AI systems.
 
 
 <details>
@@ -1390,7 +1384,7 @@ Modern LLM-based agents and chat assistants rely on long-term memory frameworks 
 - **Categories:** cs.LG
 
 
-> The paper presents Pram, a novel machine learning-based method that applies multimodal language models (MLMs) to effectively address multi-commodity flow (MCF) problems in a way that balances optimality and tractability. The methodology involves dividing the MCF problem into local subproblems handled by MLM-powered agents and harmonizing their solutions through a multi-agent reinforcement learning algorithm. Key findings indicate that Pram achieves comparable or superior performance to traditional linear programming solvers, with significantly reduced runtime and robustness to link failures, making it a scalable and practical solution for contemporary allocation systems.
+> The paper presents Pram, an innovative ML-based method that utilizes multimodal language models (MLMs) to address the multi-commodity flow (MCF) problem, effectively balancing optimality and tractability in complex network scenarios. By dividing the MCF problem into local subproblems solved by an MLM-powered agent and ensuring global consistency through a multi-agent reinforcement learning algorithm, Pram achieves high-quality allocations while demonstrating significantly faster runtimes than traditional linear programming solvers. Empirical results indicate that Pram not only approaches optimal solutions but also maintains robustness against disruptions, making it a practical and scalable option for modern allocation challenges in agentic AI systems.
 
 
 <details>
@@ -1411,7 +1405,7 @@ The multi-commodity flow (MCF) problem is a fundamental topic in network flow an
 - **Categories:** cs.CL
 
 
-> The paper introduces SurveyLens, a discipline-aware benchmark designed to evaluate Automatic Survey Generation (ASG) methods across various academic fields, addressing the limitations of current evaluation metrics that are biased toward Computer Science. It features SurveyLens-1k, a dataset of 1,000 high-quality human-written surveys covering 10 disciplines, and proposes a dual-lens evaluation framework that includes Discipline-Aware Rubric Evaluation and Canonical Alignment Evaluation. Key findings indicate differences in the performance of 11 evaluated ASG methods, offering insights into their strengths and weaknesses and providing guidance for selecting suitable tools based on specific disciplinary standards, thereby advancing the field of agentic AI.
+> The paper introduces SurveyLens, the first discipline-aware benchmark designed to evaluate Automatic Survey Generation (ASG) methods across various academic fields, addressing the limitations of existing evaluations that primarily focus on Computer Science. The authors developed SurveyLens-1k, a dataset of 1,000 high-quality surveys from ten disciplines, and employed a dual-lens evaluation framework that includes a Discipline-Aware Rubric Evaluation using large language models (LLMs) and a Canonical Alignment Evaluation for content quality assessment. Key findings show that the evaluation of 11 ASG methods unveils distinct strengths and weaknesses across different disciplines, offering valuable insights for choosing ASG tools suitable to specific academic standards.
 
 
 <details>
@@ -1432,7 +1426,7 @@ The exponential growth of scientific literature has driven the evolution of Auto
 - **Categories:** cs.CV, cs.AI
 
 
-> The paper presents Chain-of-Look, a novel visual reasoning framework designed for accurate counting of surgical instruments in densely crowded operating room scenarios. By structurally guiding the counting process along a coherent spatial trajectory and implementing a neighboring loss function to model physical constraints, this method significantly improves counting accuracy over traditional object detection and existing AI models. The introduction of the SurgCount-HD dataset, along with extensive experiments, demonstrates that Chain-of-Look surpasses current state-of-the-art methods and multimodal large language models in this challenging task, highlighting its potential impact in the agentic AI and healthcare fields.
+> The paper presents "Chain-of-Look," a novel visual reasoning framework designed to enhance the accuracy of counting densely packed surgical instruments in operating rooms. The methodology involves creating a structured visual chain that mimics the sequential human counting process, coupled with a neighboring loss function to enforce spatial constraints. Key findings indicate that this approach significantly outperforms existing state-of-the-art methods and multimodal large language models in accurately counting surgical instruments, thereby contributing valuable insights to the field of agentic AI in complex visual tasks.
 
 
 <details>
@@ -1453,7 +1447,7 @@ Accurate counting of surgical instruments in Operating Rooms (OR) is a critical 
 - **Categories:** cs.LG
 
 
-> The paper presents TVCACHE, a novel stateful tool-value cache designed to enhance the efficiency of post-training large language model (LLM) agents by caching tool outputs that depend on specific environment states. The methodology involves maintaining a tree structure of observed tool-call sequences and utilizing longest-prefix matching for accurate cache lookups, ensuring environmental consistency. Key findings highlight that TVCACHE achieves cache hit rates of up to 70% and significantly reduces the median tool call execution time by up to 6.9X, without compromising the reward accumulation during post-training, thereby providing an effective solution for optimizing resource utilization in LLM agent systems.
+> The paper introduces TVCACHE, a stateful tool-value caching system designed to enhance the efficiency of post-training large language model (LLM) agents by caching tool outputs based on observed tool-call sequences that maintain environmental state. Employing a longest-prefix matching methodology for cache lookups, TVCACHE achieves significant performance improvements, with hit rates reaching 70% and median tool call execution times reduced by up to 6.9 times, without compromising the agents’ reward accumulation during training. These findings demonstrate the potential for reducing training costs and time in the field of agentic AI, particularly in scenarios where external tool utilization is prevalent.
 
 
 <details>
@@ -1474,7 +1468,7 @@ In RL post-training of LLM agents, calls to external tools take several seconds 
 - **Categories:** cs.LG
 
 
-> The paper introduces CMAD, a novel approach to cooperative multi-agent diffusion modeled as a Stochastic Optimal Control problem, aiming to enhance the compositional generation of outputs from multiple pre-trained models. The methodology treats diffusion models as interacting agents that collaboratively adjust their trajectories to achieve a common goal, rather than relying on traditional algebraic compositions of probability densities. Key findings demonstrate that this cooperative control framework outperforms a baseline method that employs basic gradient guidance, particularly in tasks such as conditional MNIST generation, indicating promising advancements for agentic AI systems in collaborative compositional tasks.
+> The paper presents a novel framework, CMAD, which formulates the composition of multiple pre-trained diffusion models as a cooperative Stochastic Optimal Control problem, allowing for a more effective method of generating compositions without the need for explicit target distributions. The methodology involves treating the diffusion models as interacting agents that jointly navigate their diffusion trajectories toward a shared output objective. Key findings indicate that CMAD outperforms traditional methods, such as naive inference-time approaches that rely on simple gradient guidance, in generating meaningful results on conditional MNIST tasks, thus advancing the field of agentic AI by enhancing inter-agent cooperation in generative tasks.
 
 
 <details>
@@ -1495,7 +1489,7 @@ Continuous-time generative models have achieved remarkable success in image rest
 - **Categories:** cs.CR, cs.AI
 
 
-> The paper presents Aura, an innovative Agent Universal Runtime Architecture designed to enhance security in mobile agent systems, moving away from the vulnerable "Screen-as-Interface" paradigm. Through a systematic security analysis of existing mobile agents, it identifies critical vulnerabilities across four dimensions and proposes a structured interaction model that improves both security and performance. The evaluation results show significant improvements in task success rates and reductions in attack success rates, establishing Aura as a promising solution for secure autonomous agent operations in mobile environments.
+> The paper introduces Aura, a secure, intent-centric mobile agent operating system designed to address vulnerabilities associated with the current "Screen-as-Interface" paradigm. Through a systematic security analysis of mobile agents, particularly the Doubao Mobile Assistant, the authors identified critical flaws like fake App identities and unauthorized privilege escalations. Aura employs a Hub-and-Spoke architecture along with four key defense mechanisms, resulting in significant improvements in task success rates and security, illustrating its potential as a robust framework for future agentic AI systems.
 
 
 <details>
@@ -1517,7 +1511,7 @@ The evolution of Large Language Models (LLMs) has shifted mobile computing from 
 - **Categories:** cs.SE, cs.CL
 
 
-> The paper presents Agent-Diff, a benchmarking framework designed to evaluate agentic Large Language Models (LLMs) on enterprise API tasks through controlled code execution with state-diff-based evaluation. The methodology incorporates a unique state-diff contract to define task success based on environmental changes rather than traditional matching methods, alongside a standardized sandbox for executing code against real APIs. Key findings demonstrate that Agent-Diff effectively benchmarks nine LLMs across 224 tasks, revealing performance variations influenced by model differences and API documentation access.
+> The paper introduces Agent-Diff, a benchmarking framework designed to evaluate agentic Large Language Models (LLMs) on enterprise API tasks by executing code with a state-diff-based evaluation approach. The methodology combines access to real API interfaces within a controlled sandbox environment, utilizing a state-diff contract to define task success based on the expected changes in the environment state rather than just output matching. Key findings include benchmarks for nine LLMs across 224 tasks, demonstrating the framework’s effectiveness in assessing model performance while providing insights on the impact of API documentation access on outcomes, thereby contributing to the understanding of LLM capabilities in real-world agentic scenarios.
 
 
 <details>
@@ -1538,7 +1532,7 @@ We present Agent-Diff, a novel benchmarking framework for evaluating agentic Lar
 - **Categories:** cs.LO, cs.MA
 
 
-> The paper introduces PSTCTL, a probabilistic extension of Strategic Timed CTL (STCTL) designed for stochastic multi-agent systems operating in continuous time and asynchronous environments. The methodology involves developing verification techniques using irP-strategies to analyze these systems. Key findings indicate that PSTCTL effectively expands the expressiveness of temporal logics in agent systems, facilitating the modeling and verification of strategic behavior in probabilistic contexts.
+> The paper introduces PSTCTL, a probabilistic extension of Strategic Timed CTL (STCTL) designed for stochastic multi-agent systems operating under continuous time and asynchronous semantics. The methodology involves defining this new logic and demonstrating its verification capabilities using irP-strategies, which are intended to support strategic decision-making in probabilistic settings. Key findings indicate that PSTCTL enhances the expressiveness of modeling temporal and strategic behavior in multi-agent systems, contributing to the development of agentic AI frameworks that incorporate probabilistic reasoning and strategy formulation in dynamic environments.
 
 
 <details>
@@ -1559,7 +1553,7 @@ We define PSTCTL, a probabilistic variant of Strategic Timed CTL (STCTL), interp
 - **Categories:** cs.AI
 
 
-> The paper presents ScratchWorld, a novel benchmark designed to evaluate multimodal GUI agents in Scratch, focusing on program-by-construction tasks following the Use-Modify-Create pedagogical framework. The authors employ two interaction modes—primitive and composite—and introduce an execution-based evaluation protocol to assess functional correctness. Findings reveal a significant reasoning-acting gap in state-of-the-art agents, indicating challenges in fine-grained GUI manipulation despite proficient planning abilities, thus underscoring critical areas for improvement in agentic AI systems.
+> The paper introduces ScratchWorld, a benchmark designed for evaluating multimodal GUI agents in Scratch, addressing the gap in assessing AI agents' abilities to construct programs via graphical interfaces. Utilizing the Use-Modify-Create pedagogical framework, ScratchWorld consists of 83 tasks across various categories and employs two interaction modes to diagnose agent failures. Key findings demonstrate a significant reasoning-acting gap in current multimodal language models and GUI agents, indicating challenges in fine-grained GUI manipulation despite their strong planning abilities.
 
 
 <details>
@@ -1580,7 +1574,7 @@ Block-based programming environments such as Scratch play a central role in low-
 - **Categories:** cs.CL, cs.AI
 
 
-> The paper introduces Locomo-Plus, a novel benchmark designed to evaluate long-term conversational memory in LLM-based dialogue systems, emphasizing the importance of implicit user constraints beyond mere factual recall. The authors develop a unified evaluation framework that focuses on constraint consistency and demonstrate its superiority over traditional string-matching metrics through experiments with various models and memory systems. Key findings reveal that existing benchmarks fail to capture significant cognitive memory challenges, underscoring the need for more nuanced evaluation methods in the agentic AI field.
+> The paper presents the Locomo-Plus benchmark, designed to evaluate long-term conversational memory in LLM-based dialogue systems, addressing the limitations of existing frameworks that focus primarily on factual recall. The methodology emphasizes the assessment of cognitive memory by examining the retention and application of implicit user constraints in lengthy conversations, rather than relying on traditional string-matching metrics. Key findings indicate significant challenges in cognitive memory performance across various models and methods, highlighting failures that are not accounted for by current evaluation standards, thus contributing valuable insights to the agentic AI field.
 
 
 <details>
@@ -1601,7 +1595,7 @@ Long-term conversational memory is a core capability for LLM-based dialogue syst
 - **Categories:** cs.MA, cs.LG
 
 
-> The paper proposes a novel framework for analyzing cooperation in heterogeneous multi-agent systems operating under partial observability and temporal role dependency, specifically within a destructive multi-agent foraging context. It introduces a comprehensive suite of transferably applicable cooperation metrics categorized into primary, inter-team, and intra-team metrics, which encompass efficiency, coordination, dependency, fairness, and sensitivity among agents. The metrics were validated through a realistic scenario involving autonomous vehicles, and the evaluation demonstrated their effectiveness in assessing various learning-based and heuristic approaches, thus enhancing our understanding of cooperation in agentic AI systems.
+> The paper presents a novel framework for analyzing cooperation in heterogeneous multi-agent systems operating under conditions of partial observability and temporal role dependencies, specifically in a destructive foraging context. It introduces a comprehensive set of general-purpose cooperation metrics that evaluate efficiency, coordination, dependency, fairness, and sensitivity, structured into primary, inter-team, and intra-team categories. Key findings from the validation of these metrics in a realistic scenario involving autonomous vehicles highlight their transferability to various multi-agent sequential domains and emphasize the complexity of cooperative behaviors beyond mere task performance.
 
 
 <details>
@@ -1622,7 +1616,7 @@ This work addresses the problem of analyzing cooperation in heterogeneous multi-
 - **Categories:** cs.CL
 
 
-> The paper presents the Unified Memory Extraction and Management (UMEM) framework, which enhances memory generalization in Large Language Models (LLMs) by simultaneously optimizing memory extraction and management processes. Unlike traditional methods that focus primarily on memory management while treating extraction statically, UMEM employs Semantic Neighborhood Modeling and utilizes a neighborhood-level marginal utility reward to evaluate memory utility across semantically related queries. The approach demonstrates significant performance improvements across five benchmarks, achieving up to a 10.67% enhancement in multi-turn interactive tasks while maintaining a consistent growth in memory quality, which is crucial for advancing agentic AI capabilities.
+> The paper introduces the Unified Memory Extraction and Management (UMEM) framework, which enhances Large Language Models (LLMs)-based agents by simultaneously optimizing memory extraction and management, addressing the limitations of existing methods that inadequately handle memory generalization. The methodology incorporates Semantic Neighborhood Modeling and a neighborhood-level marginal utility reward, enabling the model to evaluate memory utility across semantically related queries, thus reducing overfitting to specific instances. Key findings reveal that UMEM significantly improves performance on multi-turn interactive tasks, achieving up to a 10.67% enhancement compared to competitive baselines, and demonstrates consistent progress in memory quality during continuous evolution.
 
 
 <details>
@@ -1643,7 +1637,7 @@ Self-evolving memory serves as the trainable parameters for Large Language Model
 - **Categories:** cs.RO, cs.AI, cs.LG
 
 
-> The paper "Co-jump: Cooperative Jumping with Quadrupedal Robots via Multi-Agent Reinforcement Learning" presents a novel approach where two quadrupedal robots cooperate to perform jumps that exceed their individual capabilities, using a framework based on Multi-Agent Proximal Policy Optimization (MAPPO). The methodology employs decentralized decision-making without explicit communication and addresses high-impulse dynamics through a progressive curriculum strategy, enabling efficient learning in mechanically coupled systems. Key findings include the robots achieving synchronized multi-directional jumps onto platforms as high as 1.5 m, with one robot reaching a foot-end elevation of 1.1 m—significantly improving performance compared to solo jumps—thus laying the groundwork for advanced collaborative locomotion in dynamic environments.
+> The paper introduces Co-jump, a novel cooperative jumping task for two quadrupedal robots that utilizes Multi-Agent Reinforcement Learning (specifically MAPPO) to achieve synchronized jumps exceeding their individual capabilities, without explicit communication. The methodology incorporates a progressive curriculum strategy to tackle challenges related to sparse rewards in high-impulse dynamics. Key findings demonstrate that the collaborative approach enables robots to perform jumps up to 1.5 m high, with one robot achieving a 1.1 m elevation, marking a 144% improvement over solo performance, and highlighting the potential for communication-free locomotion in agentic AI settings.
 
 
 <details>
@@ -1664,7 +1658,7 @@ While single-agent legged locomotion has witnessed remarkable progress, individu
 - **Categories:** cs.CR, cs.AI, cs.DC, cs.MA
 
 
-> The paper introduces "authenticated workflows," a novel framework designed to provide a comprehensive trust layer for enterprise agentic AI systems, addressing the limitations of existing defenses such as guardrails and semantic filters. The methodology involves enforcing security at four critical boundaries—prompts, tools, data, and context—by ensuring operations adhere to organizational policies and maintain cryptographic integrity, which results in deterministic security. Key findings demonstrate the framework’s effectiveness through a universal security runtime that integrates leading AI frameworks, achieving 100% recall with zero false positives in extensive testing, and successfully mitigating significant security vulnerabilities.
+> The paper presents "authenticated workflows," a novel approach to securing agentic AI systems by implementing a comprehensive trust layer that safeguards prompts, tools, data, and context within enterprise workflows. The methodology involves enforcing intent and integrity through cryptographic proofs and real-time policy enforcement, leveraging a new AI-native policy language (MAPL) for dynamic constraint management. Key findings demonstrate the system's effectiveness, achieving 100% recall and zero false positives across various test cases while addressing critical security vulnerabilities, thus offering deterministic security against prominent threats in the agentic AI domain.
 
 
 <details>
@@ -1685,7 +1679,7 @@ Agentic AI systems automate enterprise workflows but existing defenses--guardrai
 - **Categories:** cs.CR, cs.CL
 
 
-> The paper presents a comprehensive overview of Prompt Injection (PI) threats in Large Language Model (LLM) agents, establishing a taxonomy of PI attacks and defenses through a systematic literature review and quantitative analysis. A significant contribution is the introduction of AgentPI, a benchmark designed to evaluate agent behavior in context-dependent interaction scenarios, revealing that current defenses often fail to generalize to realistic settings. The study finds that no existing defense achieves high trustworthiness, utility, and low latency simultaneously, highlighting the limitations of current approaches and identifying critical areas for future research in agentic AI security.
+> The paper presents a systematic overview of Prompt Injection (PI) vulnerabilities in Large Language Model (LLM) agents, outlining a taxonomy of PI attacks and defenses. Utilizing a systematic literature review and quantitative analysis, the authors identify shortcomings in current benchmarks related to context-dependent tasks and introduce AgentPI, a benchmark aimed at evaluating agent behavior in realistic scenarios. Key findings highlight that existing defenses fail to simultaneously achieve high trustworthiness, utility, and low latency, and often do not generalize well when faced with contextual reasoning required in practical deployments.
 
 
 <details>
@@ -1706,7 +1700,7 @@ The evolution of Large Language Models (LLMs) has resulted in a paradigm shift t
 - **Categories:** cs.AI
 
 
-> The paper introduces LiveMedBench, a novel medical benchmark designed for evaluating Large Language Models (LLMs) in clinical settings, addressing issues of data contamination and temporal misalignment in existing benchmarks. Utilizing a Multi-Agent Clinical Curation Framework, the benchmark continuously collects and validates real-world clinical cases, paired with an Automated Rubric-based Evaluation Framework that offers more precise scoring than traditional LLM evaluations. Key findings reveal that despite extensive testing across 38 LLMs, performance remains low, with the best model only achieving 39.2% accuracy, highlighting critical challenges in applying medical knowledge contextually rather than factually.
+> The paper introduces LiveMedBench, a novel, contamination-free medical benchmark for evaluating Large Language Models (LLMs) in clinical contexts, addressing critical issues of data contamination and temporal misalignment. Utilizing a Multi-Agent Clinical Curation Framework, LiveMedBench continuously gathers real-world medical cases while maintaining strict separation from training data, and employs an Automated Rubric-based Evaluation Framework to assess model performance against granular expert-defined criteria. Key findings indicate that even top-performing models struggle with contextual application, showcasing a significant performance drop on newer cases and highlighting the need for improved alignment with specific patient scenarios.
 
 
 <details>
@@ -1727,7 +1721,7 @@ The deployment of Large Language Models (LLMs) in high-stakes clinical settings 
 - **Categories:** cs.LG, cs.AI
 
 
-> The paper presents a self-evolving recommendation system that employs Large Language Models (LLMs) to automate the optimization of complex machine learning models, particularly for global video platforms like YouTube. The methodology involves two agents: an Offline Agent for high-throughput hypothesis generation and an Online Agent for validating these candidates against real-world metrics. Key findings reveal that the LLM-driven approach significantly enhances development speed and model performance, demonstrating the potential of autonomous systems in advancing agentic AI capabilities.
+> The paper presents a self-evolving recommendation system that utilizes Large Language Models (LLMs) to autonomously optimize machine learning models, particularly for large-scale video platforms. The methodology features an Offline Agent that generates hypotheses using proxy metrics and an Online Agent that validates these against long-term business metrics, effectively simulating the role of Machine Learning Engineers. Key findings indicate that this autonomous approach significantly enhances optimization and model performance, as evidenced by successful deployments at YouTube, demonstrating that LLM-driven systems can outperform traditional optimization workflows.
 
 
 <details>
@@ -1748,7 +1742,7 @@ Optimizing large-scale machine learning systems, such as recommendation models f
 - **Categories:** cs.AI, cs.CL, cs.LG
 
 
-> The paper introduces the Agent World Model (AWM), a novel synthetic environment generation pipeline designed to enhance the training of autonomous agents in reinforcement learning. By creating 1,000 diverse, code-driven environments with robust toolsets and reliable state transitions, AWM enables efficient multi-turn interactions and facilitates effective agent training. Key findings reveal that agents trained exclusively in these synthetic environments exhibit strong out-of-distribution generalization compared to those trained in benchmark-specific environments, highlighting AWM's potential to significantly scale and improve agentic AI development.
+> The paper introduces the Agent World Model (AWM), a novel synthetic environment generation pipeline designed to enhance agentic reinforcement learning by providing a diverse range of 1,000 code-driven environments tailored for multi-turn interactions using complex toolsets. AWM's methodology focuses on creating reliable and consistent state transitions supported by databases, which allows for efficient agent training and the development of robust reward mechanisms. Key findings demonstrate that agents trained exclusively in these synthetic environments exhibit strong out-of-distribution generalization, outperforming those trained in benchmark-specific settings.
 
 
 <details>
@@ -1769,7 +1763,7 @@ Recent advances in large language model (LLM) have empowered autonomous agents t
 - **Categories:** cs.CL, cs.AI
 
 
-> The paper presents Anagent, a novel multi-agent framework designed to enhance scientific table and figure analysis, which addresses the complex interpretation challenges in the domain. It utilizes a structured approach involving four specialized agents—Planner, Expert, Solver, and Critic—each responsible for different aspects of the analysis task, and incorporates modular training strategies that optimize their collaborative capabilities. The results show significant performance improvements in scientific analysis across diverse domains, highlighting the importance of task-oriented reasoning and context-aware problem-solving in agentic AI systems.
+> The paper introduces Anagent, a multi-agent framework designed to improve the analysis of scientific tables and figures, addressing the limitations of current AI systems in interpreting complex multimodal data. Utilizing the newly developed benchmark, AnaBench, which categorizes 63,178 instances across nine scientific domains, Anagent employs four specialized agents to systematically decompose tasks, retrieve specific information, synthesize data, and iteratively refine outputs. The findings highlight substantial performance gains in scientific analysis, demonstrating that the integration of task-oriented reasoning and context-aware problem-solving significantly enhances capabilities in this domain.
 
 
 <details>
@@ -1790,7 +1784,7 @@ In scientific research, analysis requires accurately interpreting complex multim
 - **Categories:** cs.NI, cs.MA
 
 
-> The paper presents the Topology-Aware Graph MAPPO (TAG-MAPPO) framework, which enhances the resilience of 3D Aerial-Ground Integrated Networks (AGINs) under node failures through autonomous spatial reconfiguration. Employing a combination of graph-based feature aggregation and a residual ego-state fusion mechanism, the proposed framework effectively captures inter-agent dependencies and outperforms traditional Multi-Layer Perceptron approaches in terms of stability, efficiency, and rapid recovery from failures. Key findings indicate that TAG-MAPPO significantly reduces redundant handoffs by up to 50% and restores over 90% of pre-failure service coverage within 15 time steps, highlighting the crucial role of topology-aware coordination in developing resilient agentic AI systems for future communication networks.
+> The paper introduces the Topology-Aware Graph MAPPO (TAG-MAPPO) framework aimed at enhancing the resilience of 3D Aerial-Ground Integrated Networks (AGINs) in the face of node failures, a significant concern for mission-critical applications. By employing a graph-based feature aggregation approach and a residual ego-state fusion mechanism, TAG-MAPPO allows UAVs to autonomously reconfigure their topology, leading to improved adaptability compared to conventional methods. Key findings indicate that this framework can restore over 90% of service coverage after a failure within 15 time steps, significantly reduce redundant handoffs, and achieve better fairness metrics in service distribution, thereby underscoring the importance of topology-aware coordination for resilient agentic AI applications in future 6G networks.
 
 
 <details>
@@ -1811,7 +1805,7 @@ In 3D Aerial-Ground Integrated Networks (AGINs), ensuring continuous service cov
 - **Categories:** cs.RO, cs.AI, cs.MA, eess.SY
 
 
-> The paper introduces the Multi-Agent Safety Shield (MASS), a framework that integrates Control Barrier Functions (CBFs) with a Multi-Agent Reinforcement Learning (MARL) lane change controller to address the conflicting objectives of safety and efficiency in Connected and Autonomous Vehicles (CAVs) during lane changes in congested traffic. Utilizing a graph-based approach to model multi-agent interactions, the MASS ensures safety while enhancing collaborative lane change dynamics through a customized reward function that prioritizes traffic efficiency. The evaluation in congested on-ramp merging simulations shows that the MARL-MASS effectively balances the trade-off between safety and efficiency, thereby advancing the capabilities of agentic AI systems in complex environment navigation.
+> The paper introduces the Multi-Agent Safety Shield (MASS), which combines safety and traffic efficiency in Connected and Autonomous Vehicles (CAVs) during lane changes in congested environments. By utilizing Control Barrier Functions (CBFs) and multi-agent interaction topologies, the methodology incorporates a state-of-the-art Multi-Agent Reinforcement Learning (MARL) controller, resulting in a new lane change controller called MARL-MASS. Key findings indicate that MASS ensures safe, collaborative lane changes while significantly enhancing the stability of MARL policies and achieving a balance between safety constraints and traffic efficiency.
 
 
 <details>
@@ -1832,7 +1826,7 @@ Lane changing in dense traffic is a significant challenge for Connected and Auto
 - **Categories:** cs.AI
 
 
-> This paper identifies and analyzes the systematic failures of Large Language Model (LLM) agents in automating Root Cause Analysis (RCA) for cloud systems, which is critical for operational stability given the financial implications of such failures. The authors executed a comprehensive evaluation using the OpenRCA benchmark on five LLM models, categorizing the failures into twelve distinct pitfall types related to reasoning and communication. Key findings indicate that prevalent issues, such as hallucinated data interpretation and incomplete exploration, arise from underlying agent architectural flaws rather than model-specific limitations, and while prompt engineering is insufficient to address these issues, enhancing inter-agent communication protocols can significantly reduce communication-related failures, thereby providing a pathway for improving the reliability of autonomous agents in RCA tasks.
+> This paper identifies and analyzes systemic failures in AI agents tasked with automated Root Cause Analysis (RCA) for cloud systems, highlighting the limitations of current LLM-based approaches. The methodology involved executing the OpenRCA benchmark across five LLM models, classifying the failures into twelve pitfall categories related to agent reasoning, communication, and interaction. Key findings indicate that prevalent issues, such as hallucinated data interpretation and incomplete exploration, stem from shared architectural flaws rather than model-specific weaknesses, and that enhancements in inter-agent communication can significantly reduce these failures, offering a path towards more reliable agentic AI for RCA tasks.
 
 
 <details>
@@ -1853,7 +1847,7 @@ Failures in large-scale cloud systems incur substantial financial losses, making
 - **Categories:** cs.CL
 
 
-> The paper presents a significant contribution to the agentic AI field by establishing the inherent impossibility of achieving continuous self-evolution, isolation, and safety invariance in multi-agent systems derived from large language models (LLMs), termed the self-evolution trilemma. Through an information-theoretic framework, the authors theoretically and empirically demonstrate that isolated self-evolving societies, such as the open-ended agent community Moltbook, experience irreversible safety alignment degradation due to statistical blind spots. This work not only highlights the limitations of self-evolving AI systems but also calls for innovative safety-preserving mechanisms and external oversight, moving beyond temporary fixes to address fundamental dynamical risks.
+> The paper examines the limits of safety in self-evolving multi-agent systems constructed from large language models, highlighting an inherent conflict known as the self-evolution trilemma, which posits that continuous self-improvement, isolation, and safety cannot coexist indefinitely. Employing both theoretical analysis and empirical observations from a system called Moltbook, the authors demonstrate that isolated self-evolution leads to statistical blind spots that irreversibly compromise safety alignment. The findings underscore the necessity for external oversight or innovative safety mechanisms to mitigate intrinsic risks, marking a significant contribution to the understanding of safety in agentic AI systems.
 
 
 <details>
@@ -1874,7 +1868,7 @@ The emergence of multi-agent systems built from large language models (LLMs) off
 - **Categories:** cs.MA
 
 
-> The paper presents "The Hypothesis Game," a symbolic formalism designed for hypothesis refinement using LLM (large language model) agents that engage in incremental reasoning through a defined set of moves. The methodology involves evaluating this approach in mechansitic refinement tasks, specifically focused on corruption recovery and reconstruction from partial cues. Key findings reveal that the game-based method significantly outperforms traditional prompting methods in error removal and precision while maintaining hypothesis validity, suggesting it provides a more interpretable and controllable framework for scientific discovery in the agentic AI domain.
+> The paper "Tiny Moves: Game-based Hypothesis Refinement" introduces The Hypothesis Game, a novel framework for hypothesis refinement that utilizes a symbolic formalism where LLM agents collaborate on a shared hypothesis state through structured reasoning moves. This approach emphasizes incremental revisions reflective of scientific reasoning, demonstrating superior performance in error removal and precision during corruption recovery tasks compared to traditional prompting methods. Key findings indicate that this game-based methodology provides a more controllable and interpretable system for hypothesis refinement, supporting its potential application in agentic AI for enhancing scientific discovery.
 
 
 <details>
@@ -1895,7 +1889,7 @@ Most machine learning approaches to scientific discovery frame hypotheses as end
 - **Categories:** cs.CL, cs.AI
 
 
-> The paper presents MATA, a multi-agent framework designed to enhance Table Question Answering (TableQA) by harnessing multiple reasoning paths and small language models to improve reliability and efficiency, particularly in resource-constrained environments. The methodology focuses on generating diverse candidate answers and employing a specialized algorithm to reduce costly calls to large language models, resulting in significant performance and efficiency gains. Key findings indicate that MATA achieves state-of-the-art accuracy across various benchmarks while effectively minimizing LLM inference, demonstrating the potential for scalable and robust solutions in the agentic AI field.
+> The paper presents MATA, a multi-agent framework aimed at improving the reliability and scalability of Table Question Answering (TableQA) by utilizing a combination of small language models and diverse reasoning styles. The methodology involves generating multiple candidate answers from different reasoning approaches and refining these using specialized tools, while also minimizing calls to larger language models to enhance efficiency. Key findings indicate that MATA achieves state-of-the-art accuracy across multiple benchmarks and demonstrates that strategic coordination of various reasoning pathways can lead to scalable and reliable TableQA solutions, making it particularly suitable for resource-constrained environments.
 
 
 <details>
@@ -1916,7 +1910,7 @@ Recent advances in Large Language Models (LLMs) have significantly improved tabl
 - **Categories:** cs.CL
 
 
-> The paper introduces Error-Localized Policy Optimization (ELPO), a novel approach to improve learning in tool-integrated reasoning (TIR) for large language model (LLM) agents by effectively identifying and addressing the initial irrecoverable mistake in long-horizon tasks. The methodology employs a binary-search rollout tree to pinpoint this critical step, converting it into actionable learning signals through hierarchical advantage attribution and enhanced corrective updates. Key findings indicate that ELPO significantly outperforms existing agentic reinforcement learning baselines on various TIR benchmarks, demonstrating improvements in task efficiency and accuracy.
+> The paper introduces Error-Localized Policy Optimization (ELPO), a novel approach for enhancing tool-integrated reasoning (TIR) in large language model (LLM) agents by addressing the challenges of sparse rewards and weak credit assignment in long-horizon tasks. ELPO employs binary-search rollout trees to identify the first irrecoverable error within a given rollout budget, converting this information into effective learning signals through hierarchical advantage attribution and adaptive clipping for improved correction on critical decision points. The methodology demonstrates significant improvements in performance across various TIR benchmarks, outperforming existing agentic reinforcement learning baselines while maintaining efficient tool call usage, thereby advancing the capabilities of LLM agents in complex reasoning scenarios.
 
 
 <details>
@@ -1937,7 +1931,7 @@ Tool-integrated reasoning (TIR) enables LLM agents to solve tasks through planni
 - **Categories:** cs.LG
 
 
-> The paper presents FlexMARL, an innovative end-to-end training framework designed to optimize the orchestration of rollout and training processes in large-scale multi-agent reinforcement learning (MARL) using large language models (LLMs). The methodology features a joint orchestrator for managing data flow, a micro-batch driven asynchronous pipeline to eliminate synchronization issues, and a parallel sampling scheme with hierarchical load balancing for effective resource allocation. Key findings indicate that FlexMARL significantly enhances training efficiency, achieving a speedup of up to 7.3x and improving hardware utilization by up to 5.6x relative to existing frameworks, thus addressing critical challenges in agentic AI systems.
+> The paper presents FlexMARL, a novel end-to-end training framework specifically designed to optimize the challenges of large-scale multi-agent reinforcement learning (MARL), particularly for large language models (LLMs). The methodology integrates a joint orchestrator, an asynchronous micro-batch pipeline, and a parallel sampling scheme to enhance rollout and training orchestration while addressing synchronization barriers and resource utilization issues. Key findings indicate that FlexMARL significantly improves training efficiency, achieving up to 7.3 times speedup and enhancing hardware utilization by up to 5.6 times compared to existing MARL frameworks, thereby advancing the capabilities of agentic AI systems.
 
 
 <details>
@@ -1958,7 +1952,7 @@ Despite algorithm-level innovations for multi-agent reinforcement learning (MARL
 - **Categories:** cs.AI
 
 
-> The paper presents SpotAgent, a novel framework that enhances geo-localization in Large Vision-Language Models (LVLMs) through an agentic reasoning approach that integrates visual interpretation with tool-assisted verification. By employing a three-stage post-training pipeline—including Supervised Fine-Tuning, an Agentic Cold Start with high-quality trajectories, and Reinforcement Learning with a Spatially-Aware Dynamic Filtering strategy—SpotAgent improves reasoning capabilities and reduces ungrounded predictions. Experimental results indicate that SpotAgent achieves state-of-the-art performance in geo-localization tasks, effectively addressing challenges posed by sparse and ambiguous visual cues.
+> The paper presents SpotAgent, a novel framework that enhances geo-localization using large Vision-Language Models (LVLMs) through agentic reasoning and tool-assisted verification. SpotAgent employs a three-stage post-training pipeline, which includes supervised fine-tuning, a cold start phase utilizing high-quality trajectories from a multi-agent framework, and reinforcement learning, complemented by a dynamic filtering strategy to improve efficiency. Key findings indicate that SpotAgent significantly reduces errors in geo-localization, achieving state-of-the-art performance while ensuring predictions are grounded and verifiable, thus advancing the agentic AI field by merging visual analysis with expert-level reasoning.
 
 
 <details>
@@ -1979,7 +1973,7 @@ Large Vision-Language Models (LVLMs) have demonstrated strong reasoning capabili
 - **Categories:** cs.SE, cs.AI, cs.CL
 
 
-> The paper introduces SWE-AGI, an open-source benchmark designed to evaluate the ability of LLM-based agents to autonomously construct software systems from specifications in MoonBit, a new programming environment. Using this benchmark, the authors assessed various LLMs on tasks requiring significant software logic implementation, revealing that while models like gpt-5.3-codex achieved notable performance, code reading becomes the central challenge as task complexity increases. The study highlights the potential for specification-driven software engineering with autonomous agents but underscores substantial obstacles that must be overcome for reliable production-scale development.
+> This paper presents SWE-AGI, an open-source benchmark designed to evaluate the capability of LLM-based agents in autonomously constructing production-scale software from explicit specifications using the MoonBit language. The methodology involves testing agents on complex software engineering tasks that require substantial implementation effort while minimizing data leakage to promote architectural reasoning. Key findings indicate that while the best-performing model, gpt-5.3-codex, successfully solves the majority of tasks, performance declines significantly with increasing task complexity, highlighting the challenges of scaling AI-assisted software development and indicating that code comprehension becomes a critical bottleneck as projects enlarge.
 
 
 <details>
@@ -2000,7 +1994,7 @@ Although large language models (LLMs) have demonstrated impressive coding capabi
 - **Categories:** cs.CR, cs.AI
 
 
-> The paper presents Autonomous Action Runtime Management (AARM), an open specification aimed at enhancing the security of AI-driven actions during execution, transitioning from traditional defense mechanisms to a runtime-centric approach. AARM's methodology involves intercepting actions prior to execution, assessing their alignment with established policies, and ensuring authorization while maintaining records for forensic analysis, addressing threats such as prompt injection and intent drift. Key findings highlight the development of an action classification framework and propose multiple implementation architectures to facilitate robust security measures, promoting industry-wide standards to prevent fragmentation in AI system interoperability.
+> The paper introduces Autonomous Action Runtime Management (AARM), a novel specification designed to enhance the security of AI-driven actions during runtime, addressing the limitations of traditional security approaches that are inadequate for autonomous agents executing irreversible actions at machine speed. AARM comprises a runtime security system that intercepts actions, evaluates them against policies, and enforces authorizations, while also outlining a framework for classifying actions and formalizing a comprehensive threat model. Key findings highlight AARM’s ability to provide a model-agnostic and vendor-neutral approach, ensuring interoperability and setting minimum conformance requirements to secure AI systems effectively against threats like prompt injection and intent drift.
 
 
 <details>
@@ -2021,7 +2015,7 @@ As artificial intelligence systems evolve from passive assistants into autonomou
 - **Categories:** cs.MA, math.OC
 
 
-> The main contribution of the book "Dieu khien he da tac tu" is its systematic and accessible treatment of fundamental principles in multi-agent system control, tailored for educational purposes. Methodologically, it is structured into three parts covering foundational concepts, linear consensus algorithms, and practical applications like formation control and distributed optimization, with a pedagogical approach that includes exercises and recommended readings. Key findings emphasize the broad relevance of multi-agent systems across various applications and highlight the need for more comprehensive educational resources in the field, which the book aims to fulfill.
+> The paper presents a comprehensive textbook aimed at systematically addressing the control principles of multi-agent systems (MAS), a topic of growing significance since the early 2000s across various applications like autonomous vehicles and smart grids. The methodology involves a structured approach divided into three parts: foundational concepts of MAS and graph theory, linear consensus algorithm design and analysis, and relevant applications such as formation control and distributed optimization. Key findings highlight the importance of accessible educational resources in the field, providing readers with step-by-step analyses while connecting them to ongoing research and prominent figures in the MAS domain, ultimately contributing to the advancement of agentic AI through practical learning.
 
 
 <details>
@@ -2044,7 +2038,7 @@ Since the early 2000s, control of multiagent systems has attracted significant r
 - **Categories:** cs.CV, cs.LG
 
 
-> The paper presents RVMS-Bench, a novel benchmark and framework designed to evaluate video search and moment localization in real-world contexts, addressing the limitations of traditional closed-pool video retrieval systems. It features 1,440 samples from diverse categories, utilizing a hierarchical description framework to capture multi-dimensional search cues and employs human validation for accuracy. The authors also propose RACLO, an agentic framework that leverages abductive reasoning to simulate human cognitive processes in video retrieval, with findings indicating that current machine learning models are inadequate for handling real-world fuzzy memory searches.
+> The paper introduces RVMS-Bench, a novel benchmark designed for evaluating video retrieval systems by addressing the limitations of traditional closed-pool evaluations, focusing instead on real-world searchable videos characterized by fuzzy memories. By employing a hierarchical description framework and a human-verified sample set across diverse video categories, the study highlights the introduction of RACLO, an agentic framework that simulates human-like reasoning to enhance video search tasks. Experimental results illustrate that current models struggle with real-world video retrieval and moment localization, emphasizing the need for improved robustness in handling vague search criteria in unstructured environments.
 
 
 <details>
@@ -2065,7 +2059,7 @@ Traditional video retrieval benchmarks focus on matching precise descriptions to
 - **Categories:** cs.MA, cs.CL
 
 
-> The paper presents LingxiDiagBench, a comprehensive multi-agent benchmark designed to assess large language models (LLMs) in the context of psychiatric consultation and diagnosis, specifically for the Chinese language. The methodology includes the development of the LingxiDiag-16K dataset, comprising 16,000 synthetic consultation dialogues aligned with electronic medical records, allowing for both static and dynamic evaluation of diagnostic capabilities across various psychiatric disorders. Key findings reveal that while LLMs can achieve high accuracy in binary diagnostic tasks, their performance significantly drops in complex scenarios like comorbidity recognition and differential diagnosis, highlighting the challenges in dynamic consultation processes where ineffective strategies hinder diagnostic reasoning.
+> The paper introduces LingxiDiagBench, a comprehensive multi-agent benchmark designed to assess large language models (LLMs) in the context of Chinese psychiatric diagnosis and consultation. Utilizing a dataset of 16,000 synthetic consultation dialogues aligned with electronic medical records, the study evaluates LLM performance in both static diagnostic tasks and dynamic multi-turn dialogues. Key findings highlight a significant drop in accuracy for comorbidity recognition and differential diagnosis compared to binary classification, indicate that dynamic consultations can hinder diagnostic reasoning, and reveal that well-structured questioning does not guarantee accurate diagnoses, underlining critical challenges in AI-assisted psychiatric assessment.
 
 
 <details>
@@ -2086,7 +2080,7 @@ Mental disorders are highly prevalent worldwide, but the shortage of psychiatris
 - **Categories:** cs.LG
 
 
-> The paper introduces LaPha, a novel training method for AlphaZero-like LLM agents that operates within a Poincaré latent space, allowing for a search process visualized as a tree structure that efficiently navigates through tasks using hyperbolic geometry. The methodology incorporates defining node potential based on geodesic distances and utilizes a lightweight value head to enhance test-time scaling without significant additional costs. The key findings demonstrate that LaPha significantly improves performance on benchmark tasks, enhancing the accuracy of Qwen2.5-Math-1.5B on MATH-500 from 66.0% to 88.2%, and achieving competitive results on the AIME'24 and AIME'25 benchmarks with strategic value-guided search.
+> The paper introduces LaPha, a novel method for training AlphaZero-like language model agents within a Poincaré latent space, enhancing their search process through a tree structure influenced by the properties of negative curvature. The methodology involves using hyperbolic geodesic distances to define node potential and assigning rewards based on potential differences, supplemented by a lightweight value head for efficient self-guided scaling. Key findings indicate that LaPha significantly boosts performance, elevating the accuracy of Qwen2.5-Math-1.5B from 66.0% to 88.2% on MATH-500 and achieving 60.0% on AIME'24 with a larger model, highlighting its effectiveness in improving agentic AI capabilities in complex tasks.
 
 
 <details>
@@ -2107,7 +2101,7 @@ We propose LaPha, a method for training AlphaZero-like LLM agents in a Poincaré
 - **Categories:** cs.CL
 
 
-> The paper introduces AgentSkiller, an automated framework aimed at enhancing the intelligence of generalist AI agents through the synthesis of high-quality, multi-turn interaction data across semantically related domains. Utilizing a Directed Acyclic Graph (DAG) architecture, the framework constructs a domain ontology and Person-Centric Entity Graph, ensuring determinism and recoverability while linking services for simulating complex tasks. Key findings reveal that models trained on the generated dataset of approximately 11,000 interaction samples show significant enhancements in function calling capabilities, particularly with larger model parameter scales, addressing the challenge of data scarcity in agentic AI development.
+> The paper presents AgentSkiller, a novel framework designed to enhance generalist agent intelligence by synthesizing multi-turn interaction data from semantically integrated, cross-domain sources. Utilizing a DAG-based architecture and a domain ontology, AgentSkiller automates the creation of realistic environments equipped with consistent databases and tool interfaces, enabling effective simulation and training of AI agents. Experimental results show that models trained on the generated dataset significantly outperform baseline models in function calling, particularly benefiting larger parameter settings, thus addressing the data scarcity challenges in agentic AI.
 
 
 <details>
@@ -2128,7 +2122,7 @@ Large Language Model agents demonstrate potential in solving real-world problems
 - **Categories:** cs.OS, cs.AI
 
 
-> The paper introduces AgentCgroup, a novel eBPF-based resource controller for AI agents operating in multi-tenant cloud environments, addressing the challenges posed by unpredictable OS-level resource dynamics during tool calls. Through an analysis of 144 software engineering tasks from the SWE-rebench benchmark, it identifies significant inefficiencies in current resource management strategies, highlighting that OS-level execution can contribute to 56-74% of latency and memory is the main bottleneck. The proposed solution enhances resource controls by aligning with tool-call dynamics and implementing real-time adaptive policies, resulting in improved multi-tenant isolation and reduced waste in resource utilization.
+> The paper introduces AgentCgroup, an eBPF-based resource control mechanism designed to manage OS resource dynamics for AI agents operating in cloud environments, addressing inefficiencies observed in traditional resource management frameworks. Through extensive analysis of 144 software engineering tasks utilizing two LLM models, the study finds that OS-level execution significantly contributes to task latency, with memory being the primary bottleneck and resource demands proving highly unpredictable. The proposed solution effectively resolves mismatches between existing resource controls and the unique demands of AI agents, leading to improved multi-tenant isolation and reduced resource waste.
 
 
 <details>
@@ -2149,7 +2143,7 @@ AI agents are increasingly deployed in multi-tenant cloud environments, where th
 - **Categories:** cs.AI
 
 
-> The paper presents AgentAuditor, a novel framework for analyzing multi-agent large language model (LLM) outputs by using a Reasoning Tree that maps the agreements and divergences among agents, rather than relying on the traditional majority vote approach. The methodology involves localized conflict resolution at critical points in the reasoning process and incorporates Anti-Consensus Preference Optimization (ACPO) to enhance decision-making by promoting evidence-based minority selections. Key findings indicate that AgentAuditor improves accuracy by up to 5% compared to majority voting and by 3% over the LLM-as-Judge approach, demonstrating its effectiveness in enhancing the reasoning capabilities of multi-agent systems in the agentic AI field.
+> The paper introduces AgentAuditor, a novel approach that enhances decision-making in multi-agent systems (MAS) by utilizing a Reasoning Tree to represent and analyze the evidential structure of agent outputs, moving beyond the traditional majority voting method. The methodology involves a localized verification process that resolves conflicts at critical divergence points and employs Anti-Consensus Preference Optimization (ACPO) to prioritize evidence-based minority choices in cases where majority consensus is misleading. Key findings reveal that AgentAuditor improves accuracy by up to 5% over majority voting and 3% over using an LLM as a judge across five different settings, demonstrating its effectiveness in fostering more reliable reasoning in agentic AI applications.
 
 
 <details>
@@ -2170,7 +2164,7 @@ Multi-agent systems (MAS) can substantially extend the reasoning capacity of lar
 - **Categories:** cs.CL
 
 
-> The paper presents a large-scale thematic analysis of user discourse from Reddit communities focused on AI-related risks and psychological distress, contributing to the understanding of how users experience and regulate their concerns associated with AI chatbots. Utilizing a multi-agent, LLM-assisted approach grounded in Braun and Clarke's reflexive framework, the analysis identifies 14 thematic categories which are synthesized into five higher-order dimensions, revealing that self-regulation difficulties and fears regarding autonomy, control, and technical risk are prevalent. These findings underscore the necessity for empirical insights into user experiences with AI, informing future research and governance in the agentic AI field.
+> The paper presents a large-scale computational thematic analysis of user discourse from Reddit communities focused on AI-related harm, employing a multi-agent, LLM-assisted approach grounded in Braun and Clarke's reflexive framework. The study identifies 14 thematic categories related to psychological risks associated with AI use, synthesizing them into five experiential dimensions, with self-regulation difficulties and fears around autonomy and control being prominent. These findings contribute to the agentic AI field by providing empirical insights into users' emotional experiences and perceptions of AI safety, supporting future research and governance in AI systems.
 
 
 <details>
@@ -2191,7 +2185,7 @@ Generative AI systems are increasingly embedded in everyday life, yet empirical 
 - **Categories:** cs.CL
 
 
-> The paper presents FM SO.P, a novel framework designed to enhance the understanding of Standard Operating Procedures (SOPs) by utilizing a progressive task mixture approach and an automatic multi-agent evaluation system. The methodology involves a staged development of reasoning capabilities across three task types—concept disambiguation, action sequence understanding, and scenario-aware graph reasoning—coupled with adaptive assessment strategies tailored to diverse domains. Key findings indicate that FM SO.P significantly improves SOP comprehension, achieving a pass rate of 48.3% with a 32B model, effectively matching the performance of a larger baseline model with substantially fewer parameters, thereby demonstrating its efficacy in cross-domain SOP applications relevant to agentic AI.
+> The main contribution of the paper is the introduction of the FM SO.P framework, which enhances cross-domain Standard Operating Procedure (SOP) understanding through progressive task mixtures and an automatic evaluation system. The methodology involves a staged approach to skill development across tasks focusing on terminology disambiguation, sequential action understanding, and scenario-aware reasoning, combined with an adaptive multi-agent evaluation system that utilizes dynamic rubric generation. Key findings indicate that FM SO.P significantly improves performance in SOP comprehension across multiple domains, achieving competitive pass rates with fewer parameters compared to existing models, thereby advancing capabilities relevant to agentic AI systems.
 
 
 <details>
@@ -2212,7 +2206,7 @@ Standard Operating Procedures (SOPs) are critical for enterprise operations, yet
 - **Categories:** cs.AI, cs.CY, cs.HC
 
 
-> The paper's main contribution is the comparative analysis of two distinct Reddit communities focused on agentic AI, highlighting the differing expectations of oversight based on their socio-technical roles. The methodology involved topic modeling and divergence tests to examine community discussions and reveal that although "human control" serves as a common anchor term, its interpretation significantly differs between the communities: one prioritizes execution safety while the other focuses on identity and accountability. Key findings suggest that oversight mechanisms should be tailored to specific agent roles instead of adopting a uniform approach, thereby advancing the understanding of governance in agentic AI systems.
+> The main contribution of the paper is the comparative analysis of two Reddit communities, r/OpenClaw and r/Moltbook, which highlights the divergence in oversight expectations for agentic AI based on community roles. Utilizing topic modeling and various statistical methods, the authors establish that while "human control" serves as a common anchor term, its interpretation varies significantly: r/OpenClaw focuses on practical execution and risk management, whereas r/Moltbook emphasizes identity, legitimacy, and public accountability. These findings suggest that oversight mechanisms should be tailored to specific agent roles rather than relying on uniform control policies, advancing the discourse on governance in agentic AI systems.
 
 
 <details>
@@ -2234,7 +2228,7 @@ Oversight for agentic AI is often discussed as a single goal ("human control"), 
 - **Categories:** physics.soc-ph, cs.CL, cs.MA
 
 
-> The paper "Collective Behavior of AI Agents: the Case of Moltbook" analyzes the interactions of AI agents on a social media platform, revealing that their collective behavior mirrors many statistical patterns found in human online communities, such as heavy-tailed distributions and power-law scaling. The methodology involved a comprehensive analysis of over 369,000 posts and 3 million comments from around 46,000 active agents. Key findings indicate similarities in emergent dynamics between AI and humans, though a notable difference is the sublinear relationship between upvotes and discussion size among AI agents, suggesting distinct behavioral characteristics.
+> The paper investigates the collective behavior of AI agents on the social media platform Moltbook, analyzing a substantial dataset of posts and comments to uncover statistical patterns in their interactions. The researchers employed a large-scale data analysis methodology, revealing that AI agents exhibit similarities to human online communities, including activity distributions and attention dynamics, yet also display significant differences, such as the nature of engagement metrics. Key findings indicate that while AI agents' individual behaviors differ from humans, their collective dynamics exhibit structural similarities to those of human social systems, contributing valuable insights to the understanding of agentic AI behavior.
 
 
 <details>
@@ -2255,7 +2249,7 @@ We present a large scale data analysis of Moltbook, a Reddit-style social media 
 - **Categories:** cs.SE, cs.AI
 
 
-> The paper presents AIDev, a comprehensive dataset that documents agent-authored pull requests (Agentic-PRs) within real-world GitHub projects, addressing the lack of research on the utilization of AI coding agents in software engineering. The dataset consists of 932,791 Agentic-PRs generated by various AI agents across 116,211 repositories and includes a curated subset with detailed contextual information. Key findings suggest that AIDev will significantly enhance future studies on AI adoption, developer productivity, and the dynamics of human-AI collaboration in software development, thereby advancing the field of agentic AI.
+> The paper presents AIDev, a comprehensive dataset that captures the use of AI coding agents in real-world software engineering projects on GitHub, comprising 932,791 agent-authored pull requests from various agents such as OpenAI Codex and GitHub Copilot. The methodology involves aggregating data from 116,211 repositories, along with a focused subset of well-received Agentic-PRs, to analyze interactions between AI agents and human developers. Key findings highlight the significant role of AI coding agents in enhancing developer productivity and collaboration, thereby providing a vital resource for future research in AI and agent systems within software engineering.
 
 
 <details>
@@ -2277,7 +2271,7 @@ AI coding agents are rapidly transforming software engineering by performing tas
 - **Categories:** cs.AI, cs.CL, cs.IR
 
 
-> The paper presents FlyBench, a novel benchmark for evaluating AI agents' capabilities in end-to-end agentic ontology curation of Drosophila scientific knowledge from a corpus of 16,898 papers. The study assesses various agent architectures, revealing that multi-agent designs outperform simpler frameworks, while also highlighting the limited effectiveness of current AI agents in discovering new information, primarily relying on retrieval of existing knowledge. Ultimately, the findings aim to enhance retrieval-augmented scientific reasoning that could be applied across numerous scientific research fields.
+> The paper introduces FlyBench, a new benchmark designed to evaluate AI agents on the comprehensive task of ontology curation from scientific literature, specifically within the context of Drosophila research. The methodology involves AI agents retrieving and analyzing a large corpus of 16,898 full-text papers to generate structured annotations related to gene functions, expressions, and historical nomenclature, utilizing a set of 7,397 expert-curated labels. Key findings indicate that multi-agent architectures significantly outperform simpler models, although all tested architectures showed room for improvement; notably, agents tend to rely more on retrieval of existing knowledge rather than uncovering new insights, which highlights challenges in enhancing AI-driven scientific reasoning capabilities.
 
 
 <details>
@@ -2298,7 +2292,7 @@ Scientific knowledge bases accelerate discovery by curating findings from primar
 - **Categories:** cs.AI, cs.MA
 
 
-> The paper presents CoMMa, a Contribution-Aware Medical Multi-Agent framework designed for oncology decision support, which enhances decision-making by allowing specialists to operate on partitioned evidence and coordinate through a game-theoretic objective. Unlike traditional stochastic narrative approaches, CoMMa employs deterministic embedding projections to provide interpretable credit assignment and marginal utility estimation for each agent. Evaluations on various oncology benchmarks reveal that CoMMa outperforms centralized and role-based multi-agent systems in both accuracy and stability, showcasing its potential impact in agentic AI applications within healthcare.
+> The paper introduces CoMMa, a decentralized multi-agent framework designed for oncology decision support, which leverages a game-theoretic approach to enhance robust decision-making among specialists working with fragmented patient data. Unlike traditional stochastic methods, CoMMa utilizes deterministic embedding projections for contribution-aware credit assignment, allowing for clearer evidence attribution and improved stability in decision pathways. Experimental results demonstrate that CoMMa outperforms both data-centralized and role-based multi-agent systems in accuracy and stability across various oncology benchmarks, including a real-world multidisciplinary tumor board dataset.
 
 
 <details>
@@ -2319,7 +2313,7 @@ Recent multi-agent frameworks have broadened the ability to tackle oncology deci
 - **Categories:** cs.AI, cs.CL
 
 
-> The paper introduces Progress-Aware Belief Update (PABU), a novel belief-state framework designed for Large Language Model (LLM) agents that efficiently represents an agent's state by modeling task progress and selectively retaining relevant past actions and observations. The methodology involves predicting relative progress at each decision-making step and determining which interactions to store, leading to significant improvements in task completion rates and efficiency. Key findings indicate that PABU achieved an 81.0% task completion rate—23.9% higher than the previous state-of-the-art—and reduced the average number of interaction steps by 26.9%, highlighting the importance of both explicit progress prediction and selective retention for enhanced performance in agentic AI applications.
+> The paper introduces Progress-Aware Belief Update (PABU), a novel framework designed to optimize the operational efficiency of Large Language Model (LLM) agents by selectively retaining important actions and observations based on task progress. The methodology involves modeling an agent's state with a focus on its progress, allowing it to predict the relevance of new interactions for future decisions. Key findings demonstrate that PABU significantly enhances task completion rates and reduces interaction steps, achieving an 81.0% completion rate while outperforming previous state-of-the-art methods by a notable margin and promoting more efficient resource usage in LLM agents.
 
 
 <details>
@@ -2340,7 +2334,7 @@ Large Language Model (LLM) agents commonly condition actions on full action-obse
 - **Categories:** cs.DB, cs.ET, cs.MA
 
 
-> The paper introduces SciDataCopilot, an agentic data preparation framework aimed at enhancing the capabilities of Artificial General Intelligence for Science (AGI4S) by addressing the challenges presented by raw experimental data. The authors extend the text-centric AI-Ready concept to formulate a Scientific AI-Ready data paradigm, enabling the structured and effective integration of diverse scientific data within computational workflows. Key findings indicate that SciDataCopilot significantly improves efficiency, scalability, and consistency of data preparation, achieving up to a 30-fold speedup compared to traditional manual pipelines, thus facilitating a more effective interface between AGI and experimental data.
+> The paper introduces SciDataCopilot, an autonomous agentic framework that extends the AI-Ready concept to a Scientific AI-Ready data paradigm, addressing the challenges associated with raw experimental data in AI for Science (AI4S). The methodology involves an automated process for data ingestion, intent parsing, and multi-modal integration, enhancing the usability and efficiency of scientific data within computational workflows. Key findings indicate that SciDataCopilot significantly improves efficiency and scalability in data preparation, achieving up to a 30-fold speedup compared to traditional manual processes, thereby facilitating progress toward experiment-driven Artificial General Intelligence for Science (AGI4S).
 
 
 <details>
@@ -2361,7 +2355,7 @@ The current landscape of AI for Science (AI4S) is predominantly anchored in larg
 - **Categories:** cs.MA, cs.LG
 
 
-> This paper presents a novel framework for multi-agent reinforcement learning (MARL) that leverages shared quantum entanglement to enhance coordination among agents without requiring communication. The methodology involves a differentiable policy parameterization that allows optimization over quantum measurements, decomposing joint policies into a quantum coordinator and decentralized local actors. Key findings demonstrate that agents can learn strategies that surpass those utilizing shared randomness alone, achieving quantum advantages in both single-round cooperative games and more complex decentralized partially observable Markov decision processes.
+> The paper presents a novel framework that enables multi-agent reinforcement learning (MARL) agents to utilize shared quantum entanglement as a coordination resource, improving upon previous methods that relied solely on shared randomness. The methodology involves a differentiable policy parameterization for optimizing quantum measurements along with a novel architecture that separates joint policies into a quantum coordinator and decentralized local actors. Key findings indicate that this approach allows agents to learn strategies that achieve a quantum advantage, outperforming traditional communication-free correlated policies in both single-round cooperative games and decentralized partially observable Markov decision processes.
 
 
 <details>
@@ -2382,7 +2376,7 @@ The inability to communicate poses a major challenge to coordination in multi-ag
 - **Categories:** cs.LG, cs.AI, cs.CL, cs.CY
 
 
-> The paper presents a novel framework for evaluating goal-directedness in language model agents by combining behavioral assessments with interpretability analyses of the agents' internal representations. Using a case study of an LLM agent navigating a 2D grid world, the authors demonstrate that the agent's performance scales with task complexity and remains robust across varied conditions, while probing methods reveal that the agent encodes a coarse spatial map and adjusts its internal representations based on reasoning about the environment. These findings emphasize the necessity of integrating introspective evaluations to enhance our understanding of how agents represent and pursue their goals, contributing valuable insights to the field of agentic AI.
+> The paper presents a novel framework for evaluating goal-directedness in language model agents by combining behavioral assessments with analyses of internal representations. Using a case study of an LLM agent navigating a 2D grid, the authors demonstrate that the agent's performance varies with task complexity and that it maintains robust goal-directed behavior, while probing methods reveal that its internal representations encode spatial maps and action plans in a non-linear manner. Key findings emphasize the need for introspective analyses alongside behavioral evaluations to better understand how agents represent and pursue their goals, which is critical for advancing agentic AI research.
 
 
 <details>
@@ -2403,7 +2397,7 @@ Understanding an agent's goals helps explain and predict its behaviour, yet ther
 - **Categories:** cs.AI, cs.SE
 
 
-> The paper presents the Intelligent Virtual Situation Room (IVSR), a novel system that integrates a bidirectional Digital Twin (DT) with autonomous AI agents to enhance wildfire disaster management. Leveraging multisource data, including sensor imagery and weather conditions, the IVSR creates a real-time digital replica of fire environments and utilizes a similarity engine to align actual conditions with precomputed disaster response tactics. Key findings demonstrate that IVSR significantly reduces detection-to-intervention latency and improves resource coordination, offering a scalable and adaptive decision-support tool for managing wildfires effectively compared to traditional approaches.
+> The paper presents the Intelligent Virtual Situation Room (IVSR), a novel bidirectional Digital Twin (DT) platform enhanced by autonomous AI agents to improve wildfire disaster management. The methodology involves continuous ingestion of multisource data to create a real-time virtual fire environment, employing a similarity engine to align current conditions with precomputed intervention strategies, thereby enabling quick responses to evolving wildfire scenarios. Key findings highlight significant reductions in detection-to-intervention latency and enhanced resource coordination, positioning IVSR as a scalable, semi-automated tool for proactive wildfire management in the agentic AI field.
 
 
 <details>
@@ -2424,7 +2418,7 @@ According to the United Nations, wildfire frequency and intensity are projected 
 - **Categories:** cs.HC, cs.AI
 
 
-> The paper introduces pixelLOG, a high-performance framework for logging online gameplay in Minecraft, aimed at enhancing cognitive research by capturing both human and AI agent behaviors in multi-agent environments. The methodology involves a hybrid approach of active state polling and passive event monitoring, allowing for data collection at frequencies exceeding 20 updates per second, with outputs that integrate easily into analytical pipelines. Key findings highlight that pixelLOG effectively bridges traditional, isolated cognitive assessments with more ecologically valid tasks, providing rich, process-oriented insights into cognitive functions in complex virtual settings, thereby advancing the understanding of both human and artificial agent behaviors.
+> The paper introduces pixelLOG, a high-performance data collection framework for Minecraft servers that enhances cognitive research by enabling detailed tracking of both human and AI agent behavior in multi-agent environments. Utilizing a hybrid methodology of active polling and passive monitoring, pixelLOG operates at high frequencies to capture comprehensive behavioral data, producing structured outputs compatible with analytical tools. The key findings underscore its potential to provide rich, ecologically valid insights into cognitive processes, thereby advancing the study of agentic AI by integrating human interactions within complex virtual settings.
 
 
 <details>
@@ -2445,7 +2439,7 @@ Traditional cognitive assessments often rely on isolated, output-focused measure
 - **Categories:** cs.MA
 
 
-> The paper presents a novel approach that utilizes Brown-von Neumann-Nash (BNN) dynamics to achieve regularization-free last-iterate convergence in zero-sum games, effectively addressing the challenges associated with hyperparameter tuning in adversarial multi-agent learning. The authors develop a framework that incorporates BNN dynamics into extensive-form games through counterfactual weighting, alongside an algorithm leveraging neural function approximation for scalable learning in both normal-form and extensive-form games. Key findings indicate that this regularization-free method adapts more swiftly to nonstationarities and outperforms existing regularization-based approaches in performance.
+> The paper presents a novel approach to achieving last-iterate convergence in zero-sum games without the use of regularization, leveraging the Brown-von Neumann-Nash (BNN) dynamics and providing theoretical guarantees for both normal-form and extensive-form games. The authors develop a framework that incorporates counterfactual weighting to enhance applicability and implement an algorithm utilizing neural function approximation for scalable learning. Key findings indicate that this method effectively adapts to nonstationarities and outperforms existing regularization-based strategies, highlighting its potential relevance in advancing agentic AI systems.
 
 
 <details>
@@ -2466,7 +2460,7 @@ Zero-sum games are a fundamental setting for adversarial training and decision-m
 - **Categories:** cs.LG, cs.AI
 
 
-> The paper introduces Dr. MAS, a stable reinforcement learning (RL) framework tailored for multi-agent large language model (LLM) systems, addressing the challenges of training instability associated with traditional group-based RL methods. The authors identify that the instability arises from the use of a global normalization baseline that doesn't reflect the diverse reward distributions of individual agents, leading to gradient-norm issues; Dr. MAS rectifies this by normalizing advantages based on each agent's reward statistics, enhancing training stability both theoretically and empirically. Evaluations demonstrate that Dr. MAS significantly outperforms conventional GRPO methods across multi-agent math reasoning and search tasks, achieving notable improvements in performance metrics while also effectively managing diverse agent configurations and resource allocation.
+> The paper presents Dr. MAS, a stable reinforcement learning (RL) method designed for multi-agent large language model (LLM) systems, addressing training instability caused by conventional group-based RL approaches. The authors identify that global normalization baselines can disrupt the reward distributions among diverse agents, leading to gradient-norm instability, and propose an agent-wise normalization strategy that stabilizes training across agents. Evaluations demonstrate that Dr. MAS significantly outperforms vanilla GRPO across multi-agent math reasoning and search tasks—showing improvements in performance metrics while also enhancing efficiency and adaptability in heterogeneous agent environments.
 
 
 <details>
@@ -2487,7 +2481,7 @@ Multi-agent LLM systems enable advanced reasoning and tool use via role speciali
 - **Categories:** cs.SE, cs.AI
 
 
-> The paper introduces Scylla, a comprehensive evaluation framework for benchmarking agentic coding tools, aiming to rigorously assess how different architectural choices affect their capability and cost in software development tasks. Utilizing structured ablation studies across seven tiers of increasing complexity, the framework measures the Cost-of-Pass (CoP) to quantify the cost-effectiveness of obtaining correct solutions. Key findings reveal that increased architectural complexity does not necessarily correlate with improved outcomes, highlighting important trade-offs in the design of AI coding agents.
+> The paper introduces "Scylla," an evaluation framework designed for benchmarking agentic coding tools, focusing on various architectural choices such as prompts and multi-agent setups. Utilizing structured ablation studies across seven testing tiers (T0-T6), Scylla emphasizes the Cost-of-Pass (CoP) as a key metric to quantify the trade-offs between complexity and efficiency in software development tasks. The findings indicate that increased architectural complexity does not necessarily correlate with improved quality, highlighting the framework's effectiveness in evaluating and optimizing agentic AI systems in coding.
 
 
 <details>
@@ -2508,7 +2502,7 @@ LLM-based tools are automating more software development tasks at a rapid pace, 
 - **Categories:** cs.AI
 
 
-> The paper introduces PRISM, a unified theoretical framework for enhancing multi-agent reasoning in Large Language Models (LLMs) by decomposing performance gains into three dimensions: Exploration, Information, and Aggregation. The methodology involves a novel approach that maximizes these dimensions through role-based diversity, evidence-based feedback, and iterative synthesis, leading to improved collaboration among agents. Key findings demonstrate that PRISM achieves state-of-the-art performance with greater compute efficiency across various benchmarks, providing valuable design principles that can guide the development of future multi-agent reasoning systems in the agentic AI field.
+> The paper introduces PRISM, a novel framework for enhancing multi-agent reasoning in Large Language Models (LLMs) by decomposing performance gains into three dimensions: Exploration, Information, and Aggregation. The methodology incorporates role-based diversity, execution-grounded feedback, and iterative synthesis, optimizing all three dimensions simultaneously. Key findings indicate that PRISM significantly outperforms existing methods across various benchmarks, offering not only improved performance but also greater computational efficiency, while providing actionable insights for the design of future multi-agent systems.
 
 
 <details>
@@ -2530,7 +2524,7 @@ Multi-agent collaboration has emerged as a promising paradigm for enhancing reas
 - **Categories:** cs.MA, cs.CL
 
 
-> The paper presents ValueFlow, a novel evaluation framework designed to assess the propagation of value perturbations in multi-agent large language model (LLM) systems. Utilizing a 56-value evaluation dataset based on the Schwartz Value Survey and an LLM-as-a-judge protocol, ValueFlow quantifies agent value orientations during interactions, and introduces metrics such as beta-susceptibility and system susceptibility to analyze how individual agents and the overall system respond to value perturbations. Key findings reveal that susceptibility to value drift varies significantly across different values and is heavily influenced by the structural topology of the agent network, highlighting critical insights for enhancing value alignment in multi-agent AI systems.
+> The paper introduces ValueFlow, a novel framework for evaluating how value perturbations propagate within multi-agent large language model (LLM) systems, addressing the gap in understanding value alignment in agent interactions. The methodology incorporates a 56-value dataset based on the Schwartz Value Survey and employs an LLM-as-a-judge protocol to quantify agents' value orientations and analyze value drift through newly defined metrics: beta-susceptibility and system susceptibility. Key findings indicate that agents' sensitivity to value perturbations and the overall system outputs are significantly influenced by the structural topology of the multi-agent setup, highlighting the complexity of value dynamics in AI systems.
 
 
 <details>
@@ -2551,7 +2545,7 @@ Multi-agent large language model (LLM) systems increasingly consist of agents th
 - **Categories:** cs.HC, cs.AI
 
 
-> This paper presents a novel approach for assessing long-term systemic risks associated with AI systems by integrating in-silico agents with the strategic foresight methodology known as the Futures Wheel. The researchers simulated multiple AI applications, generating a wide array of potential consequences and risks, which were then compared against evaluations from domain experts and laypeople. Key findings indicate that while agents identified a broader range of systemic risks, human experts tended to focus on fewer, more likely risks, suggesting that a combined approach leverages the strengths of both agent-driven breadth and human judgment for improved foresight in AI systemic risk assessment.
+> This paper presents a novel approach for assessing long-term systemic risks associated with AI by combining simulations of in-silico agents using the Futures Wheel method with human expert judgment. The methodology involved running 30 simulations for four distinct AI applications, resulting in the identification of numerous potential consequences and risks, which were then evaluated against insights from domain experts and laypeople. Key findings indicate that while AI agents produced a wider array of systemic risks, human experts focused on fewer, more likely risks, and laypeople raised emotionally resonant concerns, suggesting a hybrid approach that leverages the strengths of both agents and human insights for more comprehensive risk assessment in AI.
 
 
 <details>
@@ -2572,7 +2566,7 @@ AI impact assessments often stress near-term risks because human judgment degrad
 - **Categories:** cs.SE, cs.CL
 
 
-> The paper investigates the effectiveness of large language models and AI agents in automating the diagnosis and repair of failures in computational reproducibility within social science research. It employs a controlled testbed based on five fully reproducible R-based studies, manipulating errors to assess the performance of two workflows: a prompt-based approach and an agent-based approach. Key findings reveal that while prompt-based methods achieved a reproduction success rate of 31-79%, agent-based systems significantly outperformed them, with success rates of 69-96%, indicating that agent-based systems are more effective in handling diverse error types and can streamline the reproducibility process in computational research.
+> The paper investigates the automation of computational reproducibility in social science research by comparing prompt-based and agent-based workflows for diagnosing and repairing analysis failures. Using a controlled testbed of five reproducible R-based studies, the authors injected realistic errors and evaluated the effectiveness of both approaches. The key findings reveal that while prompt-based methods achieved varied success rates (31-79%), agent-based systems demonstrated significantly higher success (69-96%), indicating that agent-based approaches are more effective in automating repairs and enhancing reproducibility in computational research.
 
 
 <details>
@@ -2593,7 +2587,7 @@ Reproducing computational research is often assumed to be as simple as rerunning
 - **Categories:** cs.MA
 
 
-> The paper presents EvoCorps, an evolutionary multi-agent framework designed to proactively depolarize online discourse by framing discourse governance as a dynamic social game. Utilizing a retrieval-augmented cognition core and closed-loop evolutionary learning, EvoCorps coordinates various agent roles to adapt strategies based on real-time environmental changes and adversarial actions. Key findings demonstrate that EvoCorps significantly improves discourse outcomes, such as emotional polarization and argumentative rationality, compared to traditional adversarial baselines, indicating a potential paradigm shift from reactive to proactive discourse intervention in the realm of agentic AI systems.
+> The paper introduces EvoCorps, an innovative evolutionary multi-agent framework designed to proactively depolarize online discourse by treating governance as a dynamic social game involving monitoring, planning, and identity diffusion. Utilizing a retrieval-augmented collective cognition core and closed-loop evolutionary learning, EvoCorps adapts its strategies in real time to counteract adversarial amplification. Evaluation on the MOSAIC platform demonstrates that EvoCorps significantly enhances discourse outcomes related to emotional polarization, viewpoint extremity, and argumentative rationality compared to traditional adversarial baselines, marking a shift from reactive to proactive discourse management in the agentic AI field.
 
 
 <details>
@@ -2614,7 +2608,7 @@ Polarization in online discourse erodes social trust and accelerates misinformat
 - **Categories:** cs.AI
 
 
-> The paper introduces the Personalized Agent Security Bench (PASB), a novel evaluation framework designed to assess the security of personalized local AI agents like OpenClaw in real-world scenarios, moving beyond traditional task-centric approaches. It employs a systematic methodology that includes personalized usage scenarios and long-horizon interactions to conduct a comprehensive security evaluation, revealing critical vulnerabilities throughout various execution stages of OpenClaw. The findings underscore significant security risks associated with personalized AI deployments, demonstrating the need for enhanced security measures in this emerging field.
+> The paper presents the Personalized Agent Security Bench (PASB), a comprehensive security evaluation framework designed for real-world personalized AI agents, focusing on large language model-based systems like OpenClaw. The authors systematically assess OpenClaw's security vulnerabilities through various personalized scenarios and attack types, revealing significant risks in user prompt processing, tool usage, and memory retrieval. Key findings underscore the urgent need for robust security measures in the deployment of personalized AI agents, as they are susceptible to diverse and critical security threats.
 
 
 <details>
@@ -2635,7 +2629,7 @@ Although large language model (LLM)-based agents, exemplified by OpenClaw, are i
 - **Categories:** cs.MA, cs.AI, cs.GT, cs.LG
 
 
-> The paper presents a novel framework aimed at promoting fairer cooperation in multi-agent systems by replacing the standard utilitarian objective with Proportional Fairness for altruistic utility. The methodology involves deriving analytical conditions for cooperation in social dilemmas and extending the framework to sequential settings through a Fair Markov Game, alongside the development of fair Actor-Critic algorithms. Key findings indicate that this approach can facilitate more equitable outcomes in cooperative scenarios, thus addressing the common issue of defection in mixed-motive settings.
+> This paper presents a novel framework aimed at promoting fairer cooperation in mixed-motive Markov games by replacing the traditional utilitarian welfare objective with Proportional Fairness, which is designed to mitigate individual incentives to defect. The authors develop a fair altruistic utility based on individual log-payoffs, establish analytical conditions for cooperation, and introduce Fair Markov Games along with new fair Actor-Critic algorithms for sequential settings. Their evaluations across various social dilemma environments demonstrate that this approach fosters more equitable outcomes in multi-agent systems, thereby contributing significantly to the agentic AI field.
 
 
 <details>
@@ -2656,7 +2650,7 @@ Cooperation is fundamental for society's viability, as it enables the emergence 
 - **Categories:** cs.AI
 
 
-> The paper presents SHARP (Shapley Credit-based Optimization for Multi-Agent Systems), a novel framework designed to enhance the training of multi-agent reinforcement learning systems by addressing the credit assignment problem through precise agent-specific reward attribution. The methodology involves the implementation of a decomposed reward mechanism that combines a global broadcast-accuracy reward, a Shapley-based marginal-credit reward for individual agents, and an execution efficiency reward. Key findings indicate that SHARP significantly improves performance in comparison to state-of-the-art methods, achieving average match enhancements of 23.66% over single-agent systems and 14.05% over multi-agent systems, thereby stabilizing training and fostering more effective collaboration among agents.
+> The paper introduces the Shapley-based Hierarchical Attribution for Reinforcement Policy (SHARP), a novel framework designed to tackle the credit assignment problem in multi-agent systems optimized for reinforcement learning. By employing a decomposed reward mechanism that includes a global broadcast-accuracy reward, Shapley-based marginal-credit rewards, and a tool-process reward, SHARP provides precise credit attribution to individual agents, effectively stabilizing their training. Experimental results across various benchmarks indicate that SHARP significantly enhances performance, achieving average match improvements of 23.66% and 14.05% over single-agent and multi-agent approaches, thereby advancing the efficiency of agentic AI in complex problem-solving scenarios.
 
 
 <details>
@@ -2677,7 +2671,7 @@ Integrating Large Language Models (LLMs) with external tools via multi-agent sys
 - **Categories:** cs.AI
 
 
-> The paper introduces the Structural Context Model, a formal framework designed to analyze and compare large language model (LLM) agents by focusing on context structure, which addresses the fragmentation in current LLM agent research. It comprises a declarative implementation framework and a sustainable engineering workflow called Semantic Dynamics Analysis, facilitating systematic design iteration and deeper insight into agent mechanisms. The effectiveness of this approach is validated through experiments on dynamic variants of the monkey-banana problem, resulting in up to a 32 percentage point improvement in agent success rates in challenging scenarios, demonstrating its relevance to agentic AI development.
+> The paper presents a novel framework called the Structural Context Model to formalize the design of LLM-based agents, addressing the fragmentation in current research by providing a self-consistent model for analyzing and comparing these agents independent of implementation details. The methodology includes a declarative implementation framework and a sustainable engineering workflow known as Semantic Dynamics Analysis, which enhances the design process through systematic iteration. Key findings indicate that agents developed using this framework significantly outperform traditional methods, achieving up to a 32 percentage point increase in success rates for complex tasks, thereby contributing valuable insights to the field of agentic AI.
 
 
 <details>
@@ -2698,7 +2692,7 @@ Current research on large language model (LLM) agents is fragmented: discussions
 - **Categories:** cs.LG, cs.AI
 
 
-> The paper investigates the conditions under which Multi-Agent Reinforcement Learning (MARL) outperforms Single-Agent Reinforcement Learning (SARL), focusing on the learning efficiency of agentic systems in the context of large language models (LLMs). By employing the Probably Approximately Correct (PAC) framework, the authors establish sample complexity bounds and analyze the impact of task decomposition and alignment on learning efficiency. Key findings indicate that MARL enhances sample efficiency with naturally independent subtasks but faces challenges with dependent subtasks, offering practical guidelines for effectively implementing MARL in complex LLM applications.
+> The paper investigates the conditions under which Multi-Agent Reinforcement Learning (MARL) outperforms Single-Agent Reinforcement Learning (SARL) in training large language models (LLMs), addressing a significant gap in the theoretical understanding of their comparative efficiencies. Utilizing the Probably Approximately Correct (PAC) framework, the authors define and analyze the sample complexity of both MARL and SARL, revealing that MARL is more efficient when tasks can be effectively decomposed into independent subtasks, whereas dependencies can hinder its advantages. The study also introduces the concept of task alignment, which helps quantify the trade-offs involved in enforcing task decomposition, ultimately providing practical guidelines for applying MARL in complex scenarios involving LLMs.
 
 
 <details>
@@ -2719,7 +2713,7 @@ Reinforcement Learning (RL) has emerged as a crucial method for training or fine
 - **Categories:** cs.AI, cs.IR, cs.MA
 
 
-> The paper presents SynthAgent, a Multi-Agent System framework aimed at simulating high-fidelity patients with obesity and mental health comorbidities, addressing issues related to real-world data limitations. The methodology integrates diverse clinical data to create personalized virtual patients, enabling the simulation of disease progression and treatment responses through agent interactions. Key findings indicate that the use of GPT-5 and Claude 4.5 Sonnet within SynthAgent results in superior simulation fidelity compared to other models, offering a scalable and privacy-conscious approach for investigating patient behaviors and decision-making in healthcare settings.
+> The paper presents SynthAgent, a Multi-Agent System framework specifically designed for simulating high-fidelity virtual patients with obesity and mental health comorbidities, addressing the limitations of real-world patient data. The methodology encompasses the integration of diverse clinical evidence to create personalized agents that exhibit varying personality traits affecting their health behaviors. Key findings indicate that the framework effectively replicates patient interactions and responses to treatment, with evaluations showing superior performance using GPT-5 and Claude 4.5 Sonnet, thereby advancing the understanding of patient dynamics in medical and psychological contexts relevant to the agentic AI field.
 
 
 <details>
@@ -2740,7 +2734,7 @@ Simulating high-fidelity patients offers a powerful avenue for studying complex 
 - **Categories:** q-bio.GN, cs.AI
 
 
-> The paper presents scBench, a benchmark consisting of 394 verifiable problems designed to assess AI agents' capability to analyze single-cell RNA sequencing (scRNA-seq) data across various platforms and tasks. The methodology involves creating practical scRNA-seq workflows and employing deterministic grading to evaluate the biological insights extracted by AI models. Key findings indicate that existing models demonstrate limited accuracy (29-53%), with significant performance variability influenced by both model and platform choice, highlighting the challenge of developing reliable agentic AI for complex biological datasets.
+> The paper presents scBench, a benchmarking framework designed to evaluate AI agents on single-cell RNA sequencing (scRNA-seq) analysis by providing 394 verifiable problems across various platforms and tasks. The methodology involves assessing eight advanced AI models’ performance on this benchmark, revealing significant variability in accuracy, ranging from 29-53%, due to interactions between model choice and sequencing platform. Key findings indicate that the choice of sequencing platform can drastically affect the performance of AI agents, highlighting the need for specialized approaches in developing models capable of accurately analyzing complex biological datasets.
 
 
 <details>
@@ -2765,7 +2759,7 @@ As single-cell RNA sequencing datasets grow in adoption, scale, and complexity, 
 - **Categories:** neuroscience
 
 
-> This paper identifies the putamen as a critical neural substrate linking human language and tool use through a shared mechanism that supports goal-dependent sequence integrity. The researchers employed brain lesion analysis, developmental contrasts, and functional neuroimaging involving 100 adults with focal brain injuries, revealing that damage to the putamen impaired both sentence processing and tool use. Key findings indicate that early language acquisition enhances tool-use performance and strengthens putaminal responses, highlighting the importance of this brain region in agentic AI systems that aim to replicate or understand human-like cognitive processes.
+> The paper investigates the neural mechanisms linking language and tool use, revealing that the putamen plays a crucial role in maintaining goal-dependent sequence integrity in both capacities. Using a combination of brain lesion analysis, developmental studies, and functional neuroimaging, the authors found that damage to the putamen in individuals with brain injury impaired both sentence processing and tool use, while early language acquisition was shown to enhance tool performance and strengthen putaminal responses. This research highlights the putamen as a shared neural substrate for language and action, with early language experience significantly influencing its functionality.
 
 
 <details>
@@ -2788,7 +2782,7 @@ One-Sentence SummaryLanguage and tool use share a putamen-based mechanism that s
 - **Categories:** bioinformatics
 
 
-> The main contribution of the paper is the development of MetaKnogic-Alpha, a hyper-relational knowledge base designed to synthesize and organize biomedical literature related to metabolic research, facilitating grounded metabolic reasoning. The methodology involves transforming over 100,000 full-text articles into a hypergraph structure that captures complex relationships within metabolic pathways, utilizing an autonomous reasoning agent to enhance query precision and perform multi-hop expansions to identify critical biological relationships while ensuring rigorous validity through deterministic grounding against a curated metabolic network. Key findings indicate that MetaKnogic-Alpha achieves a mechanistic accuracy of 0.98 in providing reliable insights derived from literature, significantly improving the efficiency of metabolic research by automating synthesis that historically required extensive manual effort, thus enhancing the capabilities of agents in precision oncology.
+> The paper introduces MetaKnogic-Alpha, a hyper-relational knowledge base developed to synthesize extensive biomedical literature related to metabolic research, addressing the challenge of fragmented mechanistic insights. The methodology involves transforming over 100,000 full-text articles into a hypergraph structure that captures complex metabolic relationships, utilizing an autonomous reasoning agent for precise query enrichment and deterministic grounding against established metabolic networks. Key findings include achieving a mechanistic accuracy of 0.98 in evidence-supported scenarios, demonstrating that MetaKnogic-Alpha significantly improves the speed and reliability of knowledge extraction in metabolic pathways, thereby enhancing the capabilities of researchers in fields like precision oncology.
 
 
 <details>
