@@ -30,6 +30,7 @@ jobs:
           LLM_PROVIDER: ${{ vars.LLM_PROVIDER || 'openai' }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
           EMAIL_RECIPIENTS: ${{ vars.EMAIL_RECIPIENTS || '' }}

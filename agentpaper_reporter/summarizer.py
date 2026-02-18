@@ -68,6 +68,26 @@ class Summarizer:
         )
         return response.choices[0].message.content
 
+    @retry(
+        stop=stop_after_attempt(3),
+        wait=wait_exponential(min=2, max=8),
+        reraise=True,
+    )
+    def _summarize_openrouter(self, paper: Paper) -> str:
+        client = openai.OpenAI(
+            api_key=self.config.llm.openrouter_api_key,
+            base_url="https://openrouter.ai/api/v1",
+        )
+        response = client.chat.completions.create(
+            model=self.config.llm.openrouter_model,
+            max_tokens=self.config.llm.max_tokens,
+            messages=[
+                {"role": "system", "content": self.SYSTEM_PROMPT},
+                {"role": "user", "content": self._build_prompt(paper)},
+            ],
+        )
+        return response.choices[0].message.content
+
     def summarize(self, paper: Paper) -> str:
         """Generate a summary for a single paper."""
         try:
@@ -75,6 +95,8 @@ class Summarizer:
                 return self._summarize_claude(paper)
             elif self.config.llm.provider == "openai":
                 return self._summarize_openai(paper)
+            elif self.config.llm.provider == "openrouter":
+                return self._summarize_openrouter(paper)
             else:
                 logger.warning(f"Unknown LLM provider: {self.config.llm.provider}")
                 return "Summary unavailable."
@@ -143,6 +165,23 @@ class Summarizer:
                     ],
                 )
                 return response.choices[0].message.content
+            elif self.config.llm.provider == "openrouter":
+                client = openai.OpenAI(
+                    api_key=self.config.llm.openrouter_api_key,
+                    base_url="https://openrouter.ai/api/v1",
+                )
+                response = client.chat.completions.create(
+                    model=self.config.llm.openrouter_model,
+                    max_tokens=400,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are a biomedical research analyst specializing in the intersection of AI agents and biomedicine.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                )
+                return response.choices[0].message.content
             else:
                 return "Biomedical summary unavailable."
         except Exception as e:
@@ -199,6 +238,23 @@ class Summarizer:
                 client = openai.OpenAI(api_key=self.config.llm.openai_api_key)
                 response = client.chat.completions.create(
                     model=self.config.llm.openai_model,
+                    max_tokens=500,
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": "You are a research trend analyst specializing in AI agent systems.",
+                        },
+                        {"role": "user", "content": prompt},
+                    ],
+                )
+                return response.choices[0].message.content
+            elif self.config.llm.provider == "openrouter":
+                client = openai.OpenAI(
+                    api_key=self.config.llm.openrouter_api_key,
+                    base_url="https://openrouter.ai/api/v1",
+                )
+                response = client.chat.completions.create(
+                    model=self.config.llm.openrouter_model,
                     max_tokens=500,
                     messages=[
                         {

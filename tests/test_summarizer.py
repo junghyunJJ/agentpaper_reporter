@@ -26,9 +26,11 @@ def _make_config(provider="claude"):
     config.llm.provider = provider
     config.llm.claude_model = "claude-sonnet-4-20250514"
     config.llm.openai_model = "gpt-4o-mini"
+    config.llm.openrouter_model = "anthropic/claude-sonnet-4"
     config.llm.max_tokens = 300
     config.llm.anthropic_api_key = "test-key"
     config.llm.openai_api_key = "test-key"
+    config.llm.openrouter_api_key = "test-key"
     return config
 
 
@@ -120,6 +122,42 @@ class TestSummarizer:
         )
 
         s = Summarizer(_make_config("openai"))
+        result = s.summarize(_make_paper())
+
+        assert result == "Summary unavailable."
+
+    @patch("agentpaper_reporter.summarizer.openai")
+    def test_summarize_openrouter_success(self, mock_openai):
+        """Summarize with OpenRouter returns summary text via OpenAI-compatible API."""
+        mock_choice = MagicMock()
+        mock_choice.message.content = "OpenRouter summary text"
+        mock_resp = MagicMock()
+        mock_resp.choices = [mock_choice]
+        mock_client = MagicMock()
+        mock_client.chat.completions.create.return_value = mock_resp
+        mock_openai.OpenAI.return_value = mock_client
+
+        s = Summarizer(_make_config("openrouter"))
+        result = s.summarize(_make_paper())
+
+        assert result == "OpenRouter summary text"
+        mock_openai.OpenAI.assert_called_once_with(
+            api_key="test-key",
+            base_url="https://openrouter.ai/api/v1",
+        )
+        mock_client.chat.completions.create.assert_called_once()
+        call_kwargs = mock_client.chat.completions.create.call_args[1]
+        assert call_kwargs["model"] == "anthropic/claude-sonnet-4"
+        assert call_kwargs["max_tokens"] == 300
+
+    @patch("agentpaper_reporter.summarizer.openai")
+    def test_summarize_openrouter_failure(self, mock_openai):
+        """Summarize handles OpenRouter API errors gracefully."""
+        mock_openai.OpenAI.return_value.chat.completions.create.side_effect = Exception(
+            "API error"
+        )
+
+        s = Summarizer(_make_config("openrouter"))
         result = s.summarize(_make_paper())
 
         assert result == "Summary unavailable."

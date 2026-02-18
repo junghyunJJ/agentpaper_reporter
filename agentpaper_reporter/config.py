@@ -32,19 +32,21 @@ class SourcesConfig(BaseModel):
 
 class LLMConfig(BaseModel):
     """LLM configuration."""
-    provider: str = Field(description="LLM provider: 'claude' or 'openai'")
+    provider: str = Field(description="LLM provider: 'claude', 'openai', or 'openrouter'")
     claude_model: str
     openai_model: str
+    openrouter_model: str = "anthropic/claude-sonnet-4"
     max_tokens: int
     anthropic_api_key: Optional[str] = None
     openai_api_key: Optional[str] = None
+    openrouter_api_key: Optional[str] = None
 
     @field_validator("provider")
     @classmethod
     def validate_provider(cls, v: str) -> str:
         """Validate LLM provider."""
-        if v not in ("claude", "openai"):
-            raise ValueError("provider must be 'claude' or 'openai'")
+        if v not in ("claude", "openai", "openrouter"):
+            raise ValueError("provider must be 'claude', 'openai', or 'openrouter'")
         return v
 
 
@@ -139,11 +141,14 @@ def load_config(config_path: Optional[str] = None) -> AppConfig:
     # Load API keys from environment
     anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
     openai_api_key = os.getenv("OPENAI_API_KEY")
+    openrouter_api_key = os.getenv("OPENROUTER_API_KEY")
 
     if anthropic_api_key:
         config_data["llm"]["anthropic_api_key"] = anthropic_api_key
     if openai_api_key:
         config_data["llm"]["openai_api_key"] = openai_api_key
+    if openrouter_api_key:
+        config_data["llm"]["openrouter_api_key"] = openrouter_api_key
 
     # Apply email overrides from environment
     email_enabled = os.getenv("EMAIL_ENABLED")
@@ -169,6 +174,10 @@ def load_config(config_path: Optional[str] = None) -> AppConfig:
     if config.llm.provider == "openai" and not config.llm.openai_api_key:
         raise ValueError(
             "OPENAI_API_KEY environment variable must be set when using OpenAI"
+        )
+    if config.llm.provider == "openrouter" and not config.llm.openrouter_api_key:
+        raise ValueError(
+            "OPENROUTER_API_KEY environment variable must be set when using OpenRouter"
         )
 
     logger.info(f"Configuration loaded successfully: provider={config.llm.provider}, "

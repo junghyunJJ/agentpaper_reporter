@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Weekly AI Paper Monitor — an automated pipeline that fetches papers from arXiv, bioRxiv, and medRxiv, filters by agentic AI keywords, deduplicates via SQLite, generates LLM summaries (Claude or OpenAI), and produces a weekly Markdown report. Runs on GitHub Actions (Monday 9:00 UTC) or locally via CLI.
+Weekly AI Paper Monitor — an automated pipeline that fetches papers from arXiv, bioRxiv, and medRxiv, filters by agentic AI keywords, deduplicates via SQLite, generates LLM summaries (Claude, OpenAI, or OpenRouter), and produces a weekly Markdown report. Runs on GitHub Actions (Monday 9:00 UTC) or locally via CLI.
 
 ## Commands
 
@@ -30,10 +30,10 @@ pytest tests/ --cov=agentpaper_reporter
 ## Configuration
 
 - `config.yaml` — primary config (keywords, sources, LLM provider, output paths, lookback days)
-- `.env` — API keys (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`); loaded via python-dotenv, never committed
+- `.env` — API keys (`ANTHROPIC_API_KEY`, `OPENAI_API_KEY`, `OPENROUTER_API_KEY`); loaded via python-dotenv, never committed
 - Env vars `LLM_PROVIDER` and `LOOKBACK_DAYS` override their config.yaml counterparts
 
-The LLM provider is set to `"openai"` by default in config.yaml. Switch to `"claude"` by changing `llm.provider` or setting `LLM_PROVIDER=claude`.
+The LLM provider is set to `"openai"` by default in config.yaml. Switch to `"claude"` by changing `llm.provider` or setting `LLM_PROVIDER=claude`. For OpenRouter (which provides access to many models via a unified API), set `LLM_PROVIDER=openrouter` and configure `OPENROUTER_API_KEY` in `.env`.
 
 Email notifications are **disabled by default**. To enable: set `email.enabled: true` in `config.yaml` (or `EMAIL_ENABLED=true`), configure `SMTP_USER`/`SMTP_PASSWORD` in `.env`, and set recipients via `email.recipients` in config or `EMAIL_RECIPIENTS` env var (comma-separated).
 
@@ -56,7 +56,7 @@ config.yaml + .env → load_config() → Fetch → Filter → Deduplicate → Su
 | `fetchers/biorxiv_fetcher.py` | bioRxiv/medRxiv REST API with cursor pagination (shared class, `server` param distinguishes) |
 | `filter.py` | Case-insensitive keyword matching on title+abstract, delegates dedup to DB |
 | `db.py` | `DeduplicationDB` — SQLite context manager; `get_new_papers()` atomically filters and marks seen |
-| `summarizer.py` | LLM calls (Claude/OpenAI) with tenacity retry; per-paper summaries, biomedical overview, week-over-week comparison |
+| `summarizer.py` | LLM calls (Claude/OpenAI/OpenRouter) with tenacity retry; per-paper summaries, biomedical overview, week-over-week comparison |
 | `comparison.py` | Weekly stats JSON persistence in `data/`; loads previous week's stats and builds `WeekComparison` |
 | `reporter.py` | Jinja2 rendering of `templates/report.md.j2` into Markdown |
 | `email_sender.py` | Optional HTML email delivery of reports via SMTP (disabled by default) |
