@@ -33,7 +33,7 @@ llm:
   provider: "openrouter"  # "claude", "openai", or "openrouter"
   claude_model: "claude-sonnet-4-20250514"
   openai_model: "gpt-4.1-mini"
-  openrouter_model: "moonshotai/kimi-k2.5"
+  openrouter_model: "openai/gpt-oss-120b:free"
   max_tokens: 300
 
 report:
