@@ -1,0 +1,41 @@
+{
+  "report_date": "2026-02-23",
+  "date_range_start": "2026-02-16",
+  "date_range_end": "2026-02-22",
+  "total_fetched": 962,
+  "total_matched": 113,
+  "by_source": {
+    "arxiv": 104,
+    "medrxiv": 6,
+    "biorxiv": 3
+  },
+  "top_papers": [
+    "Diffusing to Coordinate: Efficient Online Multi-Agent Diffusion Policies",
+    "[Re] Benchmarking LLM Capabilities in Negotiation through Scoreable Games",
+    "Can AI Lower the Barrier to Cybersecurity? A Human-Centered Mixed-Methods Study of Novice CTF Learning",
+    "Mean-Field Reinforcement Learning without Synchrony",
+    "WorkflowPerturb: Calibrated Stress Tests for Evaluating Multi-Agent Workflow Metrics",
+    "Agentic Trial Emulation to Learn Health System-specific Drug Effects At Scale",
+    "GPAS: an online AI system for rapid and accurate pathogen identification and LLM-based interpretation",
+    "ED-TRIAGE-AGENT: A FRAMEWORK FOR HUMAN-AI COLLABORATIVE EMERGENCY TRIAGE",
+    "A deterministic safety pipeline for therapeutic AI in elderly assisted living",
+    "Deep Agentic Variant Prioritisation for Expert Level Genetic Diagnosis Fast at Scale",
+    "Modeling and Tracking of Heterogeneous Cell Populations via Open Multi-Agent Systems",
+    "Multi-agent reasoning enables predictive design of living materials",
+    "Ataraxis: Bridging AI Coding Assistants and Scientific Hardware"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
