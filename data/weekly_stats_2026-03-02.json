@@ -1,0 +1,39 @@
+{
+  "report_date": "2026-03-02",
+  "date_range_start": "2026-02-23",
+  "date_range_end": "2026-03-01",
+  "total_fetched": 984,
+  "total_matched": 110,
+  "by_source": {
+    "arxiv": 103,
+    "medrxiv": 6,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "Controllable Reasoning Models Are Private Thinkers",
+    "Agentic AI-RAN: Enabling Intent-Driven, Explainable and Self-Evolving Open RAN Intelligence",
+    "Sharing is caring: data sharing in multi-agent supply chains",
+    "A Novel Hierarchical Multi-Agent System for Payments Using LLMs",
+    "Jailbreak Foundry: From Papers to Runnable Attacks for Reproducible Benchmarking",
+    "Onco-Shikshak: An AI-Native Adaptive Learning Ecosystem for Medical Oncology Education",
+    "End-to-End PET/CT Interpretation and Quantification with an LLM-Orchestrated AI Agent: A Real-World Pilot Study",
+    "Agent Role Structure and Operating Characteristics in Large Language Model Clinical Classification: A Comparative Study of Specialist and Deliberative Multi-Agent Protocols",
+    "Care Plan Generation for Underserved Patients Using Multi-Agent Language Models: Applying Nash Game Theory to Optimize Multiple Objectives",
+    "How Agent Role Structure Alters Operating Characteristics of Large Language Model Clinical Classifiers: A Comparative Study of Specialist and Deliberative Multi-Agent Protocols",
+    "OriGene: A Self-Evolving Virtual Disease Biologist Automating Therapeutic Target Discovery"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
