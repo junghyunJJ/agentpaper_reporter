@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-03-09",
+  "date_range_start": "2026-03-02",
+  "date_range_end": "2026-03-08",
+  "total_fetched": 1137,
+  "total_matched": 137,
+  "by_source": {
+    "arxiv": 133,
+    "biorxiv": 1,
+    "medrxiv": 3
+  },
+  "top_papers": [
+    "SUREON: A Benchmark and Vision-Language-Model for Surgical Reasoning",
+    "Talk Freely, Execute Strictly: Schema-Gated Agentic AI for Flexible and Reproducible Scientific Workflows",
+    "Conversational Demand Response: Bidirectional Aggregator-Prosumer Coordination through Agentic AI",
+    "MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing",
+    "An Interactive Multi-Agent System for Evaluation of New Product Concepts",
+    "Social Information Quality and Environmental Volatility Shape Collective Foraging Behavior",
+    "Agent Role Structure and Operating Characteristics in Large Language Model Clinical Classification: A Comparative Study of Specialist and Deliberative Multi-Agent Protocols",
+    "An agentic AI system enhances clinical detection of immunotherapy toxicities: a multi-phase validation study",
+    "An agentic AI system enhances clinical detection of immunotherapy toxicities: a multi-phase validation study"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
