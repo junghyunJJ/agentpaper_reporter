@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-03-16",
+  "date_range_start": "2026-03-09",
+  "date_range_end": "2026-03-15",
+  "total_fetched": 1057,
+  "total_matched": 146,
+  "by_source": {
+    "arxiv": 143,
+    "biorxiv": 1,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "From Experiments to Expertise: Scientific Knowledge Consolidation for AI-Driven Computational Research",
+    "LLM Constitutional Multi-Agent Governance",
+    "Semantic Invariance in Agentic AI",
+    "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+    "daVinci-Env: Open SWE Environment Synthesis at Scale",
+    "Fleming: An AI Agent for Antibiotic Discovery in Mycobacterium Tuberculosis",
+    "Conversational Artificial Intelligence-Enabled Molecular Characterization of Sezary Syndrome Reveals Distinct Pathway-Level Alterations Compared with Non-Sezary Cutaneous T-Cell Lymphoma",
+    "An Implantable Device that Converses with Patients and Learns to Co-Manage Epilepsy"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
