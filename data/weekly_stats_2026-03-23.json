@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-03-23",
+  "date_range_start": "2026-03-16",
+  "date_range_end": "2026-03-22",
+  "total_fetched": 1061,
+  "total_matched": 171,
+  "by_source": {
+    "arxiv": 166,
+    "medrxiv": 5
+  },
+  "top_papers": [
+    "AI Agents Can Already Autonomously Perform Experimental High Energy Physics",
+    "Design-OS: A Specification-Driven Framework for Engineering System Design with a Control-Systems Design Case",
+    "Reasoning Gets Harder for LLMs Inside A Dialogue",
+    "Revisiting Gene Ontology Knowledge Discovery with Hierarchical Feature Selection and Virtual Study Group of AI Agents",
+    "An Agentic Multi-Agent Architecture for Cybersecurity Risk Management",
+    "From Concept to Clinic: Real World Evidence for Autonomous AI Deployment in Primary Care Telemedicine",
+    "CLINPREAI: AN AGENTIC AI SYSTEM FOR EARLY POSTPARTUM DEPRESSION RISK PREDICTION FROM MULTIMODAL EHR DATA",
+    "ADDRESSING THE ROLE OF OCCUPATIONAL EXPOSOME ON PARKINSON'S DISEASE AND PARKINSONISM IN A MATCHED CASE-CONTROL STUDY",
+    "OpenScientist: evaluating an open agentic AI co-scientist to accelerate biomedical discovery",
+    "CoNVict: An Agentic AI System for Copy Number Variation Prioritization in Rare Disease Diagnosis"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
