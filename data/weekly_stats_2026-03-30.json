@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-03-30",
+  "date_range_start": "2026-03-23",
+  "date_range_end": "2026-03-29",
+  "total_fetched": 1065,
+  "total_matched": 134,
+  "by_source": {
+    "arxiv": 131,
+    "medrxiv": 2,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "Vision2Web: A Hierarchical Benchmark for Visual Website Development with Agent Verification",
+    "Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us",
+    "JAL-Turn: Joint Acoustic-Linguistic Modeling for Real-Time and Robust Turn-Taking Detection in Full-Duplex Spoken Dialogue Systems",
+    "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+    "Can AI Models Direct Each Other? Organizational Structure as a Probe into Training Limitations",
+    "Artificial intelligence-driven virtual tumorboard enhances precision care in myelodysplasticsyndromes",
+    "A Clinical Guideline-Grounded Hybrid Agentic Framework for Holistic Epilepsy Management.",
+    "Breaking the Extraction Bottleneck: A Single AI Agent Achieves Statistical Equivalence with Human-Extracted Meta-Analysis Data Across Five Agricultural Datasets"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
