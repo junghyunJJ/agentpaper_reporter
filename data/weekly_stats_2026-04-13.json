@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-04-13",
+  "date_range_start": "2026-04-06",
+  "date_range_end": "2026-04-12",
+  "total_fetched": 867,
+  "total_matched": 185,
+  "by_source": {
+    "arxiv": 181,
+    "biorxiv": 4
+  },
+  "top_papers": [
+    "Event-Driven Temporal Graph Networks for Asynchronous Multi-Agent Cyber Defense in NetForge_RL",
+    "Semantic Rate-Distortion for Bounded Multi-Agent Communication: Capacity-Derived Semantic Spaces and the Communication Cost of Alignment",
+    "VISOR: Agentic Visual Retrieval-Augmented Generation via Iterative Search and Over-horizon Reasoning",
+    "Strategic Algorithmic Monoculture:Experimental Evidence from Coordination Games",
+    "From Reasoning to Agentic: Credit Assignment in Reinforcement Learning for Large Language Models",
+    "Unveiling value functions in social cognition with multi-agentinverse reinforcement learning",
+    "RastQC: High-Performance Sequencing Quality Control Written in Rust",
+    "MolClaw: An Autonomous Agent with Hierarchical Skills for Drug Molecule Evaluation, Screening, and Optimization",
+    "PRISM: A High-Throughput Simulation Infrastructure for CADD Agents"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
