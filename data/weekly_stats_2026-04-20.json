@@ -1,0 +1,40 @@
+{
+  "report_date": "2026-04-20",
+  "date_range_start": "2026-04-13",
+  "date_range_end": "2026-04-19",
+  "total_fetched": 1076,
+  "total_matched": 184,
+  "by_source": {
+    "arxiv": 177,
+    "biorxiv": 2,
+    "medrxiv": 5
+  },
+  "top_papers": [
+    "ChemGraph-XANES: An Agentic Framework for XANES Simulation and Analysis",
+    "MARCH: Multi-Agent Radiology Clinical Hierarchy for CT Report Generation",
+    "Veritas-RPM: Provenance-Guided Multi-Agent False Positive Suppression for Remote Patient Monitoring",
+    "AstroVLM: Expert Multi-agent Collaborative Reasoning for Astronomical Imaging Quality Diagnosis",
+    "SocialGrid: A Benchmark for Planning and Social Reasoning in Embodied Multi-Agent Systems",
+    "HARVEST: Unlocking the Dark Bioactivity Data of Pharmaceutical Patents via Agentic AI",
+    "Reaching for domain-general syntax: Sentence processing and tool-use reach-to-grasp share neural patterns in the basal ganglia",
+    "Democratizing Scientific Publishing: A Local, Multi-Agent LLM Framework for Objective Manuscript Editing",
+    "LIFETIME JEM-DERIVED OCCUPATIONAL EXPOSURE BURDEN AND ODDS OF PARKINSONS DISEASE AND PARKINSONISM IN A MATCHED CASE-CONTROL STUDY",
+    "A Conversational Artificial Intelligence Framework for Comparative Pathway-Level Profiling of Sezary Syndrome and Primary Cutaneous CD8+ Aggressive Epidermotropic Cytotoxic T-Cell Lymphoma (PCAECTCL)",
+    "Pre-Dementia Indicators and Multidomain Vulnerabilities: Insights from AD8 Screening in Older Chinese Speaking Adults",
+    "HAARF: Healthcare AI Agents Regulatory Framework - A Comprehensive Security Verification Standard for Autonomous AI Systems in Clinical Environments"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
