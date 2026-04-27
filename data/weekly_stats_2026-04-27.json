@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-04-27",
+  "date_range_start": "2026-04-20",
+  "date_range_end": "2026-04-26",
+  "total_fetched": 677,
+  "total_matched": 132,
+  "by_source": {
+    "arxiv": 129,
+    "medrxiv": 2,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+    "Agentic World Modeling: Foundations, Capabilities, Laws, and Beyond",
+    "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems",
+    "QuantClaw: Precision Where It Matters for OpenClaw",
+    "Superminds Test: Actively Evaluating Collective Intelligence of Agent Society via Probing Agents",
+    "Artificial Intelligence Agents in Mental Health: A Systematic Review and Meta Analysis",
+    "Uncertainty-Gated Glaucoma Screening: Combining Semi-Supervised Classification with Multi-Agent Large Language Model Deliberation",
+    "MetaMuse: A Multi-Agent AI System for Biomedical Metadata Curation and Harmonization"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
