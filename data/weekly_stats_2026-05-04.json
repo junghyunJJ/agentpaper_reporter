@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-05-04",
+  "date_range_start": "2026-04-27",
+  "date_range_end": "2026-05-03",
+  "total_fetched": 658,
+  "total_matched": 141,
+  "by_source": {
+    "biorxiv": 1,
+    "arxiv": 138,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "Agent-Driven Validation of Oncology Therapeutic Targets",
+    "RunAgent: Interpreting Natural-Language Plans with Constraint-Guided Execution",
+    "NonZero: Interaction-Guided Exploration for Multi-Agent Monte Carlo Tree Search",
+    "Position: agentic AI orchestration should be Bayes-consistent",
+    "To Call or Not to Call: A Framework to Assess and Optimize LLM Tool Calling",
+    "Learning to Act and Cooperate for Distributed Black-Box Consensus Optimization",
+    "AERO: An AI Agent for Adaptive Eligibility Refinement and Optimization of Clinical Trial Criteria in Real-World Trial Emulation",
+    "Artificial Intelligence Agents in Mental Health: A Systematic Review and Meta Analysis"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
