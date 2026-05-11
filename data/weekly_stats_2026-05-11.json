@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-05-11",
+  "date_range_start": "2026-05-04",
+  "date_range_end": "2026-05-10",
+  "total_fetched": 820,
+  "total_matched": 182,
+  "by_source": {
+    "arxiv": 181,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "The Memory Curse: How Expanded Recall Erodes Cooperative Intent in LLM Agents",
+    "Graph Representation Learning Augmented Model Manipulation on Federated Fine-Tuning of LLMs",
+    "Ask Early, Ask Late, Ask Right: When Does Clarification Timing Matter for Long-Horizon Agents?",
+    "TraceFix: Repairing Agent Coordination Protocols with TLA+ Counterexamples",
+    "AgentEscapeBench: Evaluating Out-of-Domain Tool-Grounded Reasoning in LLM Agents",
+    "Bridging LLM Reasoning and Chemical Knowledge via an Evolutionary Multi-Agent Framework for Molecular Synthesis"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
