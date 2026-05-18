@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-05-18",
+  "date_range_start": "2026-05-11",
+  "date_range_end": "2026-05-17",
+  "total_fetched": 819,
+  "total_matched": 181,
+  "by_source": {
+    "arxiv": 180,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "A Generative AI Framework for Intelligent Utility Billing CO 2 Analytics and Sustainable Resource Optimisation",
+    "FORGE: Self-Evolving Agent Memory With No Weight Updates via Population Broadcast",
+    "Context, Reasoning, and Hierarchy: A Cost-Performance Study of Compound LLM Agent Design in an Adversarial POMDP",
+    "paper.json: A Coordination Convention for LLM-Agent-Actionable Papers",
+    "MAxLM: Multi-Agent Language Model-Based Scheduling and Resource Allocation in MU-MIMO-OFDMA-Enabled Wireless Networks",
+    "Reduced synaptic plasticity and E/I imbalance drive Peripersonal Space boundaries expansion in Schizophrenia"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
