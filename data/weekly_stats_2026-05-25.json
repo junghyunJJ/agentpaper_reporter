@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-05-25",
+  "date_range_start": "2026-05-18",
+  "date_range_end": "2026-05-24",
+  "total_fetched": 850,
+  "total_matched": 180,
+  "by_source": {
+    "medrxiv": 2,
+    "arxiv": 177,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "MyeGPT: an AI agent for Multiple Myeloma",
+    "An interpretable and interactive clinical AI agent for personalized anti-infective decision support in carbapenem-resistant Gram-negative bacterial infection",
+    "CHRONOS: Temporally-Aware Multi-Agent Coordination for Evolving Data Marketplaces",
+    "LLM-driven design of physics-constrained constitutive models: two agents are better than one",
+    "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+    "OpenSkillEval: Automatically Auditing the Open Skill Ecosystem for LLM Agents",
+    "One Policy, Infinite NPCs: Persona-Traceable Shared RL Policies for Scalable Game Agents",
+    "BiomniBench: Process-level Evaluation of LLM Agents for Real-world Biomedical Research"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
