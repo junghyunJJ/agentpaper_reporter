@@ -2,12 +2,18 @@
   "report_date": "2026-06-01",
   "date_range_start": "2026-05-25",
   "date_range_end": "2026-05-31",
-  "total_fetched": 600,
-  "total_matched": 1,
+  "total_fetched": 800,
+  "total_matched": 184,
   "by_source": {
+    "arxiv": 183,
     "biorxiv": 1
   },
   "top_papers": [
+    "Stateful Online Monitoring Catches Distributed Agent Attacks",
+    "Choosing the Lens: Strategic Perspective Activation in Context-Dependent Argumentation",
+    "AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle",
+    "Used Car Salesbots? Honesty and Credulity of LLMs as Bargaining Agents under Partial Information",
+    "Answer-Set-Programming-based Abstractions for Reinforcement Learning",
     "An AI-agent-orchestrated grey-box Transformer framework for sparse pharmacokinetic curve reconstruction and pharmacometric model initialization"
   ],
   "keywords_used": [
