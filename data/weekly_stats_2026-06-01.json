@@ -1,0 +1,27 @@
+{
+  "report_date": "2026-06-01",
+  "date_range_start": "2026-05-25",
+  "date_range_end": "2026-05-31",
+  "total_fetched": 600,
+  "total_matched": 1,
+  "by_source": {
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "An AI-agent-orchestrated grey-box Transformer framework for sparse pharmacokinetic curve reconstruction and pharmacometric model initialization"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
