@@ -105,7 +105,7 @@ class ArxivFetcher:
 
         except Exception as e:
             logger.error(f"Error fetching papers from arXiv: {e}", exc_info=True)
-            return []
+            raise
 
     def _extract_arxiv_id(self, entry_id: str) -> str:
         """Extract arXiv ID from entry_id URL.

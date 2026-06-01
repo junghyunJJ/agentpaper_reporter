@@ -146,13 +146,13 @@ class TestArxivFetcher:
 
     @patch("agentpaper_reporter.fetchers.arxiv_fetcher.arxiv")
     def test_fetch_handles_error(self, mock_arxiv):
-        """Fetch handles exceptions gracefully."""
+        """Fetch propagates API setup exceptions."""
         mock_arxiv.Client.side_effect = Exception("API error")
 
         fetcher = ArxivFetcher(keywords=["AI"], categories=[])
-        papers = fetcher.fetch(date(2024, 1, 1), date(2024, 1, 31))
 
-        assert len(papers) == 0
+        with pytest.raises(Exception, match="API error"):
+            fetcher.fetch(date(2024, 1, 1), date(2024, 1, 31))
 
 
 class TestBiorxivFetcher:

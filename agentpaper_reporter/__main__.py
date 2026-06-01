@@ -82,6 +82,7 @@ def main() -> int:
                 logger.info(f"Fetched {len(arxiv_papers)} papers from arXiv")
             except Exception as e:
                 logger.error(f"Failed to fetch from arXiv: {e}", exc_info=True)
+                return 1
 
         # Fetch from bioRxiv
         if config.sources.biorxiv.enabled:
@@ -96,6 +97,7 @@ def main() -> int:
                 logger.info(f"Fetched {len(biorxiv_papers)} papers from bioRxiv")
             except Exception as e:
                 logger.error(f"Failed to fetch from bioRxiv: {e}", exc_info=True)
+                return 1
 
         # Fetch from medRxiv
         if config.sources.medrxiv.enabled:
@@ -110,6 +112,7 @@ def main() -> int:
                 logger.info(f"Fetched {len(medrxiv_papers)} papers from medRxiv")
             except Exception as e:
                 logger.error(f"Failed to fetch from medRxiv: {e}", exc_info=True)
+                return 1
 
         total_fetched = len(all_papers)
         logger.info(f"Total papers fetched: {total_fetched}")
