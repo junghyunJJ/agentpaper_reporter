@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-06-08",
+  "date_range_start": "2026-06-01",
+  "date_range_end": "2026-06-07",
+  "total_fetched": 800,
+  "total_matched": 179,
+  "by_source": {
+    "arxiv": 175,
+    "medrxiv": 2,
+    "biorxiv": 2
+  },
+  "top_papers": [
+    "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+    "How AI Agents Reshape Knowledge Work: Autonomy, Efficiency, and Scope",
+    "Modelling Opinion Dynamics at Scale with Deep MARL",
+    "Self-evolving LLM agents with in-distribution Optimization",
+    "Hierarchical Certified Semantic Commitment for Byzantine-Resilient LLM-Agent Collaboration",
+    "Large Language Models in Healthcare Simulation Education: A Bibliometric Analysis with AI-Assisted Screening",
+    "Combined values alignment and epistemic verification prevent delusional reinforcement in conversational AI agents",
+    "STAR Suite: Transcriptomics processing in a single binary through AI-assisted development",
+    "PromptBio-Bench: Benchmarking LLM-based Bioinformatics Agents for End-to-End Data Analysis"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
