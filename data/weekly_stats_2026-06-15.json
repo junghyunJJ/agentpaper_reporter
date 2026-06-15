@@ -1,0 +1,35 @@
+{
+  "report_date": "2026-06-15",
+  "date_range_start": "2026-06-08",
+  "date_range_end": "2026-06-14",
+  "total_fetched": 770,
+  "total_matched": 184,
+  "by_source": {
+    "arxiv": 181,
+    "biorxiv": 3
+  },
+  "top_papers": [
+    "Learning Coordinated Preference for Multi-Objective Multi-Agent Reinforcement Learning",
+    "AgentSpec: Understanding Embodied Agent Scaffolds Through Controlled Composition",
+    "Towards Direct Latent-Space Synthesis for Parallel Branches in LLM-Agent Workflows",
+    "Regulating the Machine Contributor: Governance and Policy Alignment in Open Source",
+    "When Errors Become Narratives: A Longitudinal Taxonomy of Silent Failures in a Production LLM Agent Runtime",
+    "A multi-agent system for spine MRI report generation from multi-sequence imaging",
+    "Evaluating agentic AI for biological discovery in autonomous and copilot settings",
+    "Reconstructing living materials as a computable design space with multi-agent reasoning"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
