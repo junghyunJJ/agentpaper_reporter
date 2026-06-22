@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-06-22",
+  "date_range_start": "2026-06-15",
+  "date_range_end": "2026-06-21",
+  "total_fetched": 600,
+  "total_matched": 149,
+  "by_source": {
+    "biorxiv": 1,
+    "arxiv": 148
+  },
+  "top_papers": [
+    "ContinuumCellAgent: A Framework-Guided Agent for Long-Horizon Scientific Research",
+    "Execution-State Capsules: Graph-Bound Execution-State Checkpoint and Restore for Low-Latency, Small-Batch, On-Device Physical-AI Serving",
+    "Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes",
+    "Efficient and Sound Probabilistic Verification for AI Agents",
+    "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems",
+    "Optimal Order of Multi-Agent and General Many-Body Systems"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
