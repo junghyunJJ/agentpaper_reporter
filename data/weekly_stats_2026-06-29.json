@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-06-29",
+  "date_range_start": "2026-06-22",
+  "date_range_end": "2026-06-28",
+  "total_fetched": 635,
+  "total_matched": 141,
+  "by_source": {
+    "arxiv": 138,
+    "medrxiv": 2,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "Agentic Hardware Design as Repository-Level Code Evolution",
+    "Towards Automating Scientific Review with Google's Paper Assistant Tool",
+    "Agent-Native Immune System: Architecture, Taxonomy, and Engineering",
+    "HAT-4D: Lifting Monocular Video for 4D Multi-Object Interactions via Human-Agent Collaboration",
+    "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
+    "ALEX: Automatic Language EXplanations for Interpreting Treatment Effects via Multi-Agents",
+    "Agentic Autodiscovery of Diastolic Dysfunction Phenotypes from Surface Electrocardiogram",
+    "biomeStat: Using Agentic AI for Scalable Genomic Epidemiology Demonstrated Through End-to-End Analysis of 1,000 Asian Dengue Virus Genomes"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
