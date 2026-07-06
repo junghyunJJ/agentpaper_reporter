@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-07-06",
+  "date_range_start": "2026-06-29",
+  "date_range_end": "2026-07-05",
+  "total_fetched": 693,
+  "total_matched": 148,
+  "by_source": {
+    "arxiv": 147,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "What LLM Agents Say When No One Is Watching: Social Structure and Latent Objective Emergence in Multi-Agent Debates",
+    "Reasoning LLM Improves Speaker Recognition in Long-form TV Dramas",
+    "Controllable Sim Agents with Behavior Latents",
+    "Adoption and Ecosystem Health: A Longitudinal Analysis of Open-Source Multi-Agent Frameworks",
+    "AgentsCAD: Automated Design for Manufacturing of FDM Parts via Multi-Agent LLM Reasoning and Geometric Feature Recognition",
+    "GeneBench-Pro: Evaluating Multistage Statistical Reasoning in Genomics, Quantitative Biology, and Translational Biomedicine"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
