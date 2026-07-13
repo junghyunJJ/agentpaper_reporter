@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-07-13",
+  "date_range_start": "2026-07-06",
+  "date_range_end": "2026-07-12",
+  "total_fetched": 782,
+  "total_matched": 149,
+  "by_source": {
+    "arxiv": 148,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+    "LLM for EDA in Front-End Design: Challenges and Opportunities",
+    "Mosaic: Runtime-Efficient Multi-Agent Embodied Planning",
+    "Agora: Enhancing LLM Agent Reasoning Via Auction-Based Task Allocation",
+    "TrustX Agent Risk Classification Framework (ARC): Risk-Tiering Internally Created Agentic AI Systems",
+    "MicroGrowAgents: An Agentic AI System for Microbial Cultivation Engineering"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
