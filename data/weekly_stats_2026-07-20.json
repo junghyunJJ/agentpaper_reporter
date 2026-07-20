@@ -1,0 +1,35 @@
+{
+  "report_date": "2026-07-20",
+  "date_range_start": "2026-07-13",
+  "date_range_end": "2026-07-19",
+  "total_fetched": 733,
+  "total_matched": 143,
+  "by_source": {
+    "arxiv": 141,
+    "medrxiv": 1,
+    "biorxiv": 1
+  },
+  "top_papers": [
+    "Physics-enhanced reinforcement learning for real-time optimal control of dynamical systems",
+    "Evaluating Open-Weight LLMs for Generating Structured Threat Information for Autonomous Vehicle Vulnerabilities",
+    "PRISA: Proactive Infrastructure LiDAR Framework for Intersection Safety Assessment",
+    "When Do Multi-Agent Systems Help? An Information Bottleneck Perspective",
+    "ToolSciVer: Multimodal Scientific Claim Verification with Visual Tool Augmented Reinforcement Learning",
+    "Multi-Agent Dynamic Refinement Outperforms Static RAG in Clinical Reasoning for Complex Nephrology Cases",
+    "EcoXAI: Autonomous Agentic Ecosystem for Explainable Artificial Intelligence and Biomedical Discovery"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
