@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-07-27",
+  "date_range_start": "2026-07-20",
+  "date_range_end": "2026-07-26",
+  "total_fetched": 133,
+  "total_matched": 113,
+  "by_source": {
+    "arxiv": 113
+  },
+  "top_papers": [
+    "Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills",
+    "The Regression Tax: Decomposing Why Skills Help and Hurt LLM Agents",
+    "TRACE-ROUTER: Task-Consistent and Adaptive Online Routing for Agentic AI",
+    "Where FactsGo Missing: A LayerwiseTaxonomy and Per-Layer Attribution of Information Omissionin Air-Gapped LLM Agent Pipelines",
+    "Dynamic Capability Scoping for Enterprise AI Agents: A Synthetic Dataset and Three-Source Permission Architecture"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
