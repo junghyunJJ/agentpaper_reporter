@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-08-03",
+  "date_range_start": "2026-07-27",
+  "date_range_end": "2026-08-02",
+  "total_fetched": 731,
+  "total_matched": 164,
+  "by_source": {
+    "medrxiv": 1,
+    "arxiv": 163
+  },
+  "top_papers": [
+    "A Privacy-Preserving Zero-Code Conversational Statistical Analysis System for Clinical Research Using Agentic AI and Local R Execution",
+    "AgentHPOBench: A Benchmark For Evaluating LLM Agents as Sequential Hyperparameter Optimizers",
+    "Transcript-Managed Transformers: Monotone Multi-Agent Collapse and Universality with Two Pop-Enabled Transcripts",
+    "AgenticRepair: Multi-Faceted Program Context Engineering for Agentic Vulnerability Repair",
+    "Beyond Component Testing: Validating Agentic AI Systems",
+    "Zero-Mem: Zero-Token Memory Operations for LLM Agents"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
