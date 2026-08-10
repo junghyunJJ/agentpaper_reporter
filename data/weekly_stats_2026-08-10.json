@@ -1,0 +1,36 @@
+{
+  "report_date": "2026-08-10",
+  "date_range_start": "2026-08-03",
+  "date_range_end": "2026-08-09",
+  "total_fetched": 745,
+  "total_matched": 161,
+  "by_source": {
+    "arxiv": 158,
+    "biorxiv": 1,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+    "SkillProx: Self-Evolving Agent Skills via Proximal Textual Gradient Descent",
+    "PsychoAgent: An Affect-Sensitive Cognitive Architecture for Conflict-Aware Memory in LLM Agents",
+    "Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing",
+    "Analyzing the Interaction of Optimal Strategies in Mean-Payoff Bidding Games",
+    "AI semantics for biomedical data integration",
+    "RESCUE: An end-to-end multi-agent LLM system for proactive rare-disease patient screening in the EHR",
+    "A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
