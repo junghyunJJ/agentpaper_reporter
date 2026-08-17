@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-08-17",
+  "date_range_start": "2026-08-10",
+  "date_range_end": "2026-08-16",
+  "total_fetched": 187,
+  "total_matched": 162,
+  "by_source": {
+    "arxiv": 162
+  },
+  "top_papers": [
+    "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
+    "Wyvern: An Agentic Framework for Generating Grounded Multimodal Reports",
+    "The Past and Future of AI Scientists",
+    "Submodular Policy Learning for Distributed Task Allocation in Open Multi-Agent Systems",
+    "AgentRewind: Recoverable Execution for Long-Horizon LLM Agents"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
