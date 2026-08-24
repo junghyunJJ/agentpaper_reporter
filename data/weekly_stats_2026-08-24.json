@@ -1,0 +1,34 @@
+{
+  "report_date": "2026-08-24",
+  "date_range_start": "2026-08-17",
+  "date_range_end": "2026-08-23",
+  "total_fetched": 838,
+  "total_matched": 142,
+  "by_source": {
+    "arxiv": 140,
+    "biorxiv": 2
+  },
+  "top_papers": [
+    "AI with Authority, from Application to Silicon",
+    "Asymmetric Capacity Allocation in Self-Refinement Pipelines",
+    "Benchmarking Patent Drafting from Inventor-Style Disclosures",
+    "Personalized Privacy Control in LLMs via Attention Head Intervention",
+    "Specification Portability Across LLM Development Agents: Cross-Agent Compatibility in Specification-Driven Software Migration",
+    "EnSEMBLE: a framework for enhancer-anchored pathway analysis that locks in enhancer-corroborated pathways from transcriptome sequencing data for biological validation",
+    "PerturbTrace: Evaluating Feedback Use by AI Co-Scientist Agents in Perturbation Discovery"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
