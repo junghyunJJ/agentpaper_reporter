@@ -1,0 +1,35 @@
+{
+  "report_date": "2026-08-31",
+  "date_range_start": "2026-08-24",
+  "date_range_end": "2026-08-30",
+  "total_fetched": 729,
+  "total_matched": 163,
+  "by_source": {
+    "arxiv": 160,
+    "biorxiv": 3
+  },
+  "top_papers": [
+    "COVER: Identifiable Evaluation of Coalition Routing",
+    "Learning to Use Tools: Reinforcement Learning for Tool-Integrated Mathematical Reasoning",
+    "Prove2Me: An Open Collaborative Platform for Scaling Math Formalization",
+    "EvoUndo: Recoverability-Constrained Self-Evolution for LLM Agent Harnesses",
+    "AGENT-O: A Semantic Agent Card Framework for Interoperable and Governed Healthcare AI Agents",
+    "Self-organized Regulation of Group Size and Number in Natural and Artificial Collectives",
+    "EcoXAI: Autonomous Agentic Ecosystem for Explainable Artificial Intelligence and Biomedical Discovery",
+    "ASAREE: An Analytical Sandbox for Agentic AI Research, Engineering, and Experimentation"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
