@@ -1,0 +1,33 @@
+{
+  "report_date": "2026-09-07",
+  "date_range_start": "2026-08-31",
+  "date_range_end": "2026-09-06",
+  "total_fetched": 800,
+  "total_matched": 173,
+  "by_source": {
+    "biorxiv": 1,
+    "arxiv": 172
+  },
+  "top_papers": [
+    "PromptBio: An Agentic Platform for End-to-End Computational Biomedical Research",
+    "Multi-Step Tool-Calling over Korean Open Public APIs: A Benchmark and a Data-Synthesis Recipe",
+    "Trust-Aware Adaptive Disclosure for Inference Privacy Preservation in Multi-Agent Networks",
+    "Optimal Rates for Agentic Networked Information Aggregation",
+    "Large Language Models for HVAC Operations in Building Energy Systems: A Critical Review of Methods, Applications, and Deployment Readiness",
+    "Online Change-point Detection for Cooperative Multi-Agent Reinforcement Learning"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
