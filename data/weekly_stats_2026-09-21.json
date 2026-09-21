@@ -1,0 +1,38 @@
+{
+  "report_date": "2026-09-21",
+  "date_range_start": "2026-09-14",
+  "date_range_end": "2026-09-20",
+  "total_fetched": 765,
+  "total_matched": 146,
+  "by_source": {
+    "arxiv": 141,
+    "biorxiv": 3,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+    "An Interpretable Memory Decision Controller for LLM Agents Based on Three-Signal Complementarity: Decoupling Confidence and Consistency",
+    "Bayesian Belief Layer for Controllable Opinion Dynamics in LLM Agents",
+    "Guiding Agents of Quantum Games to Equilibrium using Matrix Exponential Fixed-Point Iteration",
+    "TrialAtlas: Multi-Agent Research Organization for Clinical Trial Design and Optimization",
+    "Self-organized Regulation of Group Size and Number in Natural and Artificial Collectives",
+    "scACORN: Context-engineered agent orchestration of specialized small language models for single-cell transcriptomic interpretation",
+    "Multi-agentic system for primer design in qPCR and LAMP diagnostics tests",
+    "AI agents at the brain-computer interface: separating inference from control",
+    "The Multimodal Anonymizer: a fully local multi-agent AI system for medical data deidentification"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
