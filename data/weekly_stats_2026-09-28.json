@@ -1,0 +1,38 @@
+{
+  "report_date": "2026-09-28",
+  "date_range_start": "2026-09-21",
+  "date_range_end": "2026-09-27",
+  "total_fetched": 964,
+  "total_matched": 173,
+  "by_source": {
+    "arxiv": 168,
+    "biorxiv": 3,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "AgentWorld: Benchmarking Long-Horizon Collaboration of Multi-agent LLMs",
+    "Multi-agent Scaling Across Disjunctive and Compensatory Tasks",
+    "HySTAR: Anchored Hypergraphs for Stable Credit Assignment in Cooperative Multi-Agent Reinforcement Learning",
+    "Towards Mitigating Fabricated Consensus: The Active Provenance Gate for Multi-Agent Debate Synthesis",
+    "ActKV: Efficient LLM Agents through Action-Guided KV Cache Management",
+    "MCseg: AI agent-guided workflow search for no-code cell segmentation and transcript attribution in spatial transcriptomics",
+    "STAR Suite: Transcriptomics processing in a single binary through AI-assisted development",
+    "Scrub Data: A Framework for Reproducible Data Curation with AI Coding Agents",
+    "An auditable evidence compiler for large language model-assisted systematic reviews",
+    "AI agents at the brain-computer interface: separating inference from control"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
