@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-10-05",
+  "date_range_start": "2026-09-28",
+  "date_range_end": "2026-10-04",
+  "total_fetched": 800,
+  "total_matched": 178,
+  "by_source": {
+    "arxiv": 174,
+    "biorxiv": 3,
+    "medrxiv": 1
+  },
+  "top_papers": [
+    "FrugalEvo: Towards Cost-Aware LLM-Guided Program Evolution",
+    "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents",
+    "HazardWeaver: Scientific Route Selection for Hazard Analysis Agents",
+    "Knowledge or Calculator? Decomposing the Skill Premium in Verifiable Financial Agent Workflows",
+    "Passing the Test You Trained On: Re-evaluating Prompt-Injection Detectors for LLM Agents",
+    "Synergistic Combination of Bioengineered MicroRNA and Chemotherapy Across High-Risk Neuroblastoma Subtypes",
+    "GroundAnnot: a closed-vocabulary contract for grounding LLM gene-set annotation in live enrichment backends",
+    "From seven combination hypotheses to one testable interaction: a gated agentic AI QSP workflow applied to healthy ageing interventions",
+    "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
