@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-10-12",
+  "date_range_start": "2026-10-05",
+  "date_range_end": "2026-10-11",
+  "total_fetched": 853,
+  "total_matched": 178,
+  "by_source": {
+    "arxiv": 174,
+    "biorxiv": 3,
+    "medrxiv": 1
+  },
+  "top_papers": [
+    "RATED: Reliability-Aware AI Agent Tool Retrieval via Execution Dynamics",
+    "MARGoS: A Configuration-Driven Platform for Reproducible MARL Experiments in ARGoS",
+    "Matched-Context Group Policy Optimization for LLM Agent Training",
+    "SafeDiSTL: Decomposing Joint Constraints for Safe Multi-Agent Reinforcement Learning",
+    "A Baseline Assessment for the Agentic Web Technology Stack",
+    "AI agent supervision of structural model building and refinement",
+    "Enrich.AI: An Agentic AI Platform for Interactive GeneSet Enrichment Analysis and Biological Interpretation",
+    "Verification Debt in Automated Biological Research Workflows: A Proof-of-Concept",
+    "Planner-Executor Style Multimodal Agentic System to Answer Patient Questions in Lung Cancer Screening CT"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
