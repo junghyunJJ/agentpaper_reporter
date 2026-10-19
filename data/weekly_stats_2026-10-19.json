@@ -1,0 +1,39 @@
+{
+  "report_date": "2026-10-19",
+  "date_range_start": "2026-10-12",
+  "date_range_end": "2026-10-18",
+  "total_fetched": 816,
+  "total_matched": 170,
+  "by_source": {
+    "arxiv": 164,
+    "biorxiv": 3,
+    "medrxiv": 3
+  },
+  "top_papers": [
+    "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
+    "DiscoveryRSI: Recursively Learning to Discover Valuable Hypotheses",
+    "Self-Building Labs",
+    "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+    "DLite: History-free Speculative Decoding for Agentic AI",
+    "BioMINTREL expands biological problem solving through cross-disciplinary representations",
+    "ExpertTwins: Auditable Long Horizon Scientific Panels through Grounded Expertise",
+    "In Vivo Transcriptomics-Based Framework for Systematic Indication Expansion",
+    "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+    "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+    "Human-Guided Agentic AI for End-to-End EHR Research: Sequential Antibody-Drug Conjugate Pathways in Breast Cancer"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
