@@ -1,0 +1,34 @@
+{
+  "report_date": "2026-10-26",
+  "date_range_start": "2026-10-19",
+  "date_range_end": "2026-10-25",
+  "total_fetched": 831,
+  "total_matched": 170,
+  "by_source": {
+    "arxiv": 168,
+    "biorxiv": 2
+  },
+  "top_papers": [
+    "J-Comm: Jacobian-Guided Latent Communication between LLM Agents",
+    "Reimagining Enterprise RAG for Multi-Agent Systems: A Knowledge Layer That Organizes Before It Retrieves",
+    "Semantic Representation for Agentic Self-Play in Automated Laboratories",
+    "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+    "Agentic Hazard Mapper: Emulating Expert Map-Making with AI Agents for Risk Communication",
+    "An immune world model with multi-agent orchestration for peptide vaccines",
+    "GENOAR: Global Engine for Navigating the Omnicell space via Agent-based Research"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
