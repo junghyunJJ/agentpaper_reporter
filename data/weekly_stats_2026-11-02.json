@@ -1,0 +1,40 @@
+{
+  "report_date": "2026-11-02",
+  "date_range_start": "2026-10-26",
+  "date_range_end": "2026-11-01",
+  "total_fetched": 850,
+  "total_matched": 186,
+  "by_source": {
+    "biorxiv": 5,
+    "medrxiv": 2,
+    "arxiv": 179
+  },
+  "top_papers": [
+    "NeuroGraphBench: Interacting with Drosophila Connectomes at Scale for Exploring the Functional Logic of Neural Circuits",
+    "Refactored intracellular domains enhance CAR expression and function",
+    "Scaling genetic discovery through automated post-GWAS interpretation",
+    "Asking the Data: Conversational Interrogation of LC-MS/MS Proteomics Data Sets with an LLM Agent",
+    "An evidence-governed agent harness for spatial transcriptomics prioritizes ICAM-1 as a target in lung fibrosis",
+    "Who Publishes During Residency? A Systematic Review and Meta-Analysis of Peer-Reviewed Publication Among Residents in the United States",
+    "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+    "Flide: Accelerating Decision Inference with Exact State Forking",
+    "RAMA: Retrieval-Augmented Multi-Agent Routing with Episodic Memory for LEO Satellite Networks",
+    "CausalXRL: Explainable Reinforcement Learning through Causal Graph Reasoning",
+    "TradeWar: A Benchmark for Execution-Grounded Trade Negotiation with Adaptive LLM Agents",
+    "AutoAnalysis: An automated, self-updating meta-analysis of human-AI collaboration"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
