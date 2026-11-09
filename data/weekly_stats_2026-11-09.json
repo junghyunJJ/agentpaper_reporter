@@ -1,0 +1,31 @@
+{
+  "report_date": "2026-11-09",
+  "date_range_start": "2026-11-02",
+  "date_range_end": "2026-11-08",
+  "total_fetched": 837,
+  "total_matched": 179,
+  "by_source": {
+    "arxiv": 179
+  },
+  "top_papers": [
+    "Knowing When to Intervene: Causal Evaluation of AI Agents",
+    "What to Delegate, What to Preserve: Human Preferences for Agentic AI Across Everyday Life and Work",
+    "MemoryDojo: Benchmarking Poisoning Through LLM Agent Memory",
+    "How Much Conversation History Does an AI Agent Need?",
+    "A Separation Principle for Cooperative Multi-Agent Reinforcement Learning"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
