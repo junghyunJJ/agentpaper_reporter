@@ -1,0 +1,37 @@
+{
+  "report_date": "2026-11-16",
+  "date_range_start": "2026-11-09",
+  "date_range_end": "2026-11-15",
+  "total_fetched": 810,
+  "total_matched": 167,
+  "by_source": {
+    "biorxiv": 3,
+    "arxiv": 163,
+    "medrxiv": 1
+  },
+  "top_papers": [
+    "EcoToxFred: A knowledge-graph-grounded conversational agent for exploring ecotoxicological monitoring and hazard data",
+    "Large language models complement established workflows for mechanistic model construction and refinement in systems biology",
+    "ASD Neuro Agentic (ANA): An Agentic Framework for Feature Discovery and Cross Site Generalization in Autism fMRI Classification",
+    "Imitation Bootstrapped Multi-Agent Reinforcement Learning",
+    "Can Mechanistic Interpretability Help Explain LLM Agent Failures? A Case Study on Web Element Hallucination",
+    "Agentic AI for Discovering Fault-Tolerant Quantum Circuits",
+    "From AI-Enabled Remote Patient Monitoring Toward Agentic Robotics: Embodiment, Governance, and Care Integration",
+    "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation",
+    "Automating postmarketing pharmacovigilance with large language model agents"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
