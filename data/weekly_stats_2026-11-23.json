@@ -1,0 +1,39 @@
+{
+  "report_date": "2026-11-23",
+  "date_range_start": "2026-11-16",
+  "date_range_end": "2026-11-22",
+  "total_fetched": 838,
+  "total_matched": 176,
+  "by_source": {
+    "arxiv": 170,
+    "biorxiv": 4,
+    "medrxiv": 2
+  },
+  "top_papers": [
+    "LesionAgent: Training-Free Agentic Tumor Tracking and Response Assessment in Longitudinal CT",
+    "SLICR: Strategy Logic-Guided Multi-Agent Reinforcement Learning",
+    "Beyond Self-Critique: Epistemic Convergence Control for Multi-Agent Research Verification",
+    "Shared Understanding in Human-AI Teams: Coordination Continuity in Evolving Work",
+    "AutoOntologyBench: A Task-Grounded Benchmark for Agentic Knowledge Engineering",
+    "Unveiling value functions in social cognition with multi-agent inverse reinforcement learning",
+    "SPIDER: Contextualizing Biomedical Knowledge for Evidence-Grounded Scientific Reasoning",
+    "Pharmacolibrary: Interoperable executable models for PK, PD and PGx derived from published evidence",
+    "EcoXAI: Autonomous Agentic Ecosystem for Explainable Artificial Intelligence and Biomedical Discovery",
+    "Human-Agentic AI Collaboration Workflow for Trend Analysis of ChatGPT Applications in Healthcare",
+    "Hard to Halt: Automation Bias in Agent-Driven Sequencing Prior Authorization Workflows"
+  ],
+  "keywords_used": [
+    "agentic AI",
+    "multi-agent system",
+    "multi-agent",
+    "AI agent",
+    "autonomous agent",
+    "LLM agent",
+    "agent framework",
+    "tool-use",
+    "function calling",
+    "agent orchestration",
+    "agent collaboration",
+    "reasoning agent"
+  ]
+}
